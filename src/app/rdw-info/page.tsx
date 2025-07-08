@@ -14,52 +14,52 @@ const RDWInfoPage = () => {
     {
       question: "Welke e-steps zijn legaal op de openbare weg?",
       answer: "Sinds 1 juli 2025 is alleen de SELANA Alpha officieel goedgekeurd door de RDW voor gebruik op de openbare weg. Daarnaast zijn er 4 oudere 'bijzondere bromfietsen' die ook mogen: Yedoo Mezeq, Kickbike Cruise, Kickbike Fat Max en Kickbike Luxury. Alle andere e-steps zijn niet toegestaan op de openbare weg.",
-      category: "legal"
+      category: "wetgeving"
     },
     {
       question: "Hoe herken ik een legale e-step?",
       answer: "Een legale e-step heeft een blauw kenteken dat begint met de letter 'E'. Dit kenteken wordt uitgegeven door de RDW en toont aan dat de e-step officieel is goedgekeurd. Zonder dit kenteken is de e-step niet toegestaan op straat.",
-      category: "recognition"
+      category: "herkenning"
     },
     {
       question: "Wat kost een kenteken voor mijn e-step?",
       answer: "Het aanvragen van een kenteken kost €18,- bij de RDW. Daarbovenop komen nog de kosten voor de kentekenplaat zelf (ongeveer €15-25). Totaal ben je dus circa €35-45 kwijt voor een volledig kenteken.",
-      category: "costs"
+      category: "kosten"
     },
     {
       question: "Moet ik een rijbewijs hebben voor een legale e-step?",
       answer: "Nee, voor RDW goedgekeurde e-steps (bijzondere bromfietsen) is geen rijbewijs vereist. Je moet wel minimaal 16 jaar oud zijn om er mee te mogen rijden.",
-      category: "requirements"
+      category: "eisen"
     },
     {
       question: "Is verzekering verplicht voor mijn e-step?",
       answer: "Ja, een WA-verzekering is verplicht voor alle legale e-steps. Zonder verzekering ben je niet gedekt voor schade aan anderen en kun je een boete krijgen. De verzekering kost ongeveer €6-10 per maand.",
-      category: "insurance"
+      category: "verzekering"
     },
     {
       question: "Waar mag ik rijden met een legale e-step?",
       answer: "Met een RDW goedgekeurde e-step mag je op het fietspad, bromfietspad of op de rijbaan (als er geen fietspad is). Je mag NIET op de stoep rijden - die is alleen voor voetgangers. De maximumsnelheid is 25 km/u.",
-      category: "traffic"
+      category: "verkeer"
     },
     {
       question: "Wat gebeurt er als ik met een illegale e-step wordt betrapt?",
       answer: "De politie kan een boete uitschrijven tot €400 en je e-step in beslag nemen. Daarnaast ben je niet verzekerd voor eventuele schade. Dit geldt voor alle e-steps zonder RDW goedkeuring en kenteken.",
-      category: "penalties"
+      category: "boetes"
     },
     {
       question: "Kunnen bestaande e-steps nog goedgekeurd worden?",
       answer: "Nee, alleen nieuwe modellen die specifiek zijn ontworpen volgens RDW eisen kunnen goedkeuring krijgen. Bestaande e-steps die je al hebt gekocht kunnen niet alsnog worden goedgekeurd. Deze mag je alleen op eigen, afgesloten terrein gebruiken.",
-      category: "existing"
+      category: "bestaand"
     },
     {
       question: "Wat zijn de technische eisen voor RDW goedkeuring?",
       answer: "RDW goedgekeurde e-steps moeten voldoen aan strenge eisen: maximaal 25 km/u, voor- en achterremmen, richtingaanwijzers, verlichting, 10-inch luchtbanden, VIN-nummer, en maximaal 4kW motorvermogen. Ze moeten ook uitgebreide veiligheidstesten doorstaan.",
-      category: "technical"
+      category: "technisch"
     },
     {
       question: "Komen er binnenkort meer legale e-steps?",
       answer: "Ja, er zijn momenteel 5 fabrikanten die een aanvraag hebben ingediend bij de RDW voor nieuwe e-step modellen. De verwachting is dat er in de komende maanden meer goedgekeurde modellen beschikbaar komen, maar dit proces duurt lang vanwege strenge veiligheidseisen.",
-      category: "future"
+      category: "toekomst"
     },
     {
       question: "Wat is het verschil met e-steps met stepondersteuning?",
@@ -74,16 +74,16 @@ const RDWInfoPage = () => {
   ];
 
   const categoryColors = {
-    legal: "bg-green-50 border-green-200 text-green-800",
-    recognition: "bg-blue-50 border-blue-200 text-blue-800", 
-    costs: "bg-yellow-50 border-yellow-200 text-yellow-800",
-    requirements: "bg-purple-50 border-purple-200 text-purple-800",
-    insurance: "bg-orange-50 border-orange-200 text-orange-800",
-    traffic: "bg-indigo-50 border-indigo-200 text-indigo-800",
-    penalties: "bg-red-50 border-red-200 text-red-800",
-    existing: "bg-gray-50 border-gray-200 text-gray-800",
-    technical: "bg-cyan-50 border-cyan-200 text-cyan-800",
-    future: "bg-emerald-50 border-emerald-200 text-emerald-800",
+    wetgeving: "bg-green-50 border-green-200 text-green-800",
+    herkenning: "bg-blue-50 border-blue-200 text-blue-800", 
+    kosten: "bg-yellow-50 border-yellow-200 text-yellow-800",
+    eisen: "bg-purple-50 border-purple-200 text-purple-800",
+    verzekering: "bg-orange-50 border-orange-200 text-orange-800",
+    verkeer: "bg-indigo-50 border-indigo-200 text-indigo-800",
+    boetes: "bg-red-50 border-red-200 text-red-800",
+    bestaand: "bg-gray-50 border-gray-200 text-gray-800",
+    technisch: "bg-cyan-50 border-cyan-200 text-cyan-800",
+    toekomst: "bg-emerald-50 border-emerald-200 text-emerald-800",
     types: "bg-pink-50 border-pink-200 text-pink-800",
     deadline: "bg-violet-50 border-violet-200 text-violet-800"
   };
