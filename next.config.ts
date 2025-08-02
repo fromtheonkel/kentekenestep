@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  }
-};
+  images: {
+    domains: ['selana.nl'],
+    formats: ['image/webp', 'image/avif'],
+  },
+  compress: true,
+  poweredByHeader: false,
+}
 
-export default nextConfig;
+module.exports = nextConfig
