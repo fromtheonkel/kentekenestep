@@ -2,16 +2,17 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Calendar, ArrowRight, User, FileText } from 'lucide-react';
+import { Calendar, ArrowRight, FileText } from 'lucide-react';
 import { getArticleBySlug, blogArticles } from '@/data/blog/articles';
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const article = getArticleBySlug(params.slug);
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
   
   if (!article) {
     return {
@@ -48,8 +49,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ArticlePage({ params }: PageProps) {
-  const article = getArticleBySlug(params.slug);
+export default async function ArticlePage({ params }: PageProps) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
 
   if (!article) {
     notFound();
