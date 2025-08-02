@@ -50,20 +50,11 @@ export const metadata: Metadata = {
     title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
     description: 'Het complete overzicht van legale e-steps in Nederland. Vergelijk RDW goedgekeurde modellen, bekijk prijzen en lees over regelgeving.',
     siteName: 'KentekenEstep.nl',
-    images: [
-      {
-        url: '/og-image.jpg', // Je moet deze afbeelding nog maken (1200x630px)
-        width: 1200,
-        height: 630,
-        alt: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Overzicht',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
     description: 'Vergelijk legale e-steps in Nederland - SELANA Alpha en meer',
-    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -76,10 +67,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  // Voeg verification toe wanneer je Google Search Console hebt ingesteld
-  // verification: {
-  //   google: 'your-google-verification-code',
-  // },
 };
 
 export default function RootLayout({
@@ -90,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <head>
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager - EXACT zoals jij het had */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KW6X22NL');`,
@@ -98,7 +85,7 @@ export default function RootLayout({
         />
         {/* End Google Tag Manager */}
         
-        {/* Initialize consent to denied by default */}
+        {/* Initialize consent to denied by default - EXACT zoals jij het had */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -112,7 +99,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Structured Data for SEO */}
+        {/* Structured Data voor SEO (nieuw toegevoegd) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -122,16 +109,10 @@ export default function RootLayout({
               "name": "KentekenEstep.nl",
               "description": "Overzicht van RDW goedgekeurde e-steps in Nederland",
               "url": "https://www.kentekenestep.nl",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://www.kentekenestep.nl/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              },
               "publisher": {
                 "@type": "Organization",
                 "name": "KentekenEstep.nl",
-                "url": "https://www.kentekenestep.nl",
-                "logo": "https://www.kentekenestep.nl/logo_estep_rdw.svg"
+                "url": "https://www.kentekenestep.nl"
               }
             })
           }}
@@ -140,7 +121,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager (noscript) - EXACT zoals jij het had */}
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-KW6X22NL"
