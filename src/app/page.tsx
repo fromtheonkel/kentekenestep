@@ -35,9 +35,9 @@ export default function Page() {
 
   const handleMoreInfo = (productType: string) => {
     // GTM Event tracking - alleen als dataLayer beschikbaar is
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+    if (typeof window !== 'undefined' && (window as unknown as { dataLayer: unknown[] }).dataLayer) {
       try {
-        (window as any).dataLayer.push({
+        (window as unknown as { dataLayer: unknown[] }).dataLayer.push({
           event: 'cta_button_click',
           product_type: productType,
           product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
@@ -69,24 +69,8 @@ export default function Page() {
     }
   };
 
-  // Blog Image Component
-  const BlogImage = ({ type, src, className = "" }) => {
-    // If src is provided (external URL), use it as an img tag
-    if (src) {
-      return (
-        <div className={`${className} relative overflow-hidden`}>
-          <Image 
-            src={src} 
-            alt="Blog afbeelding" 
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      );
-    }
-
-    // Otherwise use the SVG illustrations
+  // Blog Image Component - Only for SVG illustrations now
+  const BlogImage = ({ type, className = "" }) => {
     switch (type) {
       case 'market-growth':
         return (
@@ -676,11 +660,20 @@ export default function Page() {
 
             {/* Article Image */}
             <div className="mb-12 h-64 md:h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center p-8 shadow-sm border border-slate-100 overflow-hidden">
-              <BlogImage 
-                type={currentArticle.image} 
-                src={currentArticle.image?.startsWith('http') ? currentArticle.image : null}
-                className="w-full h-full" 
-              />
+              {currentArticle.image?.startsWith('http') ? (
+                // External image - use regular img tag
+                <img 
+                  src={currentArticle.image} 
+                  alt="Article afbeelding" 
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                // Internal/SVG image - use BlogImage component
+                <BlogImage 
+                  type={currentArticle.image} 
+                  className="w-full h-full" 
+                />
+              )}
             </div>
 
             {/* Article Content */}
@@ -755,11 +748,20 @@ export default function Page() {
                       onClick={() => handleReadMore(post.id)}
                     >
                       <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center p-3 mb-4 group-hover:shadow-sm transition-shadow">
-                        <BlogImage 
-                          type={post.image} 
-                          src={post.image?.startsWith('http') ? post.image : null}
-                          className="w-full h-full" 
-                        />
+                        {post.image?.startsWith('http') ? (
+                          // External image - use regular img tag
+                          <img 
+                            src={post.image} 
+                            alt="Article afbeelding" 
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          // Internal/SVG image - use BlogImage component
+                          <BlogImage 
+                            type={post.image} 
+                            className="w-full h-full" 
+                          />
+                        )}
                       </div>
                       <div className="flex items-center gap-2 mb-3">
                         <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-medium">
@@ -994,11 +996,20 @@ export default function Page() {
                 <article key={post.id} className="bg-white rounded-lg shadow border hover:shadow-lg transition-shadow">
                   <div className="md:flex">
                     <div className="md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center p-4">
-                      <BlogImage 
-                        type={post.image} 
-                        src={post.image?.startsWith('http') ? post.image : null}
-                        className="w-full h-full" 
-                      />
+                      {post.image?.startsWith('http') ? (
+                        // External image - use regular img tag
+                        <img 
+                          src={post.image} 
+                          alt="Article afbeelding" 
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        // Internal/SVG image - use BlogImage component
+                        <BlogImage 
+                          type={post.image} 
+                          className="w-full h-full" 
+                        />
+                      )}
                     </div>
                     <div className="md:w-2/3 p-6">
                       <div className="flex items-center gap-2 mb-3">
