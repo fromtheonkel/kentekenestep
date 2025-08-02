@@ -1,12 +1,27 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Calendar, ArrowRight, Search, User, FileText } from 'lucide-react';
 
 export default function Page() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedArticle, setSelectedArticle] = useState(null);
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+
+  // Scroll event for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.querySelector('.hero-section');
+      if (heroSection) {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        setIsHeaderSticky(window.scrollY > heroBottom);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleReadMore = (articleId) => {
     setSelectedArticle(articleId);
@@ -16,8 +31,40 @@ export default function Page() {
     setSelectedArticle(null);
   };
 
+  const handleMoreInfo = (productType) => {
+    // Navigate to product specific pages or sections
+    switch(productType) {
+      case 'selana':
+        window.open('https://selana.nl/?utm_source=kentekenestep&utm_medium=referral&utm_campaign=homepage', '_blank');
+        break;
+      case 'onkel':
+        // For now, scroll to newsletter signup since Onkel isn't available yet
+        document.querySelector('.newsletter-signup')?.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'others':
+        // Scroll to newsletter signup for updates
+        document.querySelector('.newsletter-signup')?.scrollIntoView({ behavior: 'smooth' });
+        break;
+      default:
+        break;
+    }
+  };
+
   // Blog Image Component
-  const BlogImage = ({ type, className = "" }) => {
+  const BlogImage = ({ type, src, className = "" }) => {
+    // If src is provided (external URL), use it as an img tag
+    if (src) {
+      return (
+        <img 
+          src={src} 
+          alt="Blog afbeelding" 
+          className={`${className} object-cover`}
+          style={{ width: '100%', height: '100%' }}
+        />
+      );
+    }
+
+    // Otherwise use the SVG illustrations
     switch (type) {
       case 'market-growth':
         return (
@@ -188,6 +235,122 @@ export default function Page() {
   };
 
   const blogPosts = [
+    {
+      id: 5,
+      title: "Selana Alpha €150 goedkoper: maar is €1.750 nog steeds te duur?",
+      excerpt: "De Selana Alpha krijgt een prijsverlaging naar €1.750, maar met een wachttijd van 3 maanden en een prijs die nog altijd 3-4x hoger ligt dan illegale alternatieven, rijzen er vragen over de toegankelijkheid.",
+      content: `
+        <p>Na bijna een jaar op de markt heeft Selana eindelijk de prijs van hun Alpha e-step verlaagd van €1.900 naar €1.750. Een stap in de goede richting, maar de vraag blijft: is dit genoeg om de gemiddelde Nederlandse consument te overtuigen?</p>
+
+        <h3>€1.750: Een kritische blik op de prijs</h3>
+        <p>Laten we eerlijk zijn: <strong>€1.750 is nog altijd een behoorlijk bedrag</strong> voor een elektrische step. Ter vergelijking:</p>
+        <ul>
+          <li><strong>Illegale e-steps</strong>: €400-800 voor vergelijkbare specificaties</li>
+          <li><strong>Gewone fiets</strong>: €300-600 voor dagelijks transport</li>
+          <li><strong>E-bike</strong>: €1.200-2.000 voor elektrisch vervoer</li>
+          <li><strong>Selana Alpha</strong>: €1.750 + verzekering + kenteken</li>
+        </ul>
+        
+        <p>Je betaalt dus een <strong>legaliteitspremie van ongeveer €1.000-1.350</strong> ten opzichte van vergelijkbare niet-goedgekeurde modellen. De vraag is of die legaliteit dat waard is voor de gemiddelde gebruiker.</p>
+
+        <h3>3 maanden wachttijd: een serieus probleem</h3>
+        <p>Nog problematischer is de <strong>levertijd van 3 maanden</strong>. In een tijd waarin we gewend zijn aan next-day delivery, voelt dit archaïsch aan. Vooral als je bedenkt dat:</p>
+        <ul>
+          <li>Illegale alternatieven vaak <strong>binnen 1-3 dagen</strong> geleverd worden</li>
+          <li>Je €1.750 vooruit moet betalen voor iets dat je pas over een kwartaal krijgt</li>
+          <li>Er <strong>geen garantie</strong> is dat de levertijd niet verder oploopt</li>
+          <li>Je intussen gewoon lopend of met het OV moet</li>
+        </ul>
+
+        <h3>Wat krijg je wel voor je geld?</h3>
+        <p>Eerlijkheidshalve: de Selana Alpha biedt wel unieke voordelen die je nergens anders krijgt:</p>
+        
+        <h4>Echte legaliteit</h4>
+        <ul>
+          <li><strong>Geen boeterisico</strong>: €140-400 boetes vermeden</li>
+          <li><strong>Verzekering mogelijk</strong>: bescherming bij diefstal/schade</li>
+          <li><strong>Overal rijden</strong>: ook waar andere e-steps verboden zijn</li>
+          <li><strong>Geen stress</strong>: bij politiecontroles</li>
+        </ul>
+
+        <h4>Kwalitatieve specificaties</h4>
+        <ul>
+          <li><strong>25 km/u topsnelheid</strong> (legaal maximum)</li>
+          <li><strong>45-60km bereik</strong> op één lading</li>
+          <li><strong>10-inch luchtbanden</strong> voor comfort</li>
+          <li><strong>Dubbele vering</strong> voor een soepele rit</li>
+          <li><strong>Richtingaanwijzers</strong> voor veiligheid</li>
+          <li><strong>NFC-keycard</strong> tegen diefstal</li>
+        </ul>
+
+        <h3>De kosten komen niet alleen</h3>
+        <p>Vergeet niet de <strong>bijkomende kosten</strong>:</p>
+        <ul>
+          <li><strong>Kenteken</strong>: €32,60 eenmalig</li>
+          <li><strong>WA-verzekering</strong>: €8-15 per maand (€96-180/jaar)</li>
+          <li><strong>Thuisbezorging</strong>: €100 extra (tenzij je zelf ophaalt)</li>
+          <li><strong>Casco-verzekering</strong>: €15-25 extra per maand (aanbevolen bij deze prijs)</li>
+        </ul>
+        
+        <p>In het <strong>eerste jaar</strong> ben je dus al snel <strong>€2.000-2.100</strong> kwijt voor transport dat je met een gewone fiets gratis zou hebben.</p>
+
+        <h3>Voor wie is de Selana Alpha geschikt?</h3>
+        
+        <h4>✅ Geschikt voor:</h4>
+        <ul>
+          <li><strong>Zakelijke gebruikers</strong> die kosten kunnen aftrekken</li>
+          <li><strong>Dagelijkse pendelaars</strong> die dagelijks lange afstanden afleggen</li>
+          <li><strong>Regelconforme burgers</strong> die geen risicos willen nemen</li>
+          <li><strong>Tech early adopters</strong> die graag het nieuwste hebben</li>
+        </ul>
+
+        <h4>❌ Minder geschikt voor:</h4>
+        <ul>
+          <li><strong>Incidentele gebruikers</strong> die af en toe een ritje maken</li>
+          <li><strong>Studenten</strong> met een beperkt budget</li>
+          <li><strong>Mensen die snel mobiliteit nodig hebben</strong> (vanwege wachttijd)</li>
+          <li><strong>Prijs-bewuste kopers</strong> die kosten-baten afwegen</li>
+        </ul>
+
+        <h3>Bestellen en levering: de praktijk</h3>
+        <h4>Verzending</h4>
+        <ul>
+          <li><strong>Gratis ophalen</strong> bij ophaallocaties (na bevestigingsmail)</li>
+          <li><strong>Thuisbezorging</strong>: €100 extra</li>
+          <li><strong>Wachttijd</strong>: 3 maanden (mogelijk langer)</li>
+        </ul>
+
+        <h4>Retourbeleid</h4>
+        <p><strong>14 dagen retourrecht</strong> na ontvangst, mits ongebruikt. Let op: na 3 maanden wachten heb je waarschijnlijk al alternatieve transport geregeld.</p>
+
+        <h3>Onze conclusie: afwachten of aangrijpen?</h3>
+        <p>De prijsverlaging is een welkome stap, maar <strong>€1.750 blijft fors voor wat je krijgt</strong>. De 3 maanden wachttijd maakt het nog minder aantrekkelijk.</p>
+        
+        <p><strong>Onze aanbeveling:</strong></p>
+        <ul>
+          <li><strong>Heb je het geld over en wil je per se legaal rijden?</strong> Dan is dit je enige optie momenteel.</li>
+          <li><strong>Zit je krap bij kas?</strong> Wacht tot meer concurrentie de prijzen drukt.</li>
+          <li><strong>Heb je haast?</strong> Overweeg een e-bike of andere transportmiddelen.</li>
+          <li><strong>Ben je nieuwsgierig?</strong> Wacht op onze review als we er zelf een hebben getest.</li>
+        </ul>
+
+        <div style="background-color: #fff7ed; border-left: 4px solid #fb923c; padding: 16px; margin: 32px 0;">
+          <p style="color: #9a3412; margin: 0;"><strong>Update 30 juli 2025:</strong> De prijs is verlaagd naar €1.750. Wachttijd blijft 3 maanden. Meer RDW-goedgekeurde alternatieven worden verwacht in Q4 2025.</p>
+        </div>
+
+        <p><strong>Interesse gewekt ondanks onze kritiek?</strong><br>
+        <a href="https://selana.nl/products/alpha?utm_source=kentekenestep&utm_medium=blog&utm_campaign=selana_price_drop_2025&utm_content=review" target="_blank" rel="noopener noreferrer" style="color: #ea580c; font-weight: 600; text-decoration: underline;">Bekijk de Selana Alpha voor €1.750</a></p>
+        
+        <p style="font-size: 14px; color: #64748b;"><em>Disclaimer: Dit is een kritische analyse. We hebben geen commerciele relatie met Selana, maar sommige links kunnen affiliate-links bevatten voor transparantie.</em></p>
+      `,
+      author: "Iwan",
+      date: "2025-07-30",
+      readTime: "8 min",
+      category: "Product Update",
+      image: "https://selana.nl/cdn/shop/files/SELANA_Alpha1.jpg?v=1751712644&width=800",
+      tags: ["SELANA", "Alpha", "Prijskritiek", "RDW", "Analyse"],
+      featured: true
+    },
     {
       id: 1,
       title: "Meer RDW Goedgekeurde E-Steps Komen Eraan",
@@ -362,7 +525,7 @@ export default function Page() {
     }
   ];
 
-  const categories = ['all', 'Markt Update', 'Product Review', 'Regelgeving'];
+  const categories = ['all', 'Product Update', 'Markt Update', 'Product Review', 'Regelgeving'];
 
   const filteredPosts = blogPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -373,8 +536,6 @@ export default function Page() {
     
     return matchesSearch && matchesCategory;
   });
-
-  const featuredPosts = blogPosts.filter(post => post.featured);
   
   // Get the selected article
   const currentArticle = selectedArticle ? blogPosts.find(post => post.id === selectedArticle) : null;
@@ -382,7 +543,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className={`bg-white shadow-sm border-b transition-all duration-300 ${isHeaderSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -409,7 +570,8 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-700 to-slate-900 text-white py-16">
+      <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white py-16">
+        {isHeaderSticky && <div className="h-16"></div>}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -423,6 +585,7 @@ export default function Page() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {isHeaderSticky && <div className="h-16 -mt-12"></div>}
         {/* Article Detail View */}
         {currentArticle ? (
           <div className="max-w-4xl mx-auto">
@@ -491,7 +654,11 @@ export default function Page() {
 
             {/* Article Image */}
             <div className="mb-12 h-64 md:h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center p-8 shadow-sm border border-slate-100 overflow-hidden">
-              <BlogImage type={currentArticle.image} className="w-full h-full" />
+              <BlogImage 
+                type={currentArticle.image} 
+                src={currentArticle.image?.startsWith('http') ? currentArticle.image : null}
+                className="w-full h-full" 
+              />
             </div>
 
             {/* Article Content */}
@@ -566,7 +733,11 @@ export default function Page() {
                       onClick={() => handleReadMore(post.id)}
                     >
                       <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center p-3 mb-4 group-hover:shadow-sm transition-shadow">
-                        <BlogImage type={post.image} className="w-full h-full" />
+                        <BlogImage 
+                          type={post.image} 
+                          src={post.image?.startsWith('http') ? post.image : null}
+                          className="w-full h-full" 
+                        />
                       </div>
                       <div className="flex items-center gap-2 mb-3">
                         <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-medium">
@@ -622,404 +793,157 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Top 3 RDW Goedgekeurde E-Steps */}
-        <section className="py-16 bg-white">
+        {/* E-Step Vergelijker Widget */}
+        <section className="py-16 bg-gradient-to-br from-slate-50 to-orange-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Top 3 RDW Goedgekeurde E-Steps
-              </h2>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                Vergelijk de beste legale elektrische steps die officieel goedgekeurd zijn door de RDW
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* SELANA Alpha */}
-              <div className="relative bg-white rounded-2xl border-2 border-green-200 shadow-lg overflow-hidden">
-                <div className="absolute top-4 left-4 right-4">
-                  <span className="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                    Nu Beschikbaar
-                  </span>
+            <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+              <div className="lg:flex">
+                {/* Left Side - Content */}
+                <div className="lg:w-3/5 p-8 lg:p-12">
+                  <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+                    RDW Goedgekeurde E-Steps
+                  </h2>
+                  
+                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                    We staan er niet vaak bij stil, maar ook een mooie rit kost geld. Hoe jouw mobiliteit eruitziet 
+                    bepaal je zelf, maar dankzij een RDW goedgekeurde e-step maak je het mogelijk.
+                  </p>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-slate-700 font-medium">Kosten van je mobiliteit gedekt.</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-slate-700 font-medium">Eenvoudig in 3 minuten geregeld.</span>
+                    </div>
+                    
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-slate-700 font-medium">Volledig legaal op de openbare weg.</span>
+                    </div>
+                  </div>
+                  
+                  <button 
+                    onClick={() => window.open('/vergelijken', '_self')}
+                    className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-bold text-base transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  >
+                    Vergelijk alle modellen
+                  </button>
                 </div>
                 
-                <div className="pt-16 pb-8 px-8">
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-slate-600 to-slate-800 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xl font-bold">SA</span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">SELANA Alpha</h3>
-                    <p className="text-slate-600">Eerste RDW Goedgekeurde E-Step</p>
+                {/* Right Side - Product Card */}
+                <div className="lg:w-2/5 bg-slate-50 p-8 lg:p-12 relative">
+                  {/* Badge */}
+                  <div className="absolute top-6 right-6">
+                    <span className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                      Enige goedgekeurde
+                    </span>
                   </div>
-
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="flex text-yellow-400">
-                      <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <span className="ml-2 text-sm text-slate-500">(Nieuwe release)</span>
-                  </div>
-
-                  <div className="text-center mb-6">
-                    <div className="text-4xl font-bold text-slate-900 mb-1">€1.900</div>
-                    <div className="text-sm text-slate-500">Kenteken: Gratis</div>
-                    <div className="text-sm text-slate-500">Verzekering: ~€6/maand</div>
-                    <div className="text-sm text-orange-600 font-medium">Levertijd: Oktober 2025</div>
-                  </div>
-
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-green-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xs mr-2">✓</span>
-                        Voordelen:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Enige volledig legale e-step
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          RDW goedkeuring met kenteken
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Premium kwaliteit materials
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Richtingaanwijzers & verlichting
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Dual suspension systeem
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-red-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xs mr-2">×</span>
-                        Aandachtspunten:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Lange levertijd (3+ maanden)
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Hoge aanschafprijs
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Zwaar gewicht (28kg)
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Niet inklapbaar
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4 mb-6">
-                    <h4 className="font-semibold text-slate-900 mb-3">Belangrijkste specificaties:</h4>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Max snelheid</span>
-                        <span className="text-slate-900 font-medium">25 km/h</span>
+                  
+                  {/* Product Info */}
+                  <div className="mt-8 lg:mt-0">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-slate-800 rounded-2xl flex items-center justify-center">
+                        <span className="text-white text-2xl font-bold">SA</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Bereik</span>
-                        <span className="text-slate-900 font-medium">45-60 km</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Gewicht</span>
-                        <span className="text-slate-900 font-medium">28 kg</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Kenteken</span>
-                        <span className="text-green-600 font-medium">✓ Blauw E-kenteken</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Verzekering</span>
-                        <span className="text-green-600 font-medium">✓ WA mogelijk</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-slate-900">SELANA Alpha</h3>
+                        <p className="text-slate-600">Eerste RDW Goedgekeurde E-Step</p>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <button className="w-full bg-green-500 text-white py-3 px-4 rounded-lg font-semibold hover:bg-green-600 transition-colors">
-                      Meer Informatie
-                    </button>
-                    <a 
-                      href="https://selana.nl" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block w-full text-center border border-slate-300 text-slate-600 py-3 px-4 rounded-lg font-medium hover:bg-slate-50 transition-colors"
+                    
+                    {/* Rating */}
+                    <div className="flex items-center gap-2 mb-6">
+                      <div className="flex text-yellow-400 text-xl">
+                        <span>★★★★★</span>
+                      </div>
+                      <span className="text-slate-600 font-medium">9,4</span>
+                      <span className="text-slate-500 text-sm">Nieuwe release</span>
+                    </div>
+                    
+                    {/* Pricing */}
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="text-center">
+                        <p className="text-slate-600 text-sm mb-1">Aanschafprijs</p>
+                        <p className="text-2xl font-bold text-slate-900">€ 1.750</p>
+                        <button className="text-orange-600 text-sm underline hover:text-orange-700">
+                          Bekijk specificaties
+                        </button>
+                      </div>
+                      <div className="text-center">
+                        <p className="text-slate-600 text-sm mb-1 flex items-center justify-center gap-1">
+                          Verzekering <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded-full text-xs">i</span>
+                        </p>
+                        <p className="text-2xl font-bold text-slate-900">€ 6,-</p>
+                        <button className="text-orange-600 text-sm underline hover:text-orange-700">
+                          Per maand
+                        </button>
+                      </div>
+                    </div>
+                    
+                    {/* Features */}
+                    <div className="space-y-3 mb-8">
+                      <div className="flex items-center gap-2 text-sm">
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-slate-700">RDW goedkeuring met kenteken</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-slate-700">45-60 km bereik per lading</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-slate-700">Richtingaanwijzers en verlichting</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-slate-700">Premium kwaliteit met 2 jaar garantie</span>
+                      </div>
+                    </div>
+                    
+                    {/* More Info Link */}
+                    <div className="text-center mb-6">
+                      <button 
+                        onClick={() => handleMoreInfo('selana')}
+                        className="text-orange-600 font-medium hover:text-orange-700 flex items-center justify-center gap-1"
+                      >
+                        + Meer informatie SELANA Alpha
+                      </button>
+                    </div>
+                    
+                    {/* CTA Button */}
+                    <button 
+                      onClick={() => handleMoreInfo('selana')}
+                      className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-xl font-bold text-base transition-all transform hover:scale-105 shadow-lg"
                     >
-                      Bezoek Website ↗
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Onkel (Verwacht) */}
-              <div className="relative bg-white rounded-2xl border-2 border-orange-200 shadow-lg overflow-hidden">
-                <div className="absolute top-4 left-4 right-4">
-                  <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                    Verwacht Q4 2025
-                  </span>
-                </div>
-                
-                <div className="pt-16 pb-8 px-8">
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xl font-bold">ON</span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">Onkel E-Step</h3>
-                    <p className="text-slate-600">RDW Aanvraag Ingediend</p>
-                  </div>
-
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="flex text-gray-400">
-                      <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <span className="ml-2 text-sm text-slate-500">(Nog niet beschikbaar)</span>
-                  </div>
-
-                  <div className="text-center mb-6">
-                    <div className="text-4xl font-bold text-slate-900 mb-1">€1.200*</div>
-                    <div className="text-sm text-slate-500">Kenteken: €33</div>
-                    <div className="text-sm text-slate-500">Verzekering: ~€6/maand</div>
-                    <div className="text-sm text-orange-600 font-medium">*Geschatte prijs</div>
-                  </div>
-
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-green-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xs mr-2">✓</span>
-                        Verwachte voordelen:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Concurrentiële pricing
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Mogelijk lichter gewicht
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Innovatief design
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Alternatief voor SELANA
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Marktconcurrentie stimuleert
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-red-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xs mr-2">×</span>
-                        Aandachtspunten:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Nog geen RDW goedkeuring
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Onzekere release datum
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Specificaties niet bevestigd
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Onbekend merk/fabrikant
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4 mb-6">
-                    <h4 className="font-semibold text-slate-900 mb-3">Verwachte specificaties:</h4>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Max snelheid</span>
-                        <span className="text-slate-900 font-medium">25 km/h</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Bereik</span>
-                        <span className="text-slate-900 font-medium">30-50 km*</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Gewicht</span>
-                        <span className="text-slate-900 font-medium">15-25 kg*</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Kenteken</span>
-                        <span className="text-orange-600 font-medium">⏳ In behandeling</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Verzekering</span>
-                        <span className="text-orange-600 font-medium">⏳ Na goedkeuring</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <button className="w-full bg-orange-500 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
-                      Meer Informatie
-                    </button>
-                    <button className="w-full border border-slate-300 text-slate-600 py-3 px-4 rounded-lg font-medium hover:bg-slate-50 transition-colors">
-                      Wachtlijst (Binnenkort)
+                      Bekijk e-step
                     </button>
                   </div>
                 </div>
               </div>
-
-              {/* Derde Model (Generiek) */}
-              <div className="relative bg-white rounded-2xl border-2 border-slate-200 shadow-lg overflow-hidden">
-                <div className="absolute top-4 left-4 right-4">
-                  <span className="inline-block bg-slate-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                    Verwacht 2026
-                  </span>
-                </div>
-                
-                <div className="pt-16 pb-8 px-8">
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xl font-bold">?</span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">Andere Merken</h3>
-                    <p className="text-slate-600">Meerdere Aanvragen Ingediend</p>
-                  </div>
-
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="flex text-gray-300">
-                      <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <span className="ml-2 text-sm text-slate-500">(Nog onbekend)</span>
-                  </div>
-
-                  <div className="text-center mb-6">
-                    <div className="text-4xl font-bold text-slate-900 mb-1">€800-1500*</div>
-                    <div className="text-sm text-slate-500">Kenteken: €33</div>
-                    <div className="text-sm text-slate-500">Verzekering: ~€6/maand</div>
-                    <div className="text-sm text-orange-600 font-medium">*Geschatte prijsrange</div>
-                  </div>
-
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-green-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xs mr-2">✓</span>
-                        Mogelijke voordelen:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Meer keuze voor consumenten
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Concurrentiële prijzen
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Verschillende features
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Innovatieve ontwerpen
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                          Marktcorrectie verwacht
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-red-700 mb-2 flex items-center">
-                        <span className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-xs mr-2">×</span>
-                        Aandachtspunten:
-                      </h4>
-                      <ul className="space-y-1 text-sm text-slate-600">
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Geen concrete informatie
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Onzekere goedkeuringen
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Lange wachttijden mogelijk
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-red-500 mr-2 mt-0.5">×</span>
-                          Onbekende kwaliteit
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4 mb-6">
-                    <h4 className="font-semibold text-slate-900 mb-3">Algemene eisen:</h4>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Max snelheid</span>
-                        <span className="text-slate-900 font-medium">25 km/h</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Bereik</span>
-                        <span className="text-slate-900 font-medium">Variabel</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Gewicht</span>
-                        <span className="text-slate-900 font-medium">Onbekend</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Kenteken</span>
-                        <span className="text-slate-600 font-medium">⏳ Vereist</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-600">Verzekering</span>
-                        <span className="text-slate-600 font-medium">⏳ Verplicht</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <button className="w-full bg-slate-500 text-white py-3 px-4 rounded-lg font-semibold hover:bg-slate-600 transition-colors">
-                      Meer Informatie
-                    </button>
-                    <button className="w-full border border-slate-300 text-slate-600 py-3 px-4 rounded-lg font-medium hover:bg-slate-50 transition-colors">
-                      Blijf op de Hoogte
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Disclaimer */}
-            <div className="mt-12 p-6 bg-orange-50 border border-orange-200 rounded-xl">
-              <p className="text-sm text-orange-800 text-center">
-                <strong>Let op:</strong> Alleen de SELANA Alpha is momenteel volledig RDW goedgekeurd. 
-                Andere modellen zijn gebaseerd op aanvragen en verwachtingen. 
-                Specificaties en prijzen kunnen wijzigen. *Geschatte prijzen zijn indicatief.
-              </p>
             </div>
           </div>
         </section>
@@ -1049,7 +973,11 @@ export default function Page() {
                 <article key={post.id} className="bg-white rounded-lg shadow border hover:shadow-lg transition-shadow">
                   <div className="md:flex">
                     <div className="md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center p-4">
-                      <BlogImage type={post.image} className="w-full h-full" />
+                      <BlogImage 
+                        type={post.image} 
+                        src={post.image?.startsWith('http') ? post.image : null}
+                        className="w-full h-full" 
+                      />
                     </div>
                     <div className="md:w-2/3 p-6">
                       <div className="flex items-center gap-2 mb-3">
@@ -1113,7 +1041,7 @@ export default function Page() {
         )}
 
         {/* Newsletter Signup */}
-        <section className="mt-16 bg-slate-700 text-white rounded-2xl p-8 md:p-12 text-center">
+        <section className="newsletter-signup mt-16 bg-slate-700 text-white rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Blijf op de hoogte</h2>
           <p className="text-xl text-slate-200 mb-8">
             Ontvang de laatste updates over RDW goedkeuringen en e-step regelgeving
@@ -1370,7 +1298,7 @@ export default function Page() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 KentekenEstep.nl. Affiliate links naar MediaMarkt kunnen commissie opleveren.</p>
+            <p>&copy; 2025 KentekenEstep.nl. Affiliate links kunnen commissie opleveren.</p>
           </div>
         </div>
       </footer>
