@@ -3,6 +3,14 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, ArrowRight, Search, User, FileText } from 'lucide-react';
 
+// TypeScript declarations for GTM
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
+
 export default function Page() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,6 +40,30 @@ export default function Page() {
   };
 
   const handleMoreInfo = (productType) => {
+    // GTM Event tracking
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click_cta_button', {
+        event_category: 'engagement',
+        event_label: productType,
+        product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
+        button_location: 'homepage_vergelijker',
+        value: productType === 'selana' ? 1750 : 0 // Prijs van product
+      });
+    }
+
+    // Alternative tracking via dataLayer (backup)
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'cta_button_click',
+        product_type: productType,
+        product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
+        button_location: 'homepage_vergelijker',
+        button_text: 'Bekijk e-step',
+        destination_url: productType === 'selana' ? 'https://selana.nl' : null,
+        product_price: productType === 'selana' ? 1750 : null
+      });
+    }
+
     // Navigate to product specific pages or sections
     switch(productType) {
       case 'selana':
@@ -805,8 +837,7 @@ export default function Page() {
                   </h2>
                   
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    We staan er niet vaak bij stil, maar ook een mooie rit kost geld. Hoe jouw mobiliteit eruitziet 
-                    bepaal je zelf, maar dankzij een RDW goedgekeurde e-step maak je het mogelijk.
+                    E-steps zijn ideaal voor de laatste mile. Van huis naar de trein, van de trein naar kantoor, even bij vrienden langs op iets meer dan loopafstand. Om het veilig te houden heb je in Nederland een door het RDW goedgekeurde step nodig om legaal het fietspad op te gaan. De markt is pas opengebroken en concurrentie is nog minimaal. Geef het goede voorbeeld en kies voor een RDW goedgekeurde e-step.  
                   </p>
                   
                   <div className="space-y-4 mb-8">
@@ -816,7 +847,7 @@ export default function Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-slate-700 font-medium">Kosten van je mobiliteit gedekt.</span>
+                      <span className="text-slate-700 font-medium">Verzekerd het fietspad op.</span>
                     </div>
                     
                     <div className="flex items-center gap-3">
