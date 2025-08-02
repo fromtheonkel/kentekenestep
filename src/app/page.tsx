@@ -2,14 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Calendar, ArrowRight, Search, User, FileText } from 'lucide-react';
-
-// TypeScript declarations for GTM
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
-  }
-}
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -39,29 +33,22 @@ export default function Page() {
     setSelectedArticle(null);
   };
 
-  const handleMoreInfo = (productType) => {
-    // GTM Event tracking
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click_cta_button', {
-        event_category: 'engagement',
-        event_label: productType,
-        product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
-        button_location: 'homepage_vergelijker',
-        value: productType === 'selana' ? 1750 : 0 // Prijs van product
-      });
-    }
-
-    // Alternative tracking via dataLayer (backup)
-    if (typeof window !== 'undefined' && window.dataLayer) {
-      window.dataLayer.push({
-        event: 'cta_button_click',
-        product_type: productType,
-        product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
-        button_location: 'homepage_vergelijker',
-        button_text: 'Bekijk e-step',
-        destination_url: productType === 'selana' ? 'https://selana.nl' : null,
-        product_price: productType === 'selana' ? 1750 : null
-      });
+  const handleMoreInfo = (productType: string) => {
+    // GTM Event tracking - alleen als dataLayer beschikbaar is
+    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+      try {
+        (window as any).dataLayer.push({
+          event: 'cta_button_click',
+          product_type: productType,
+          product_name: productType === 'selana' ? 'SELANA Alpha' : productType,
+          button_location: 'homepage_vergelijker',
+          button_text: 'Bekijk e-step',
+          destination_url: productType === 'selana' ? 'https://selana.nl' : null,
+          product_price: productType === 'selana' ? 1750 : null
+        });
+      } catch (error) {
+        console.log('GTM tracking error:', error);
+      }
     }
 
     // Navigate to product specific pages or sections
@@ -87,12 +74,15 @@ export default function Page() {
     // If src is provided (external URL), use it as an img tag
     if (src) {
       return (
-        <img 
-          src={src} 
-          alt="Blog afbeelding" 
-          className={`${className} object-cover`}
-          style={{ width: '100%', height: '100%' }}
-        />
+        <div className={`${className} relative overflow-hidden`}>
+          <Image 
+            src={src} 
+            alt="Blog afbeelding" 
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
       );
     }
 
@@ -580,22 +570,22 @@ export default function Page() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex items-center gap-3">
-                <img 
+                <Image 
                   src="/logo_estep_rdw.svg" 
                   alt="KentekenEstep.nl Logo" 
-                  width="40" 
-                  height="40" 
+                  width={40} 
+                  height={40} 
                   className="h-10 w-auto"
                 />
                 <div className="text-2xl font-bold text-slate-700">KentekenEstep.nl</div>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-slate-600 hover:text-slate-800">Home</a>
-              <a href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</a>
-              <a href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</a>
-              <a href="#" className="text-slate-600 hover:text-slate-800 font-semibold">Blog</a>
-              <a href="#" className="text-slate-600 hover:text-slate-800">Contact</a>
+              <Link href="/" className="text-slate-600 hover:text-slate-800">Home</Link>
+              <Link href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</Link>
+              <Link href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</Link>
+              <Link href="#" className="text-slate-600 hover:text-slate-800 font-semibold">Blog</Link>
+              <Link href="#" className="text-slate-600 hover:text-slate-800">Contact</Link>
             </nav>
           </div>
         </div>
@@ -711,7 +701,7 @@ export default function Page() {
                   content: '';
                 }
                 .article-content p:first-child:before {
-                  content: '"';
+                  content: '\"';
                   position: absolute;
                   top: 0.5rem;
                   left: 1rem;
@@ -837,7 +827,7 @@ export default function Page() {
                   </h2>
                   
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    E-steps zijn ideaal voor de laatste mile. Van huis naar de trein, van de trein naar kantoor, even bij vrienden langs op iets meer dan loopafstand. Om het veilig te houden heb je in Nederland een door het RDW goedgekeurde step nodig om legaal het fietspad op te gaan. De markt is pas opengebroken en concurrentie is nog minimaal. Geef het goede voorbeeld en kies voor een RDW goedgekeurde e-step.  
+                    E-steps zijn ideaal voor de laatste mile. Van huis naar de trein, van de trein naar kantoor, even bij vrienden langs op iets meer dan loopafstand. Om het veilig te houden heb je in Nederland een door het RDW goedgekeurde step nodig om legaal het fietspad op te gaan. De markt is pas opengebroken en concurrentie is nog minimaal. Geef het goede voorbeeld en kies voor een RDW goedgekeurde e-step.
                   </p>
                   
                   <div className="space-y-4 mb-8">
@@ -847,7 +837,7 @@ export default function Page() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-slate-700 font-medium">Verzekerd het fietspad op.</span>
+                      <span className="text-slate-700 font-medium">Verzekerd met je step op pad.</span>
                     </div>
                     
                     <div className="flex items-center gap-3">
@@ -1306,25 +1296,25 @@ export default function Page() {
             <div>
               <h3 className="font-semibold mb-4">Vergelijken</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="/vergelijken" className="hover:text-white">RDW Goedgekeurd</a></li>
-                <li><a href="/vergelijken" className="hover:text-white">Top 3 Modellen</a></li>
-                <li><a href="/vergelijken" className="hover:text-white">Prijsvergelijking</a></li>
+                <li><Link href="/vergelijken" className="hover:text-white">RDW Goedgekeurd</Link></li>
+                <li><Link href="/vergelijken" className="hover:text-white">Top 3 Modellen</Link></li>
+                <li><Link href="/vergelijken" className="hover:text-white">Prijsvergelijking</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Informatie</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="/rdw-info" className="hover:text-white">E-Step Regelgeving</a></li>
-                <li><a href="#" className="hover:text-white">Verzekering</a></li>
-                <li><a href="#" className="hover:text-white">Waar mag je rijden?</a></li>
+                <li><Link href="/rdw-info" className="hover:text-white">E-Step Regelgeving</Link></li>
+                <li><Link href="#" className="hover:text-white">Verzekering</Link></li>
+                <li><Link href="#" className="hover:text-white">Waar mag je rijden?</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white">Contact</a></li>
-                <li><a href="#" className="hover:text-white">FAQ</a></li>
-                <li><a href="#" className="hover:text-white">Privacy</a></li>
+                <li><Link href="#" className="hover:text-white">Contact</Link></li>
+                <li><Link href="#" className="hover:text-white">FAQ</Link></li>
+                <li><Link href="#" className="hover:text-white">Privacy</Link></li>
               </ul>
             </div>
           </div>
