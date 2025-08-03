@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Page() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [selectedArticle, setSelectedArticle] = useState<number | null>(null);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   // Scroll event for sticky header
