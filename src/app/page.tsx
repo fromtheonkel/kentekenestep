@@ -16,7 +16,7 @@ export default function Page() {
     const handleScroll = () => {
       const heroSection = document.querySelector('.hero-section');
       if (heroSection) {
-        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        const heroBottom = (heroSection as HTMLElement).offsetTop + (heroSection as HTMLElement).offsetHeight;
         setIsHeaderSticky(window.scrollY > heroBottom);
       }
     };
