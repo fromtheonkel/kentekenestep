@@ -25,7 +25,7 @@ export default function Page() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleReadMore = (articleId) => {
+  const handleReadMore = (articleId: number) => {
     setSelectedArticle(articleId);
   };
 
