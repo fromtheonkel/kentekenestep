@@ -11,7 +11,7 @@ export default function VergelijkenPage() {
   const [weightFilter, setWeightFilter] = useState([0, 35]);
   const [sortBy, setSortBy] = useState('price'); // 'price', 'range', 'weight', 'rating'
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc', 'desc'
-  const [selectedBrands, setSelectedBrands] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   const allScooters = [
@@ -142,8 +142,8 @@ export default function VergelijkenPage() {
 
     // Sorting
     filtered.sort((a, b) => {
-      let aValue = a[sortBy];
-      let bValue = b[sortBy];
+      let aValue = (a as any)[sortBy];
+      let bValue = (b as any)[sortBy];
       
       // Handle rating (null values should go to end)
       if (sortBy === 'rating') {
@@ -163,7 +163,7 @@ export default function VergelijkenPage() {
 
   const top3Scooters = allScooters.slice(0, 3);
 
-  const handleBrandToggle = (brand) => {
+  const handleBrandToggle = (brand: string) => {
     setSelectedBrands(prev => 
       prev.includes(brand) 
         ? prev.filter(b => b !== brand)
