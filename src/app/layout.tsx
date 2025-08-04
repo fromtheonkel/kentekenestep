@@ -16,103 +16,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Vergelijken',
-    template: '%s | KentekenEstep.nl'
-  },
-  description: "Vergelijk RDW goedgekeurde elektrische steps en populaire alternatieven. Ontdek de enige volledig legale e-step in Nederland en meer. ✓ SELANA Alpha ✓ Prijzen ✓ Reviews ✓ Regelgeving",
-  keywords: [
-    'RDW goedgekeurde e-steps', 
-    'legale e-step Nederland', 
-    'kenteken e-step', 
-    'SELANA Alpha', 
-    'e-step verzekering', 
-    'elektrische step vergelijken',
-    'e-step regelgeving',
-    'e-step kenteken aanvragen',
-    'legaal e-step rijden'
-  ],
-  authors: [{ name: 'Iwan' }],
-  creator: 'KentekenEstep.nl',
-  publisher: 'KentekenEstep.nl',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://www.kentekenestep.nl'),
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'nl_NL',
-    url: 'https://www.kentekenestep.nl',
-    title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
-    description: 'Het complete overzicht van legale e-steps in Nederland. Vergelijk RDW goedgekeurde modellen, bekijk prijzen en lees over regelgeving.',
-    siteName: 'KentekenEstep.nl',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
-    description: 'Vergelijk legale e-steps in Nederland - SELANA Alpha en meer',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
+  description: "Vergelijk RDW goedgekeurde elektrische steps en populaire alternatieven.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="nl" suppressHydrationWarning>
-      <head>
-        {/* Structured Data voor SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "KentekenEstep.nl",
-              "description": "Overzicht van RDW goedgekeurde e-steps in Nederland",
-              "url": "https://www.kentekenestep.nl",
-              "publisher": {
-                "@type": "Organization",
-                "name": "KentekenEstep.nl",
-                "url": "https://www.kentekenestep.nl"
-              }
-            })
-          }}
-        />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* Google Tag Manager - Nu met Next.js Script component */}
-        <Script id="gtm-script" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KW6X22NL');
-          `}
-        </Script>
-
-        {/* Initialize consent to denied by default */}
-        <Script id="gtm-consent" strategy="afterInteractive">
+    <html lang="nl" suppressHydrationWarning={true}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Initialize dataLayer and gtag function FIRST */}
+        <Script id="gtag-base" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -123,7 +40,18 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Tag Manager (noscript) */}
+        {/* Then load GTM */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KW6X22NL');
+          `}
+        </Script>
+
+        {/* GTM NoScript fallback */}
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-KW6X22NL"
@@ -134,11 +62,9 @@ export default function RootLayout({
         </noscript>
         
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <CookieConsentBanner />
       </body>
     </html>
-  );
+  )
 }
