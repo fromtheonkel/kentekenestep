@@ -1,4 +1,4 @@
-// src/app/blog/[slug]/page.tsx
+// src/app/blog/[slug]/page.tsx - VERVANG je huidige bestand hiermee
 
 import React from 'react';
 import { Calendar, User, Clock, ArrowLeft, ArrowRight, Share2 } from 'lucide-react';
@@ -8,9 +8,9 @@ import { blogArticles } from '@/data/blog/articles';
 import { notFound } from 'next/navigation';
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
-  const article = blogArticles.find(article => article.slug === params.slug && article.published);
+  const { slug } = await params;
+  const article = blogArticles.find(article => article.slug === slug && article.published);
   
   if (!article) {
     return {
@@ -41,8 +42,9 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const article = blogArticles.find(article => article.slug === params.slug && article.published);
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const article = blogArticles.find(article => article.slug === slug && article.published);
 
   if (!article) {
     notFound();
