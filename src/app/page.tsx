@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import LatestBlog from '@/components/LatestBlog';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -42,6 +43,7 @@ export default function Home() {
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-slate-600 hover:text-slate-800 font-semibold">Home</Link>
               <Link href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</Link>
+              <Link href="/blog" className="text-slate-600 hover:text-slate-800">Blog</Link>
               <Link href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</Link>
               <Link href="/contact" className="text-slate-600 hover:text-slate-800">Contact</Link>
             </nav>
@@ -218,7 +220,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </div>
 
+      {/* 🆕 BLOG SECTIE - TOEGEVOEGD HIER */}
+      <LatestBlog />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Signup */}
         <section className="mt-16 bg-slate-700 text-white rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Blijf op de hoogte</h2>
@@ -282,6 +289,7 @@ export default function Home() {
             <div>
               <h3 className="font-semibold mb-4">Informatie</h3>
               <ul className="space-y-2 text-slate-400">
+                <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
                 <li><Link href="/rdw-info" className="hover:text-white">E-Step Regelgeving</Link></li>
                 <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
                 <li><Link href="/contact" className="hover:text-white">FAQ</Link></li>

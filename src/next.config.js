@@ -1,24 +1,36 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // NUCLEAR OPTION: Disable ALL linting and type checking
-  eslint: {
-    ignoreDuringBuilds: true,
-    dirs: [], // Don't run ESLint on any directories
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
-    domains: ['selana.nl'],
-    unoptimized: true, // Fallback for image issues
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'selana.nl',
+        port: '',
+        pathname: '/cdn/shop/files/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+        port: '',
+        pathname: '/**',
+      }
+      // Voeg hier specifieke hostnames toe, geen wildcards zoals *.example.com
+    ],
+    unoptimized: false, // Zet op true als je problemen hebt
   },
-  // Force disable all static analysis
   swcMinify: true,
-  experimental: {
-    forceSwcTransforms: true,
-    esmExternals: false,
-  },
-  // Disable all optimizations that might cause issues
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
 };
