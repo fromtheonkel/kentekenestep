@@ -144,9 +144,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         )}
 
         {/* Article Content */}
-        <div className="prose prose-lg prose-slate max-w-none mb-16">
+        <div className="mb-16">
           {article.content ? (
-            <div dangerouslySetInnerHTML={{ __html: article.content }} />
+            <div 
+              className="prose prose-lg prose-slate max-w-none
+                [&_p]:mb-6 [&_p]:leading-relaxed [&_p]:text-lg [&_p]:text-gray-700
+                [&_p.lead]:text-xl [&_p.lead]:font-medium [&_p.lead]:text-gray-600 [&_p.lead]:mb-8 [&_p.lead]:border-l-4 [&_p.lead]:border-orange-500 [&_p.lead]:pl-4 [&_p.lead]:bg-orange-50 [&_p.lead]:p-4 [&_p.lead]:rounded-lg
+                [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:mt-10 [&_h2]:mb-6 [&_h2]:pb-2 [&_h2]:border-b-4 [&_h2]:border-orange-500
+                [&_h3]:text-2xl [&_h3]:font-semibold [&_h3]:text-gray-900 [&_h3]:mt-8 [&_h3]:mb-4
+                [&_strong]:font-semibold [&_strong]:text-gray-900
+                [&_em]:italic [&_em]:text-gray-600
+                [&_a]:text-orange-600 [&_a]:no-underline [&_a]:hover:underline
+                [&_ul]:my-6 [&_ul]:pl-6
+                [&_li]:mb-2 [&_li]:text-gray-700 [&_li]:text-lg
+                [&_hr]:my-12 [&_hr]:border-0 [&_hr]:border-t [&_hr]:border-gray-300"
+              dangerouslySetInnerHTML={{ __html: article.content }} 
+            />
           ) : (
             <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
               <p className="text-orange-700 mb-0">

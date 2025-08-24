@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build --no-lint",
     "build:env": "set SKIP_ENV_VALIDATION=true&& next build --no-lint",
     "build:safe": "next build",
@@ -11,7 +11,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "lucide-react": "^0.525.0",
+    "marked": "^16.2.0",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

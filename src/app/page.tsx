@@ -161,7 +161,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="text-center">
                         <p className="text-slate-600 text-sm mb-1">Aanschafprijs</p>
-                        <p className="text-2xl font-bold text-slate-900">€ 1.750</p>
+                        <p className="text-2xl font-bold text-slate-900">€ 1.900</p>
                         <button className="text-orange-600 text-sm underline hover:text-orange-700">
                           Bekijk specificaties
                         </button>

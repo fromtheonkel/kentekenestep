@@ -1,4 +1,4 @@
-// src/data/blog/articles.ts - VERVANG je huidige bestand hiermee
+// src/data/blog/articles.ts - Met mooie stock photos
 
 export interface BlogArticle {
   id: number;
@@ -25,33 +25,128 @@ export const categories = [
   'Vergelijking'
 ];
 
-export const blogArticles: BlogArticle[] = [
-  {
-    id: 1,
-    title: "Selana Alpha €150 goedkoper of toch weer niet?",
-    slug: "selana-alpha-prijsverlaging-2025",
-    excerpt: "De Selana Alpha kreeg een prijsverlaging naar €1.750, maar met een wachttijd van 3 maanden en een prijs die nog altijd 3-4x hoger ligt dan illegale alternatieven, rijzen er vragen over de toegankelijkheid.",
+// Helper function to create a new blog article with defaults
+export const createBlogArticle = (article: Partial<BlogArticle> & { 
+  title: string; 
+  slug: string; 
+  excerpt: string; 
+  content: string; 
+}): BlogArticle => {
+  const nextId = Math.max(...blogArticles.map(a => a.id), 0) + 1;
+  
+  return {
+    id: nextId,
     author: "Iwan",
-    date: "2025-08-04",
+    date: new Date().toISOString().split('T')[0], // Today's date
     category: "Nieuws",
-    tags: ["Selana", "Alpha", "Prijzen", "RDW", "Legaal"],
-    // Geen image = mooie gradient fallback
-    featured: true,
+    tags: [],
+    featured: false,
     readTime: "3 min",
     published: true,
-    content: `
-      <h2>Prijsverlaging van €150</h2>
-      <p>De Selana Alpha, de enige volledig RDW-goedgekeurde e-step in Nederland, heeft een prijsverlaging gekregen van €150. De nieuwe prijs was €1.750, maar dit lijkt al weer terug gedraaid. Misschien omdat er toch nog geen concurrentie is.</p>
-      
-      <h2>Wachttijd en beschikbaarheid</h2>
-      <p>Ondanks de hoge prijs is er nog altijd een wachttijd van ongeveer 3 maanden. Dit maakt de Selana Alpha niet alleen duur, maar ook moeilijk verkrijgbaar.</p>
-      
-      <h2>Vergelijking met illegale alternatieven</h2>
-      <p>Populaire e-steps zoals de Segway Ninebot kosten tussen de €300-500, wat de Selana Alpha 3-4x duurder maakt. Dit roept vragen op over de toegankelijkheid van legaal e-step rijden in Nederland.</p>
-      
-      <h2>Conclusie</h2>
-      <p>Hoewel een prijsverlaging welkom zal zijn, blijft de Selana Alpha een dure optie voor wie legaal wil rijden. De hoge prijs en wachttijd zorgen ervoor dat veel mensen kiezen voor illegale alternatieven.</p>
-    `
+    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80",
+    ...article
+  };
+};
+
+export const blogArticles: BlogArticle[] = [
+  // 🆕 NEW ARTICLE - Add new articles here at the top
+  {
+    id: 6,
+    title: "E-step Ongeluk in Gouda: Wat Als De Step WEL Verzekerd Was Geweest?",
+    slug: "gouda-estep-vonnis-verzekering-analyse",
+    excerpt: "Een recent vonnis uit Gouda toont de enorme financiële risico's van onverzekerde e-steps. Maar wat waren de gevolgen geweest als dezelfde tiener een goedgekeurde, verzekerde e-step had gebruikt? Een analyse van de rechtszaak en de nieuwe wetgeving.",
+    author: "Iwan",
+    date: "2025-08-24",
+    category: "Nieuws", 
+    tags: ["Rechtszaak", "Verzekering", "Gouda", "Aansprakelijkheid", "RDW"],
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: true,
+    readTime: "8 min",
+    published: true,
+    content: `<p class="lead">Een recent vonnis uit Gouda werpt licht op de financiële consequenties van e-step ongevallen. Wat gebeurt er als ouders aansprakelijk worden gesteld voor een ongeval met een onverzekerde e-step? En hoe anders waren de gevolgen geweest met een goedgekeurde, verzekerde variant?</p>
+
+<h2>Een baanbrekende rechtszaak</h2>
+
+<p>Het <a href="https://www.nrc.nl/nieuws/2025/08/12/is-de-e-step-een-motorrijtuig-en-betaalt-de-bestuurder-dus-altijd-de-schade-a4902819" target="_blank" rel="noopener noreferrer">recente artikel van NRC</a> beschrijft een belangrijke rechtszaak uit Gouda die richtinggevend kan zijn voor toekomstige gevallen. Een tiener reed met hoge snelheid op een ongoedgekeurde e-step door een woonerf, waarbij hij het pad van een fietser kruiste. De fietser viel en liep botbreuken op.</p>
+
+<p>De rechter kwam tot een heldere uitspraak: ondanks dat de e-step niet was goedgekeurd door de RDW, werd het voertuig gekwalificeerd als motorrijtuig. Dit betekent dat de ouders <strong>volledig aansprakelijk zijn voor alle materiële en immateriële schade</strong> van het slachtoffer. Een uitkomst die vergaande financiële gevolgen heeft voor de betrokken familie.</p>
+
+<p>Deze zaak illustreert een belangrijk juridisch principe: voor de aansprakelijkheid maakt het niet uit of een e-step wel of niet goedgekeurd is. Beide worden behandeld als motorrijtuig. Het verschil zit echter in wat er daarna gebeurt.</p>
+
+<h2>De werkelijke situatie: onverzekerd rijden</h2>
+
+<p>In de Goudse zaak moeten de ouders alle kosten voor hun eigen rekening nemen. Bij ongevallen met botbreuken kunnen deze snel oplopen tot tienduizenden euro's. Medische behandeling, fysiotherapie, mogelijke inkomstenderving van het slachtoffer en smartengeld — het zijn allemaal kostenposten die zich opstapelen.</p>
+
+<p>Omdat ongoedgekeurde e-steps niet verzekerbaar zijn, valt er geen beroep te doen op een verzekeringsmaatschappij. De ouders staan er alleen voor en moeten in het ergste geval langdurig afbetalen of hun spaargeld aanspreken. Voor sommige families kan dit betekenen dat ze jarenlang onder een financiële last gebukt gaan.</p>
+
+<p>Juridisch gezien is de positie ook helder: de step wordt als motorrijtuig beschouwd, waardoor de bescherming van zwakke verkeersdeelnemers van toepassing is. In dit geval betekende dat 100% aansprakelijkheid, omdat er geen sprake was van eigen schuld van het slachtoffer.</p>
+
+<h2>Het alternatieve scenario: verzekerd rijden</h2>
+
+<p>Stel dat dezelfde tiener een RDW-goedgekeurde e-step had gebruikt, compleet met kenteken en WA-verzekering. De juridische uitkomst was identiek geweest — hij zou nog steeds volledig aansprakelijk zijn gesteld. Het cruciale verschil ligt in de financiële afhandeling.</p>
+
+<p>In dat geval zou de WA-verzekering alle schade aan het slachtoffer hebben gedekt. De ouders zouden slechts het eigen risico hebben moeten betalen, doorgaans tussen de €150 en €300. Alle medische kosten, inkomstenderving en smartengeld zouden door de verzekeraar zijn vergoed. In plaats van een mogelijk jarenlange financiële last, zouden ze hebben gekeken naar een beheersbare eenmalige uitgave.</p>
+
+<p>Ook verzekerde e-steps blijven motorrijtuigen in juridische zin, met dezelfde bescherming voor zwakke verkeersdeelnemers. Het verschil is dat er een financiële vangnet aanwezig is in de vorm van een verplichte verzekering.</p>
+
+<h2>Nieuwe regels, nieuwe realiteit</h2>
+
+<p>De wetgeving die sinds 1 juli 2025 van kracht is, maakt het onderscheid tussen goedgekeurde en ongoedgekeurde e-steps scherper. Alle RDW-goedgekeurde e-steps moeten nu voorzien zijn van een kenteken en een WA-verzekering. Rijden zonder verzekering leidt tot boetes en inbeslagname van het voertuig.</p>
+
+<p>Tegelijkertijd blijft het aanbod van legale alternatieven beperkt. Volgens de RDW zijn er momenteel slechts vijf elektrische steps die goedgekeurd zijn voor gebruik op de openbare weg. Het overgrote deel van de e-steps die in winkels verkocht worden, valt nog altijd onder de categorie ongoedgekeurd.</p>
+
+<h2>De juridische achtergrond</h2>
+
+<p>De uitspraak van de Rechtbank Midden-Nederland (21 mei 2025; ECLI:NL:RBMNE:2025:2569) is op dit punt helder. De rechter stelde vast: <em>"Omdat de jongen tijdens de rechtszitting heeft gezegd dat de step geen vaart mindert als hij ophoudt met steppen, en evenmin als de maximumsnelheid van 25 kilometer per uur is bereikt, is het volgens de rechter een bromfiets."</em></p>
+
+<p>Deze definitie is cruciaal omdat het betekent dat ongeacht de goedkeuringsstatus, de aansprakelijkheidsregels voor motorrijtuigen van toepassing zijn. Het verschil tussen een goedgekeurde en ongoedgekeurde e-step ligt dus niet in de juridische aansprakelijkheid, maar in de financiële dekking die beschikbaar is.</p>
+
+<h2>De praktische betekenis voor ouders</h2>
+
+<p>Advocaat Bas Hopman van SAP Advocaten waarschuwt in het NRC artikel voor de gevolgen: <em>"Ouders van een minderjarige die met zo'n voertuig de openbare weg op gaat kunnen voor grote financiële problemen komen te staan."</em></p>
+
+<p>Deze waarschuwing raakt de kern van het probleem. Ongoedgekeurde e-steps worden juridisch behandeld als motorrijtuigen, maar kunnen niet verzekerd worden tegen de risico's die daaruit voortvloeien. Het gevolg is dat alle financiële risico's bij de eigenaar en gebruiker liggen.</p>
+
+<p>Voor een verzekerde, goedgekeurde e-step liggen de verhoudingen anders. Hoewel de aansprakelijkheid hetzelfde blijft, vangt de verplichte verzekering de financiële gevolgen op. Het eigen risico blijft beperkt tot enkele honderden euro's, en vaak is er rechtsbijstand inbegrepen voor de afhandeling van claims.</p>
+
+<h2>Een kwestie van afwegingen maken</h2>
+
+<p>De kosten van een verzekering voor een goedgekeurde e-step liggen tussen de €4 en €10 per maand, wat neerkomt op €48 tot €120 per jaar. Tegenover deze relatief bescheiden uitgave staan potentiële schadekosten die kunnen variëren van enkele duizenden euro's voor lichte verwondingen tot meer dan €100.000 bij ernstige of blijvende letselschade.</p>
+
+<p>Deze rekensom maakt duidelijk waarom de keuze voor een verzekerde e-step financieel gezien logisch is. Een jaarlijkse premie van rond de €100 biedt bescherming tegen kosten die een veelvoud daarvan kunnen bedragen en mogelijk jarenlang doorlopen.</p>
+
+<h2>Praktische gevolgen in het dagelijks leven</h2>
+
+<p>Voor families die kiezen voor een goedgekeurde, verzekerde e-step blijft de juridische aansprakelijkheid bestaan, maar is er financiële zekerheid. De verzekering neemt de schadeafhandeling over, het eigen risico blijft beperkt, en er is vaak rechtsbijstand beschikbaar. Dit geeft rust en voorkomt dat een ongeval tot langdurige financiële problemen leidt.</p>
+
+<p>Families met ongoedgekeurde e-steps daarentegen dragen het volledige financiële risico zelf. Bij ernstige ongevallen kan dit leiden tot langdurige afbetalingsregelingen, aanslag op spaargeld of in extreme gevallen zelfs beslag op bezittingen. De financiële gevolgen van een ongeval kunnen zo jarenlang voelbaar blijven.</p>
+
+<h2>De bredere context</h2>
+
+<p>Het Goudse vonnis past in een bredere ontwikkeling waarbij de wetgeving probeert gelijke tred te houden met nieuwe vormen van mobiliteit. Zoals de Fietsersbond opmerkt: <em>"De RDW is sinds 1 juli begonnen meer steps toe te laten"</em>, maar het aanbod blijft vooralsnog beperkt tot vijf goedgekeurde modellen.</p>
+
+<p>Deze beperkte keuze betekent dat veel consumenten nog altijd geconfronteerd worden met een dilemma: kiezen voor een van de weinige legale, maar duurdere opties, of een ongoedgekeurde e-step kopen met alle bijbehorende risico's. De Goudse rechtszaak laat zien wat die risico's in de praktijk kunnen betekenen.</p>
+
+<h2>Vooruitkijken</h2>
+
+<p>Het ongeval in Gouda had bij gebruik van een verzekerde e-step juridisch gezien exact hetzelfde uitgedraaid — de bestuurder zou nog steeds volledig aansprakelijk zijn gesteld. Het verschil zou hebben gelegen in de financiële afwikkeling: de verzekering zou de schadekosten hebben gedragen in plaats van de ouders.</p>
+
+<p>Deze zaak onderstreept het belang van bewuste keuzes bij de aanschaf van een e-step. Wie kiest voor een goedgekeurde, verzekerde variant, kiest voor financiële zekerheid bij ongelukken. Wie kiest voor een ongoedgekeurde e-step, neemt bewust een financieel risico dat aanzienlijke gevolgen kan hebben.</p>
+
+<p>Voor ouders die overwegen een e-step aan te schaffen, is het raadzaam eerst de <a href="https://www.rdw.nl/paginas/kenteken-aanvragen-voor-uw-bijzondere-bromfiets/e-steps" target="_blank" rel="noopener noreferrer">actuele RDW-lijst</a> te raadplegen en <a href="/" rel="noopener noreferrer">verzekeringmogelijkheden</a> te vergelijken. De keuze die zij maken kan bepalend zijn voor hun financiële toekomst.</p>
+
+<hr>
+
+<p><strong>Disclaimer</strong></p>
+
+<p>Aan de in dit artikel getrokken conclusies kunnen geen rechten worden ontleend. Dit artikel bevat uitsluitend eigen analyses gebaseerd op beschikbare bronnen. Voor juridisch advies over uw specifieke situatie raadpleegt u een gekwalificeerde juridisch adviseur. De auteur en KentekenEstep.nl aanvaarden geen aansprakelijkheid voor eventuele gevolgen van handelingen gebaseerd op de informatie in dit artikel.</p>
+
+<p><strong>Bronnen</strong></p>
+<ul>
+<li><a href="https://www.nrc.nl/nieuws/2025/08/12/is-de-e-step-een-motorrijtuig-en-betaalt-de-bestuurder-dus-altijd-de-schade-a4902819" target="_blank" rel="noopener noreferrer">NRC: Is de e-step een motorrijtuig en betaalt de bestuurder dus altijd de schade?</a></li>
+<li>Rechtbank Midden-Nederland, 21 mei 2025; ECLI:NL:RBMNE:2025:2569</li>
+<li><a href="https://www.rdw.nl/paginas/kenteken-aanvragen-voor-uw-bijzondere-bromfiets/e-steps" target="_blank" rel="noopener noreferrer">RDW Goedgekeurde E-steps Overzicht</a></li>
+</ul>`
   },
   {
     id: 2,
@@ -62,6 +157,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-08-02",
     category: "Regelgeving",
     tags: ["RDW", "Kenteken", "Verzekering", "Wet", "2025"],
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop&crop=center&q=80", // Legal documents/regulations
     featured: true,
     readTime: "5 min",
     published: true,
@@ -88,6 +184,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-07-28",
     category: "Reviews",
     tags: ["Segway", "Xiaomi", "Illegaal", "Populair"],
+    image: "/images/segway-e2-pro.jpeg", // Segway e-scooter (popular but illegal)
     featured: false,
     readTime: "4 min",
     published: true,
@@ -111,6 +208,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-07-25",
     category: "Tips",
     tags: ["Verzekering", "WA", "Kosten", "Vergelijking"],
+    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=400&fit=crop&crop=center&q=80", // Insurance/protection shield
     featured: false,
     readTime: "6 min", 
     published: true,
@@ -120,6 +218,9 @@ export const blogArticles: BlogArticle[] = [
       
       <h2>Beste opties</h2>
       <p>Verschillende verzekeraars bieden e-step verzekeringen aan. Vergelijk altijd de voorwaarden en dekking.</p>
+      
+      <h2>Wat is gedekt?</h2>
+      <p>Een standaard WA-verzekering dekt schade aan derden. Voor eigen schade heb je aanvullende dekking nodig.</p>
     `
   },
   {
@@ -131,6 +232,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-07-20",
     category: "Tips", 
     tags: ["Kenteken", "RDW", "Aanvragen", "Handleiding"],
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&crop=center&q=80", // Application process/forms
     featured: false,
     readTime: "4 min",
     published: true,
@@ -143,11 +245,14 @@ export const blogArticles: BlogArticle[] = [
       
       <h2>Stap 3: Kenteken ontvangen</h2>
       <p>Je ontvangt het kenteken per post. Monteer het zichtbaar op je e-step volgens de voorschriften.</p>
+      
+      <h2>Tips</h2>
+      <p>Controleer altijd of alle documenten compleet zijn voordat je de aanvraag indient. Dit voorkomt vertraging.</p>
     `
   }
 ];
 
-// Helper functions
+// Helper functions blijven hetzelfde
 export const getFeaturedArticles = () => blogArticles.filter(article => article.featured && article.published);
 
 export const getLatestArticle = () => {

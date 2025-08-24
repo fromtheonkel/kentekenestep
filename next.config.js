@@ -26,11 +26,9 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       }
-      // Voeg hier specifieke hostnames toe, geen wildcards zoals *.example.com
     ],
-    unoptimized: false, // Zet op true als je problemen hebt
+    unoptimized: false,
   },
-  swcMinify: true,
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
 };
