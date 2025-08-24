@@ -18,6 +18,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
   description: "Vergelijk RDW goedgekeurde elektrische steps en populaire alternatieven.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
