@@ -51,6 +51,113 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 export const blogArticles: BlogArticle[] = [
   // 🆕 NEW ARTICLE - Add new articles here at the top
   {
+    id: 7,
+    title: "België verscherpt e-step controles na stijging ongevallen - Volgt Nederland?",
+    slug: "belgi-verscherpt-e-step-controles-na-stijging-ongevallen-volgt-nederland",
+    excerpt: "**Minister van Consumentenbescherming kondigt strengere maatregelen aan terwijl Nederland al jaren een striktere koers vaart**...",
+    author: "Iwan",
+    date: "2025-08-24",
+    category: "Nieuws",
+    tags: ["RDW", "Verzekering", "Kenteken", "Regelgeving", "E-step"],
+    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: false,
+    readTime: "5 min",
+    published: true,
+    content: `<ul>
+<li>*Minister van Consumentenbescherming kondigt strengere maatregelen aan terwijl Nederland al jaren een striktere koers vaart**</li>
+</ul>
+
+<p>De Belgische Minister van Consumentenbescherming Rob Beenders (Vooruit) heeft aangekondigd dat er strengere controles komen op de verkoop van elektrische steps. Deze maatregel volgt op een zorgwekkende stijging van het aantal ongevallen met e-steps. Voor Nederlandse consumenten die overwegen een e-step aan te schaffen, roept dit de vraag op: kunnen we vergelijkbare maatregelen verwachten in Nederland?</p>
+
+<h2>Alarmerende cijfers uit België</h2>
+
+<p>De cijfers spreken voor zich: ongevallen met e-steps zijn in de eerste drie maanden van 2025 met maar liefst 62 procent gestegen ten opzichte van dezelfde periode vorig jaar. Deze stijgende trend begon al in 2024 en lijkt nu te versnellen. Gemiddeld vonden er in het eerste kwartaal van 2025 elke dag vijf ongevallen met e-steps met slachtoffers plaats.</p>
+
+<p>Minister Beenders wijst op specifieke risico's zoals te hoge snelheid en technische gebreken als slecht vastgedraaide wieltjes of sturen. "We moeten onveilige e-steps uit de handel halen," stelt de minister, die van september tot december jaarlijkse controles wil uitvoeren, zowel in fysieke winkels als online.</p>
+
+<h2>Belgische aanpak: controle op verkopers</h2>
+
+<p>De Belgische strategie richt zich primair op verkopers en distributeurs. Na een eerste test in Brussel zijn al zes types e-steps uit de handel gehaald. Beenders benadrukt dat veel verkochte e-steps simpelweg niet conform de geldende regels zijn, ondanks dat verkopers aan strikte veiligheidsvoorschriften moeten voldoen.</p>
+
+<p>Daarnaast overwegen Belgische politieke partijen verdergaande maatregelen. De CD&V stelt voor om de maximumsnelheid te verlagen van 25 km/u naar 20 km/u en nummerplaten verplicht te stellen voor alle e-steps.</p>
+
+<h2>Nederland: al jaren een striktere koers</h2>
+
+<p>Terwijl België nu maatregelen neemt, voert Nederland al jaren een veel restrictievere aanpak. In Nederland mogen alleen goedgekeurde elektrische steps of steps met trapondersteuning op de openbare weg rijden. De meeste steps zonder trapondersteuning zijn niet goedgekeurd en mogen niet op de weg.</p>
+
+<h2># Nieuwe Nederlandse regelgeving vanaf 2025</h2>
+
+<p>Sinds 1 juli 2025 hebben e-steps een kenteken nodig. Dit geldt voor alle bijzondere bromfietsen. De kentekenplicht wordt gefaseerd ingevoerd:</p>
+
+<ul>
+<li>Nieuwe e-steps vanaf juli 2025: direct kenteken verplicht</li>
+<ul>
+<li>Goedgekeurde e-steps van vóór 1 juli 2025 hebben vanaf 1 juli 2026 een kenteken nodig</li>
+<h2>Beperkt aanbod legale e-steps in Nederland</h2>
+
+</ul>
+
+<p>Er zijn op dit moment slechts 5 elektrische steps waarmee je in Nederland op de openbare weg mag rijden. Dit beperkte aanbod contrasteert sterk met andere Europese landen waar e-steps veel breder beschikbaar zijn.</p>
+
+<h2># Gevolgen van illegaal rijden</h2>
+
+<p>Voor Nederlandse consumenten zijn de gevolgen van het rijden met een niet-goedgekeurde e-step aanzienlijk:</p>
+
+<ul>
+<li>De politie kan een boete geven of de e-step in beslag nemen</li>
+<ul>
+<li>Je bent niet verzekerd voor schade die je veroorzaakt bij anderen. Je aansprakelijkheidsverzekering dekt de schade niet</li>
+<ul>
+<li>Wie na 1 juli 2026 zonder kenteken op een elektrische step rijdt, riskeert een boete van honderden euro's</li>
+<h2>Verschillen in aanpak België vs Nederland</h2>
+
+</ul>
+
+<p>| Aspect | België | Nederland |</p>
+
+<p>|--------|--------|-----------|</p>
+
+<p>| **Huidige situatie** | Veel e-steps legaal toegestaan | Zeer beperkt aantal toegestaan |</p>
+
+<p>| **Nieuwe maatregelen** | Scherpere controles, mogelijk nummerplaten | Kentekenplicht al ingevoerd |</p>
+
+<p>| **Ongevallen trend** | +62% in Q1 2025 | Beperkte data door lage gebruik |</p>
+
+<p>| **Regelgeving** | Reactief (na problemen) | Proactief (preventie-gericht) |</p>
+
+<h2>Zal Nederland de Belgische aanpak volgen?</h2>
+
+<p>Het is onwaarschijnlijk dat Nederland de Belgische aanpak zal overnemen, en wel om deze redenen:</p>
+
+<ul>
+<li>*Nederland heeft al strengere regels**: Nederland blijft achter op het gebied van e-step beschikbaarheid door de strikte regelgeving. Verhuurdiensten van e-steps, zoals Lime en Tier, zijn hier nog niet op grote schaal beschikbaar.</li>
+<ul>
+<li>*Andere problematiek**: Terwijl België reageert op een stijging van ongevallen, probeert Nederland juist de markt gecontroleerd open te stellen met strikte veiligheidseisen vooraf.</li>
+<ul>
+<li>*Focus op toelating, niet handhaving**: Met de aankomende regelgeving wordt een belangrijke stap gezet richting een veiligere en beter gereguleerde inzet van e-steps in Nederland.</li>
+<h2>Conclusie voor Nederlandse consumenten</h2>
+
+</ul>
+
+<p>Voor consumenten die een e-step overwegen, betekent dit:</p>
+
+<p>1. **Controleer altijd de toelating**: Controleer of het model goedgekeurd is voor de openbare weg en vraag of de fabrikant of verkoper registratie bij de RDW aanbiedt</p>
+
+<p>2. **Reken op beperkte keuze**: Het aanbod legale e-steps in Nederland blijft voorlopig zeer beperkt</p>
+
+<p>3. **Bereid je voor op kosten**: Naast de aanschafprijs moet je rekenen op kentekenkosten (€18 voor bestaande modellen) en WA-verzekering</p>
+
+<p>4. **Geen versoepelingen verwacht**: De Nederlandse aanpak lijkt eerder te leiden tot meer restricties dan minder</p>
+
+<p>De Belgische ontwikkelingen onderstrepen het belang van veiligheid bij e-steps, maar zullen waarschijnlijk niet leiden tot een koerswijziging in Nederland. Ons land kiest bewust voor een voorzichtige, veiligheid-gerichte aanpak die probeert problemen te voorkomen in plaats van te reageren op ontstane situaties.</p>
+
+<ul>
+<li>--</li>
+<ul>
+<li>Wil je meer weten over welke e-steps wel legaal zijn in Nederland? Bekijk onze [vergelijkingstool](https://www.kentekenestep.nl) voor een overzicht van alle goedgekeurde modellen.*</li>
+</ul>`
+  },
+  {
     id: 6,
     title: "E-step Ongeluk in Gouda: Wat Als De Step WEL Verzekerd Was Geweest?",
     slug: "gouda-estep-vonnis-verzekering-analyse",
