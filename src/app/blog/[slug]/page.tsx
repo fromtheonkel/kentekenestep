@@ -156,7 +156,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 [&_em]:italic [&_em]:text-gray-600
                 [&_a]:text-orange-600 [&_a]:no-underline [&_a]:hover:underline
                 [&_ul]:my-6 [&_ul]:pl-6
+                [&_ol]:my-6 [&_ol]:pl-6
                 [&_li]:mb-2 [&_li]:text-gray-700 [&_li]:text-lg
+                [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:my-6
+                [&_th]:border [&_th]:border-gray-300 [&_th]:px-4 [&_th]:py-2 [&_th]:bg-gray-50 [&_th]:text-left [&_th]:font-semibold
+                [&_td]:border [&_td]:border-gray-300 [&_td]:px-4 [&_td]:py-2
                 [&_hr]:my-12 [&_hr]:border-0 [&_hr]:border-t [&_hr]:border-gray-300"
               dangerouslySetInnerHTML={{ __html: article.content }} 
             />
