@@ -62,24 +62,8 @@ function isDutchIP(ip: string): boolean {
 }
 
 export function isIPAllowed(ip: string): boolean {
-  // Always allow localhost for development
-  const localhostIPs = ['127.0.0.1', '::1', 'localhost'];
-  if (localhostIPs.includes(ip)) {
-    return true;
-  }
-  
-  // Check if IP is from Netherlands
-  if (isDutchIP(ip)) {
-    return true;
-  }
-  
-  // Also check specific allowed IPs from env (as backup)
-  const allowedIPs = process.env.ADMIN_ALLOWED_IPS?.split(',').map(ip => ip.trim()) || [];
-  if (allowedIPs.includes(ip)) {
-    return true;
-  }
-  
-  return false;
+  // No IP restrictions - password protection is sufficient
+  return true;
 }
 
 export function validatePassword(password: string): boolean {
