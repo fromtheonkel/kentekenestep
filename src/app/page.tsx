@@ -59,9 +59,21 @@ export default function Home() {
           muted 
           loop 
           playsInline
+          preload="metadata"
+          webkit-playsinline="true"
           className="absolute inset-0 w-full h-full object-cover opacity-60"
+          style={{ 
+            WebkitBackfaceVisibility: 'hidden',
+            WebkitPerspective: 1000,
+            WebkitTransform: 'translate3d(0,0,0)',
+            backfaceVisibility: 'hidden',
+            perspective: 1000,
+            transform: 'translate3d(0,0,0)'
+          }}
         >
           <source src="/video/E_step_op_fietspad_met_kenteken.mp4" type="video/mp4" />
+          {/* Fallback for browsers that don't support video */}
+          Your browser does not support the video tag.
         </video>
         
         {/* Dark overlay for better text readability */}

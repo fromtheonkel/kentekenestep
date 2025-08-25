@@ -69,6 +69,13 @@ export function isIPAllowed(ip: string): boolean {
 export function validatePassword(password: string): boolean {
   const adminPassword = process.env.ADMIN_PASSWORD;
   
+  console.log('Password validation:', {
+    hasEnvPassword: !!adminPassword,
+    envPasswordLength: adminPassword?.length || 0,
+    inputPasswordLength: password.length,
+    isMatch: password === adminPassword
+  });
+  
   if (!adminPassword) {
     console.error('ADMIN_PASSWORD environment variable not set!');
     return false;
