@@ -52,9 +52,23 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white py-16">
+      <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white py-16 relative overflow-hidden">
+        {/* Background Video */}
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        >
+          <source src="/video/E_step_op_fietspad_met_kenteken.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+        
         {isHeaderSticky && <div className="h-16"></div>}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               E-Steps met <span className="text-orange-400">goedkeuring!</span>
