@@ -59,7 +59,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-08-25",
     category: "Nieuws",
     tags: ["RDW", "Verzekering", "Kenteken", "Regelgeving", "Selana"],
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80",
+    image: "/images/spanje_estep.png",
     featured: false,
     readTime: "5 min",
     published: true,
