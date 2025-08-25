@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { AlertTriangle, Scale, ExternalLink, DollarSign, FileText, Clock, Shield, Info } from 'lucide-react';
 
 export default function DisclaimerPage() {
@@ -23,10 +24,10 @@ export default function DisclaimerPage() {
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-slate-600 hover:text-slate-800">Home</a>
+              <a href="/" className="text-slate-600 hover:text-slate-800 font-semibold">Home</a>
               <a href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</a>
-              <a href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</a>
               <a href="/blog" className="text-slate-600 hover:text-slate-800">Blog</a>
+              <a href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</a>
               <a href="/contact" className="text-slate-600 hover:text-slate-800">Contact</a>
             </nav>
           </div>
@@ -333,25 +334,27 @@ export default function DisclaimerPage() {
             <div>
               <h3 className="font-semibold mb-4">Vergelijken</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="/vergelijken" className="hover:text-white">RDW Goedgekeurd</a></li>
-                <li><a href="/vergelijken" className="hover:text-white">Top 3 Modellen</a></li>
-                <li><a href="/vergelijken" className="hover:text-white">Prijsvergelijking</a></li>
+                <li><Link href="/vergelijken" className="hover:text-white">RDW Goedgekeurd</Link></li>
+                <li><Link href="/vergelijken" className="hover:text-white">Top 3 Modellen</Link></li>
+                <li><Link href="/vergelijken" className="hover:text-white">Prijsvergelijking</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Informatie</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="/rdw-info" className="hover:text-white">E-Step Regelgeving</a></li>
-                <li><a href="/blog" className="hover:text-white">Blog</a></li>
-                <li><a href="/privacy" className="hover:text-white">Privacy</a></li>
+                <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
+                <li><Link href="/rdw-info" className="hover:text-white">E-Step Regelgeving</Link></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="/contact" className="hover:text-white">Contact</a></li>
-                <li><a href="#" className="hover:text-white font-semibold">Disclaimer</a></li>
-                <li><a href="#" className="hover:text-white">FAQ</a></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
+                <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
+                <li><Link href="/disclaimer" className="hover:text-white">Disclaimer</Link></li>
               </ul>
             </div>
           </div>

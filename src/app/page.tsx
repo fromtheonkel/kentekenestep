@@ -291,16 +291,15 @@ export default function Home() {
               <ul className="space-y-2 text-slate-400">
                 <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
                 <li><Link href="/rdw-info" className="hover:text-white">E-Step Regelgeving</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                <li><Link href="/contact" className="hover:text-white">FAQ</Link></li>
+                <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-slate-400">
                 <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                <li><Link href="/contact" className="hover:text-white">FAQ</Link></li>
                 <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
+                <li><Link href="/disclaimer" className="hover:text-white">Disclaimer</Link></li>
               </ul>
             </div>
           </div>
