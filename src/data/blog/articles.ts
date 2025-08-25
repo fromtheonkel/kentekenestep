@@ -54,15 +54,15 @@ export const blogArticles: BlogArticle[] = [
     id: 8,
     title: "Nieuwe E-Scooter Regels Spanje vs Nederland: Wat Verandert Er?",
     slug: "nieuwe-e-scooter-regels-spanje-vs-nederland-wat-verandert-er",
-    excerpt: "In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe re...",
+    excerpt: "In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe regelgeving in voor elektrische scooters, maar de aanpak verschilt aanzienlijk.",
     author: "Iwan",
     date: "2025-08-25",
     category: "Nieuws",
-    tags: ["RDW", "Verzekering", "Kenteken", "Regelgeving", "Selana"],
+    tags: ["RDW", "Verzekering", "Kenteken", "Regelgeving", "Spanje"],
     image: "/images/spanje_estep.webp",
     featured: false,
     readTime: "5 min",
-    published: true,
+    published: false,
     content: `<p class="lead">In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe regelgeving in voor elektrische scooters en andere persoonlijke mobiliteitsmiddelen (PMV's), maar de aanpak verschilt aanzienlijk. Dit artikel analyseert de verschillen en overeenkomsten tussen beide landen.</p>
 
 <h2>Spanje: Revolutionaire Veranderingen in 2026</h2>
