@@ -62,172 +62,126 @@ export const blogArticles: BlogArticle[] = [
     image: "/images/spanje_estep.webp",
     featured: false,
     readTime: "5 min",
-    published: false,
+    published: true,
     content: `<p class="lead">In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe regelgeving in voor elektrische scooters en andere persoonlijke mobiliteitsmiddelen (PMV's), maar de aanpak verschilt aanzienlijk. Dit artikel analyseert de verschillen en overeenkomsten tussen beide landen.</p>
 
 <h2>Spanje: Revolutionaire Veranderingen in 2026</h2>
 
-<h2># De Nieuwe Wetgeving</h2>
+<h3>De Nieuwe Wetgeving</h3>
 
 <p>Vanaf januari 2026 wordt het verplicht om een wettelijke aansprakelijkheidsverzekering te hebben en je voertuig te registreren bij de DGT voor elektrische scooters in Spanje. Deze maatregel geldt voor alle voertuigen voor persoonlijke mobiliteit, waaronder:</p>
 
 <ul>
 <li>Elektrische scooters</li>
-<ul>
 <li>Segways</li>
-<ul>
 <li>Monowheels</li>
-<ul>
 <li>Hoverboards</li>
-<ul>
 <li>Andere PMV's</li>
-<h2># Doelstellingen van de Spaanse Regelgeving</h2>
-
 </ul>
+
+<h3>Doelstellingen van de Spaanse Regelgeving</h3>
 
 <p>Het doel is volgens de regering tweeledig: slachtoffers van ongevallen beschermen en voorkomen dat ze hulpeloos achterblijven als de bestuurder insolvent is, en het beheer van schadevergoedingen verbeteren.</p>
 
-<h2># Registratie en Identificatie</h2>
+<h3>Registratie en Identificatie</h3>
 
 <p>De nieuwe wet voorziet ook in de oprichting van een openbaar register van scooters en eigenaars tegen 2 januari 2026. Eigenaren van elektrische steps zullen hun voertuigen ook moeten registreren bij de provinciale verkeersautoriteiten. Hier krijgen de steps een soort kentekenplaat of identificatienummer toegewezen.</p>
 
-<h2># Omvang van de Maatregel</h2>
+<h3>Omvang van de Maatregel</h3>
 
 <p>Deze maatregel, die naar verwachting in 2026 in werking zal treden, zal van toepassing zijn op alle ongeveer vijf miljoen elektrische steps in Spanje.</p>
 
 <h2>Nederland: Gefaseerde Implementatie Sinds 2025</h2>
 
-<h2># Huidige Nederlandse Regels</h2>
+<h3>Huidige Nederlandse Regels</h3>
 
 <p>Nederland heeft al een voorsprong genomen met regelgeving voor elektrische steps. U moet de e-step verzekeren voor wettelijke aansprakelijkheid (WA). U plakt de sticker van de verzekeraar op de e-step.</p>
 
-<h2># Kentekenplicht Timeline</h2>
+<h3>Kentekenplicht Timeline</h3>
 
 <p>Sinds 1 juli 2025 hebben e-steps een kenteken nodig. Dit geldt ook voor alle andere bijzondere bromfietsen. Voor bestaande voertuigen geldt: Goedgekeurde e-steps van vóór 1 juli 2025 hebben vanaf 1 juli 2026 een kenteken nodig.</p>
 
-<h2># Goedkeuring: Het Cruciale Verschil</h2>
+<h3>Goedkeuring: Het Cruciale Verschil</h3>
 
 <p>Een belangrijk punt in Nederland is dat de meeste steps zonder trapondersteuning zijn niet goedgekeurd. Daar mag u niet mee rijden op de weg. Let op: de meeste e-steps die worden aangeboden, zijn niet goedgekeurd. Een kenteken aanvragen voor een niet-goedgekeurde e-step is niet mogelijk.</p>
 
 <h2>Vergelijking: Spanje vs Nederland</h2>
 
-<h2># Overeenkomsten</h2>
+<h3>Overeenkomsten</h3>
 
 <ul>
-<li>*Verzekeringsverplichting**</li>
-<ul>
-<li>Beide landen vereisen een WA-verzekering</li>
-<ul>
-<li>Focus op bescherming van slachtoffers</li>
-<ul>
-<li>Verzekeraar meldt status aan overheidsinstantie (DGT/RDW)</li>
-<ul>
-<li>*Registratie bij Overheid**</li>
-<ul>
-<li>Spanje: Registratie bij DGT vanaf 2026</li>
-<ul>
-<li>Nederland: Kentekenregistratie bij RDW sinds juli 2025</li>
-<ul>
-<li>*Identificatie op Voertuig**</li>
-<ul>
-<li>Spanje: Kentekenplaat of identificatienummer</li>
-<ul>
-<li>Nederland: Kenteken</li>
-<h2># Belangrijke Verschillen</h2>
+<li><strong>Verzekeringsverplichting</strong>
+  <ul>
+    <li>Beide landen vereisen een WA-verzekering</li>
+    <li>Focus op bescherming van slachtoffers</li>
+    <li>Verzekeraar meldt status aan overheidsinstantie (DGT/RDW)</li>
+  </ul>
+</li>
+<li><strong>Registratie bij Overheid</strong>
+  <ul>
+    <li>Spanje: Registratie bij DGT vanaf 2026</li>
+    <li>Nederland: Kentekenregistratie bij RDW sinds juli 2025</li>
+  </ul>
+</li>
+<li><strong>Identificatie op Voertuig</strong>
+  <ul>
+    <li>Spanje: Kentekenplaat of identificatienummer</li>
+    <li>Nederland: Kenteken</li>
+  </ul>
+</li>
+</ul>
+
+<h3>Belangrijke Verschillen</h3>
 
 <ul>
-<li>*Timeline**</li>
-<ul>
-<li>**Nederland**: Gefaseerde invoering - WA-verzekering al verplicht, kenteken vanaf juli 2025</li>
-<ul>
-<li>**Spanje**: Alles tegelijk vanaf januari 2026</li>
-<ul>
-<li>*Voertuiggoedkeuring**</li>
-<ul>
-<li>**Nederland**: Alleen goedgekeurde e-steps mogen de weg op, met strikte typegoedkeuring</li>
-<ul>
-<li>**Spanje**: Geen duidelijke typegoedkeuringsvereiste genoemd, focus ligt op registratie en verzekering</li>
-<ul>
-<li>*Boetes**</li>
-<ul>
-<li>**Nederland**: De politie kan een boete geven. Of uw e-step in beslag nemen, met boetes rond de €340-350 voor niet-verzekerd zijn</li>
-<ul>
-<li>**Spanje**: Nog onduidelijk wat boetes zullen worden</li>
-<ul>
-<li>*Bestaande Voertuigen**</li>
-<ul>
-<li>**Nederland**: Bestaande goedgekeurde e-steps krijgen uitstel tot juli 2026</li>
-<ul>
-<li>**Spanje**: Alle voertuigen moeten vanaf januari 2026 voldoen</li>
+<li><strong>Timeline</strong>
+  <ul>
+    <li><strong>Nederland</strong>: Gefaseerde invoering - WA-verzekering al verplicht, kenteken vanaf juli 2025</li>
+    <li><strong>Spanje</strong>: Alles tegelijk vanaf januari 2026</li>
+  </ul>
+</li>
+<li><strong>Voertuiggoedkeuring</strong>
+  <ul>
+    <li><strong>Nederland</strong>: Alleen goedgekeurde e-steps mogen de weg op, met strikte typegoedkeuring</li>
+    <li><strong>Spanje</strong>: Geen duidelijke typegoedkeuringsvereiste genoemd, focus ligt op registratie en verzekering</li>
+  </ul>
+</li>
+<li><strong>Boetes</strong>
+  <ul>
+    <li><strong>Nederland</strong>: De politie kan een boete geven. Of uw e-step in beslag nemen, met boetes rond de €340-350 voor niet-verzekerd zijn</li>
+    <li><strong>Spanje</strong>: Nog onduidelijk wat boetes zullen worden</li>
+  </ul>
+</li>
+<li><strong>Bestaande Voertuigen</strong>
+  <ul>
+    <li><strong>Nederland</strong>: Bestaande goedgekeurde e-steps krijgen uitstel tot juli 2026</li>
+    <li><strong>Spanje</strong>: Alle voertuigen moeten vanaf januari 2026 voldoen</li>
+  </ul>
+</li>
+</ul>
+
 <h2>De Nederlandse Voorsprong</h2>
 
-<h2># Typegoedkeuring als Onderscheidend Element</h2>
+<h3>Typegoedkeuring als Onderscheidend Element</h3>
 
+<p>Het grootste verschil tussen beide landen ligt in de nadruk op typegoedkeuring. Nederland hanteert een striktere benadering waarbij alleen goedgekeurde voertuigen toegestaan zijn op de openbare weg. Dit betekent dat veel populaire importmodellen niet legaal gebruikt kunnen worden.</p>
+
+<h3>Marktimplicaties</h3>
+
+<p>Deze verschillen hebben belangrijke gevolgen voor fabrikanten en consumenten:</p>
+
+<ul>
+<li><strong>Nederland</strong>: Beperkte keuze, maar garantie op veiligheid en legaliteit</li>
+<li><strong>Spanje</strong>: Mogelijk bredere keuze, maar onzekerheid over specifieke veiligheidsvereisten</li>
 </ul>
 
-<p>Nederland hanteert een veel strenger systeem met typegoedkeuring. Via websites zoals [kentekenestep.nl](https://www.kentekenestep.nl) kunnen consumenten zien welke e-steps daadwerkelijk goedgekeurd zijn. De Selana Alpha krijgt een prijsverlaging naar €1.750, maar met een wachttijd van 3 maanden en een prijs die nog altijd 3-4x hoger ligt dan illegale alternatieven, rijzen er vragen over de toegankelijkheid.</p>
+<h2>Conclusie</h2>
 
-<h2># Uitdagingen in Nederland</h2>
+<p>Beide landen maken belangrijke stappen in de regulering van elektrische mobiliteit, maar kiezen verschillende benaderingen. Nederland kiest voor een gefaseerde, strikt gereguleerde invoering met nadruk op typegoedkeuring. Spanje daarentegen kiest voor een bredere, meer inclusieve benadering die zich richt op registratie en verzekering.</p>
 
-<p>Vanaf 1 januari 2024 is er voor nieuwe typen bijzondere bromfietsen een nationale typegoedkeuring nodig voor ze de openbare weg op mogen. Dit heeft geleid tot een beperkt aanbod van legale e-steps en hoge prijzen.</p>
+<p>Voor consumenten betekent dit dat zij goed moeten opletten welke regels gelden in hun land en ervoor moeten zorgen dat hun voertuig voldoet aan alle lokale vereisten. De komende jaren zullen cruciaal zijn voor de ontwikkeling van de elektrische micromoboliteitsmarkt in beide landen.</p>
 
-<h2>Impact op de Markt</h2>
-
-<h2># Spanje: Meer Inclusieve Aanpak</h2>
-
-<p>Spanje lijkt een meer inclusieve aanpak te kiezen, waarbij bestaande voertuigen geregistreerd en verzekerd kunnen worden zonder complexe typegoedkeuringsprocedures. Dit zou kunnen leiden tot:</p>
-
-<ul>
-<li>Lagere kosten voor consumenten</li>
-<ul>
-<li>Snellere adoptie van legale status</li>
-<ul>
-<li>Minder impact op bestaande eigenaren</li>
-<h2># Nederland: Veiligheid Boven Toegankelijkheid</h2>
-
-</ul>
-
-<p>Nederland kiest voor veiligheid en kwaliteit boven toegankelijkheid, met als gevolg:</p>
-
-<ul>
-<li>Hogere voertuigkosten</li>
-<ul>
-<li>Beperkte keuze in legale modellen</li>
-<ul>
-<li>Veel illegale voertuigen op de weg</li>
-<h2>Lessen voor Andere Landen</h2>
-
-<h2># De Spaanse Benadering</h2>
-
-<ul>
-<li>**Pro**: Inclusief voor bestaande eigenaren, praktischer voor massale implementatie</li>
-<ul>
-<li>**Con**: Mogelijk minder controle over voertuigkwaliteit</li>
-<h2># De Nederlandse Benadering</h2>
-
-<ul>
-<li>**Pro**: Hogere veiligheidsnormen, betere voertuigkwaliteit</li>
-<ul>
-<li>**Con**: Dure implementatie, toegankelijkheidsproblemen</li>
-<h2>Conclusie: Twee Wegen Naar Hetzelfde Doel</h2>
-
-</ul>
-
-<p>Beide landen streven hetzelfde doel na: veiligere wegen en beschermde verkeersdeelnemers. De aanpak verschilt echter aanzienlijk:</p>
-
-<ul>
-<li>*Spanje** kiest voor een pragmatische transitie waarbij bestaande gebruikers kunnen blijven rijden mits ze verzekerd zijn en geregistreerd staan. Dit lijkt een meer inclusieve benadering die massale adoptie mogelijk maakt.</li>
-<ul>
-<li>*Nederland** heeft gekozen voor een kwaliteitsgerichte aanpak met strikte typegoedkeuring. Dit levert veiligere voertuigen op, maar creëert toegangsbarrières door hogere kosten en beperkte beschikbaarheid.</li>
-</ul>
-
-<p>De komende jaren zullen uitwijzen welke benadering effectiever is in het bereiken van de doelstellingen: verkeersveiligheid, gebruikersacceptatie en praktische uitvoerbaarheid. Voor consumenten in beide landen betekent dit in elk geval dat de wilde westen-tijd van ongereguleerde e-scooters definitief voorbij is.</p>
-
-<ul>
-<li>--</li>
-<ul>
-<li>Voor actuele informatie over goedgekeurde e-steps in Nederland, bezoek [kentekenestep.nl](https://www.kentekenestep.nl). Voor vragen over Nederlandse regelgeving, raadpleeg de [RDW](https://www.rdw.nl). Voor Spaanse regelgeving, houd de website van de [DGT](https://dgt.es) in de gaten.*</li>
-</ul>`
+<p>Voor de nieuwste updates over e-step regelgeving en goedgekeurde modellen, blijf onze blog volgen.</p>`
   },
   {
     id: 7,
