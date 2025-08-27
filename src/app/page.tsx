@@ -8,6 +8,48 @@ import Link from 'next/link';
 export default function Home() {
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "KentekenEstep.nl",
+    "url": "https://kentekenestep.nl",
+    "description": "Informatie over RDW goedgekeurde elektrische steps in Nederland",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://kentekenestep.nl/vergelijken",
+      "query-input": "required name=search_term_string"
+    },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Welke e-steps zijn toegestaan in Nederland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alleen door de RDW goedgekeurde e-steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900)."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Is een verzekering verplicht voor e-steps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, een WA-verzekering is verplicht voor alle e-steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Heb ik een rijbewijs nodig voor een e-step?", 
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor RDW goedgekeurde e-steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook rijden."
+          }
+        }
+      ]
+    }
+  };
+
   // Scroll event for sticky header
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +65,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className={`bg-white shadow-sm border-b transition-all duration-300 ${isHeaderSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,8 +295,265 @@ export default function Home() {
         </section>
       </div>
 
+      {/* SEO Rich Content - Nederlandse E-Step Regelgeving */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              E-Step Regelgeving <span className="text-orange-500">Nederland 2025</span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Alles wat je moet weten over legale e-steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Regelgeving Overzicht */}
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+                <h3 className="text-2xl font-bold text-green-900 mb-6 flex items-center gap-3">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  Legale E-Steps in Nederland
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-green-900">RDW Typegoedkeuring Verplicht</h4>
+                      <p className="text-green-700">Alleen door RDW goedgekeurde e-steps mogen op openbare wegen rijden sinds juli 2025</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-green-900">WA-Verzekering Verplicht</h4>
+                      <p className="text-green-700">Kosten ongeveer €6 per maand voor wettelijke aansprakelijkheidsverzekering</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-green-900">Kenteken Nodig</h4>
+                      <p className="text-green-700">Alle nieuwe e-steps hebben vanaf juli 2025 een kenteken nodig, bestaande tot juli 2026</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-green-900">Rijbewijs AM of Hoger</h4>
+                      <p className="text-green-700">Bromfietsrijbewijs (AM) of autorijbewijs (B) vereist voor bestuurders</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-red-50 to-rose-50 p-8 rounded-2xl border border-red-100">
+                <h3 className="text-2xl font-bold text-red-900 mb-6 flex items-center gap-3">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.502 0L4.23 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                    </svg>
+                  </div>
+                  Boetes & Risico's
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-red-100 p-4 rounded-lg">
+                    <h4 className="font-semibold text-red-900 mb-2">€340-350 Boete</h4>
+                    <p className="text-red-800 text-sm">Voor rijden zonder verzekering of met niet-goedgekeurde e-step</p>
+                  </div>
+                  <div className="bg-red-100 p-4 rounded-lg">
+                    <h4 className="font-semibold text-red-900 mb-2">Inbeslagname Mogelijk</h4>
+                    <p className="text-red-800 text-sm">Politie kan uw e-step in beslag nemen bij overtreding</p>
+                  </div>
+                  <div className="bg-red-100 p-4 rounded-lg">
+                    <h4 className="font-semibold text-red-900 mb-2">Geen Dekking bij Ongevallen</h4>
+                    <p className="text-red-800 text-sm">Zonder verzekering bent u persoonlijk aansprakelijk voor alle schade</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Goedgekeurde Modellen */}
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl border border-orange-100">
+                <h3 className="text-2xl font-bold text-orange-900 mb-6 flex items-center gap-3">
+                  <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  RDW Goedgekeurde E-Steps (2025)
+                </h3>
+                
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-200 mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h4 className="text-xl font-bold text-slate-900">SELANA Alpha</h4>
+                    <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                      ✓ RDW Goedgekeurd
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <span className="text-slate-600">Prijs:</span>
+                      <span className="font-semibold text-slate-900 ml-2">€1.900</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-600">Bereik:</span>
+                      <span className="font-semibold text-slate-900 ml-2">45-60 km</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-600">Max snelheid:</span>
+                      <span className="font-semibold text-slate-900 ml-2">25 km/h</span>
+                    </div>
+                    <div>
+                      <span className="text-slate-600">Verzekering:</span>
+                      <span className="font-semibold text-slate-900 ml-2">€6/maand</span>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <Link 
+                      href="/vergelijken"
+                      className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold text-sm"
+                    >
+                      Bekijk specificaties →
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <p className="text-blue-800 text-sm">
+                    <strong>Meer modellen verwacht:</strong> NIU, Segway, en andere merken werken aan RDW goedkeuring. 
+                    Verwacht wordt dat er in 2025-2026 meer modellen bijkomen.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 p-8 rounded-2xl border border-slate-200">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Belangrijke Data 2025-2026</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                      JUL
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Juli 2025</h4>
+                      <p className="text-slate-600 text-sm">Kentekenplicht van kracht voor nieuwe e-steps</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                      JUL
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Juli 2026</h4>
+                      <p className="text-slate-600 text-sm">Deadline kenteken voor bestaande goedgekeurde e-steps</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                      NU
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Sinds 2024</h4>
+                      <p className="text-slate-600 text-sm">WA-verzekering al verplicht voor alle e-steps</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 rounded-2xl text-white">
+              <h3 className="text-2xl font-bold mb-4">Wil je legaal en verzekerd op pad?</h3>
+              <p className="text-lg mb-6 text-orange-100">
+                Bekijk de vergelijker voor actuele prijzen en beschikbaarheid van RDW goedgekeurde e-steps
+              </p>
+              <Link 
+                href="/vergelijken"
+                className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+              >
+                Vergelijk E-Steps
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 🆕 BLOG SECTIE - TOEGEVOEGD HIER */}
       <LatestBlog />
+
+      {/* FAQ Section voor betere discoverability */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Veelgestelde <span className="text-orange-500">Vragen</span>
+            </h2>
+            <p className="text-xl text-slate-600">
+              De belangrijkste vragen over e-steps in Nederland beantwoord
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Welke e-steps zijn toegestaan in Nederland?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Alleen door de RDW goedgekeurde e-steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900). NIU, Segway en andere merken werken aan goedkeuring voor hun modellen.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Is een verzekering verplicht voor e-steps?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Ja, een WA-verzekering is verplicht voor alle e-steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand. Zonder verzekering riskeer je een boete van €340-350 en persoonlijke aansprakelijkheid voor alle schade.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Heb ik een rijbewijs nodig voor een e-step?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Voor RDW goedgekeurde e-steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook op een RDW goedgekeurde e-step rijden.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Wanneer heb ik een kenteken nodig?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Nieuwe e-steps hebben sinds juli 2025 een kenteken nodig. Voor bestaande goedgekeurde e-steps geldt een uitstel tot juli 2026. Het kenteken wordt geregeld door de dealer bij aankoop.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Wat kost het om legaal op pad te gaan?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Voor de SELANA Alpha betaal je €1.900 aanschafprijs + €6 per maand voor verzekering. Daarnaast zijn er kosten voor een rijbewijs AM (€200-300) als je die nog niet hebt.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Waar mag ik rijden met een RDW goedgekeurde e-step?</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Met een RDW goedgekeurde e-step mag je op fietspaden, fietsstroken en wegen waar maximaal 50 km/h geldt. Je mag NIET op de stoep, in voetgangerszones of op snelwegen rijden.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link 
+              href="/faq"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105"
+            >
+              Meer vragen? Bekijk volledige FAQ →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Signup */}
@@ -335,5 +639,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

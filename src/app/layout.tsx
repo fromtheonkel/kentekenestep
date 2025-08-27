@@ -16,8 +16,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps',
-  description: "Vergelijk RDW goedgekeurde elektrische steps en populaire alternatieven.",
+  title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Nederland 2025',
+  description: "✓ Officiële RDW goedgekeurde e-steps ✓ Verzekeringsinformatie ✓ Kenteken & regelgeving ✓ Boetes vermijden ✓ SELANA Alpha €1.900 ✓ Legaal op fietspad rijden",
+  keywords: "RDW goedgekeurde e-step, elektrische step Nederland, e-step verzekering, e-step kenteken, SELANA Alpha, e-step boete, legale e-step, e-step regelgeving 2025",
+  openGraph: {
+    title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Nederland 2025',
+    description: 'Alles over legale e-steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen. SELANA Alpha €1.900.',
+    url: 'https://kentekenestep.nl',
+    siteName: 'KentekenEstep.nl',
+    locale: 'nl_NL',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RDW Goedgekeurde E-Steps Nederland 2025',
+    description: 'Vergelijk legale e-steps, verzekeringen en regelgeving. SELANA Alpha €1.900.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: 'https://kentekenestep.nl',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },

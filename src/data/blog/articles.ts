@@ -508,6 +508,11 @@ export const getLatestArticle = () => {
   return published.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
 };
 
+export const getLatest3Articles = () => {
+  const published = blogArticles.filter(article => article.published);
+  return published.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
+};
+
 export const getArticlesByCategory = (category: string) => {
   if (category === 'all') return blogArticles.filter(article => article.published);
   return blogArticles.filter(article => article.category === category && article.published);
