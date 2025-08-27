@@ -564,13 +564,13 @@ export default function Home() {
           </p>
           
           <div className="max-w-md mx-auto">
-            <div className="max-w-md mx-auto flex gap-4">
+            <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 placeholder="Jouw email adres"
-                className="flex-1 px-4 py-3 rounded-lg text-slate-900"
+                className="flex-1 px-4 py-3 rounded-lg text-slate-900 placeholder-slate-500"
               />
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-3 rounded-lg font-bold transition-colors text-sm sm:text-base whitespace-nowrap">
                 Aanmelden
               </button>
             </div>
