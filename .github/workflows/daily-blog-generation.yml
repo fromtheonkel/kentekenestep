@@ -44,11 +44,10 @@ jobs:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: |
         echo "🔍 Checking for relevant e-step news..."
-        node scripts/news-monitor.js > news-report.txt
-        cat news-report.txt
+        node scripts/news-monitor.js 2>&1 | tee news-report.txt
         
         # Check if there are high-priority articles
-        if grep -q "Priority: [4-5]" news-report.txt; then
+        if grep -q "P[4-5]" news-report.txt; then
           echo "found_news=true" >> $GITHUB_OUTPUT
           echo "✅ Found high-priority news!"
         else
