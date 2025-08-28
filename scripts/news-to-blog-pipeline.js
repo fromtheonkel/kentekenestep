@@ -28,6 +28,80 @@ const calculateReadTime = (content) => {
   return Math.max(1, Math.ceil(wordCount / wordsPerMinute)) + ' min';
 };
 
+const checkForDuplicates = async (newsArticle, analysisTitle) => {
+  try {
+    const articlesFilePath = path.join(__dirname, '..', 'src', 'data', 'blog', 'articles.ts');
+    const articlesContent = await fs.readFile(articlesFilePath, 'utf-8');
+    
+    // Extract all existing titles and check for similarity
+    const titleMatches = articlesContent.match(/title:\s*["`']([^"`']+)["`']/g) || [];
+    const existingTitles = titleMatches.map(match => 
+      match.replace(/title:\s*["`']([^"`']+)["`']/, '$1').toLowerCase()
+    );
+    
+    // Check for keyword overlap with recent articles (last 30 days)
+    const recentDatePattern = /date:\s*["`'](202[4-9]-\d{2}-\d{2})["`']/g;
+    const now = new Date();
+    const thirtyDaysAgo = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
+    
+    // Keywords to check for similarity
+    const newsKeywords = [
+      ...newsArticle.title.toLowerCase().split(/\s+/).filter(w => w.length > 3),
+      ...(newsArticle.keywords || []).map(k => k.toLowerCase()),
+      'helmplicht', 'e-step', 'e-bike', 'rdw'
+    ].filter((v, i, arr) => arr.indexOf(v) === i); // unique
+    
+    const analysisKeywords = analysisTitle.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+    
+    // Check for similar titles
+    for (const existingTitle of existingTitles) {
+      const similarity = calculateTitleSimilarity(analysisTitle.toLowerCase(), existingTitle);
+      if (similarity > 0.7) {
+        return {
+          isDuplicate: true,
+          reason: `Similar title exists: "${existingTitle}"`,
+          similarity
+        };
+      }
+      
+      // Check keyword overlap
+      const existingKeywords = existingTitle.split(/\s+/).filter(w => w.length > 3);
+      const keywordOverlap = newsKeywords.filter(k => 
+        existingKeywords.some(ek => ek.includes(k) || k.includes(ek))
+      ).length;
+      
+      if (keywordOverlap >= 2 && (existingTitle.includes('helmplicht') || existingTitle.includes('e-step'))) {
+        return {
+          isDuplicate: true,
+          reason: `Similar topic covered recently: "${existingTitle}"`,
+          keywordOverlap
+        };
+      }
+    }
+    
+    return { isDuplicate: false };
+    
+  } catch (error) {
+    console.log(`⚠️ Could not check for duplicates: ${error.message}`);
+    return { isDuplicate: false };
+  }
+};
+
+const calculateTitleSimilarity = (title1, title2) => {
+  const words1 = title1.split(/\s+/);
+  const words2 = title2.split(/\s+/);
+  const allWords = [...new Set([...words1, ...words2])];
+  
+  let matchCount = 0;
+  for (const word of words1) {
+    if (words2.includes(word) && word.length > 3) {
+      matchCount++;
+    }
+  }
+  
+  return matchCount / Math.max(words1.length, words2.length);
+};
+
 const fetchArticleContent = async (url) => {
   try {
     // Simple content extraction - in production you'd use a proper web scraper
@@ -274,6 +348,14 @@ const runPipeline = async (maxArticles = 2, minPriority = 4) => {
       console.log(`\n🔬 Generating analysis for: ${newsItem.title}`);
       
       const analysisArticle = await generateAnalysisArticle(newsItem);
+      
+      // Check for duplicates before proceeding
+      const duplicateCheck = await checkForDuplicates(newsItem, analysisArticle.title);
+      if (duplicateCheck.isDuplicate) {
+        console.log(`🚫 Skipping duplicate: ${duplicateCheck.reason}`);
+        continue;
+      }
+      console.log(`✅ No duplicates found for: ${analysisArticle.title}`);
       
       // Generate image
       analysisArticle.image = await generateImageWithGemini(
