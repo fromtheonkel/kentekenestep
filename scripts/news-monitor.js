@@ -14,18 +14,33 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const NEWS_SOURCES = [
   {
     name: 'NU.nl',
-    url: 'https://www.nu.nl/zoeken?q=elektrische+step',
-    selector: 'article .list-item'
+    urls: [
+      'https://www.nu.nl/zoeken?q=rdw+goedgekeurde+step',
+      'https://www.nu.nl/zoeken?q=e-step+rdw',
+      'https://www.nu.nl/zoeken?q=elektrische+step+rdw',
+      'https://www.nu.nl/zoeken?q=elektrische+step'
+    ],
+    selector: 'article, .list-item, .article'
   },
   {
     name: 'NOS.nl', 
-    url: 'https://nos.nl/zoeken?q=e-step',
-    selector: '.search-result-item'
+    urls: [
+      'https://nos.nl/zoeken?q=rdw+step',
+      'https://nos.nl/zoeken?q=e-step+rdw',
+      'https://nos.nl/zoeken?q=elektrische+step+rdw',
+      'https://nos.nl/zoeken?q=e-step'
+    ],
+    selector: '.search-result-item, article, .article'
   },
   {
     name: 'AD.nl',
-    url: 'https://www.ad.nl/zoeken?q=elektrische+step',
-    selector: '.teaser'
+    urls: [
+      'https://www.ad.nl/zoeken?q=rdw+goedgekeurde+step',
+      'https://www.ad.nl/zoeken?q=e-step+rdw',
+      'https://www.ad.nl/zoeken?q=elektrische+step+rdw',
+      'https://www.ad.nl/zoeken?q=elektrische+step'
+    ],
+    selector: '.teaser, article, .article'
   },
   {
     name: 'Rijksoverheid',
@@ -149,17 +164,31 @@ const monitorNews = async () => {
   const allArticles = [];
   
   for (const source of NEWS_SOURCES) {
-    try {
-      console.log(`📡 Fetching from ${source.name}...`);
-      const html = await fetchPage(source.url);
-      const articles = extractArticles(html, source);
-      
-      console.log(`   Gevonden: ${articles.length} artikelen`);
-      allArticles.push(...articles);
-      
-    } catch (error) {
-      console.log(`   ❌ Fout: ${error.message}`);
+    console.log(`📡 Fetching from ${source.name}...`);
+    let sourceArticles = [];
+    
+    // Handle sources with multiple URLs
+    const urls = source.urls || [source.url];
+    
+    for (const url of urls) {
+      try {
+        console.log(`   📡 Checking: ${url}`);
+        const html = await fetchPage(url);
+        const articles = extractArticles(html, source);
+        sourceArticles.push(...articles);
+        console.log(`   ✅ Gevonden: ${articles.length} artikelen`);
+        
+        // Add small delay to be respectful
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+      } catch (error) {
+        console.log(`   ❌ Fout: ${error.message}`);
+      }
     }
+    
+    console.log(`📊 ${source.name} totaal: ${sourceArticles.length} artikelen`);
+    allArticles.push(...sourceArticles);
+    console.log('');
   }
   
   console.log(`\n📊 Totaal gevonden: ${allArticles.length} artikelen`);
@@ -167,8 +196,17 @@ const monitorNews = async () => {
   
   const relevantArticles = [];
   
+  console.log(`🔍 Voorbeelden van gevonden artikelen:`);
+  allArticles.slice(0, 5).forEach((article, i) => {
+    console.log(`${i + 1}. ${article.title} (${article.source})`);
+  });
+  console.log('');
+
   for (const article of allArticles.slice(0, 20)) { // Limit to prevent API overuse
     const assessment = await assessRelevance(article);
+    
+    console.log(`🤖 Beoordeling: "${article.title.substring(0, 50)}..." - ${assessment.relevant ? 'RELEVANT' : 'NIET relevant'} (P${assessment.priority})`);
+    console.log(`   💭 ${assessment.reason}`);
     
     if (assessment.relevant && assessment.priority >= 3) {
       relevantArticles.push({
@@ -179,8 +217,8 @@ const monitorNews = async () => {
       console.log(`✅ Relevant (P${assessment.priority}): ${article.title}`);
       console.log(`   📍 ${article.source} - ${assessment.reason}`);
       console.log(`   🔗 ${article.url}`);
-      console.log('');
     }
+    console.log('');
   }
   
   // Sort by priority
