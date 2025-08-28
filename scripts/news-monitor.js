@@ -160,10 +160,10 @@ const extractArticles = (html, source) => {
 
 const assessRelevance = async (article) => {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+    // Use more stable model and add retry logic
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
-    const prompt = `
-Beoordeel of dit nieuwsartikel relevant is voor KentekenEstep.nl (Nederlandse e-step website):
+    const prompt = `Beoordeel of dit nieuwsartikel relevant is voor KentekenEstep.nl (Nederlandse e-step website):
 
 Titel: ${article.title}
 Samenvatting: ${article.summary}
@@ -184,19 +184,30 @@ NIET relevant:
 - Auto/motor nieuws
 - Algemene verkeersveiligheid zonder e-step focus
 
-Antwoord alleen met JSON:
-{
-  "relevant": true/false,
-  "priority": 1-5,
-  "reason": "korte uitleg waarom wel/niet relevant",
-  "keywords": ["gevonden", "relevante", "termen"]
-}
-`;
+Antwoord ALLEEN met dit JSON formaat:
+{"relevant": true, "priority": 4, "reason": "korte uitleg", "keywords": ["term1", "term2"]}`;
 
     const result = await model.generateContent(prompt);
-    return JSON.parse(result.response.text());
+    const responseText = result.response.text().trim();
+    
+    // Clean up response - remove markdown code blocks if present
+    const cleanResponse = responseText.replace(/```json\s*|\s*```/g, '').trim();
+    
+    const assessment = JSON.parse(cleanResponse);
+    
+    // Add delay to respect rate limits (6 requests per minute = 10 second delay)
+    await new Promise(resolve => setTimeout(resolve, 10000));
+    
+    return assessment;
   } catch (error) {
     console.error(`Error assessing ${article.title}:`, error.message);
+    
+    // If rate limited, wait longer
+    if (error.message.includes('429') || error.message.includes('quota')) {
+      console.log('   ⏳ Rate limited, waiting 60 seconds...');
+      await new Promise(resolve => setTimeout(resolve, 60000));
+    }
+    
     return { relevant: false, priority: 1, reason: "Assessment failed", keywords: [] };
   }
 };
@@ -250,12 +261,33 @@ const monitorNews = async () => {
   const relevantArticles = [];
   
   console.log(`🔍 Voorbeelden van gevonden artikelen:`);
-  allArticles.slice(0, 5).forEach((article, i) => {
-    console.log(`${i + 1}. ${article.title} (${article.source})`);
+  allArticles.slice(0, 10).forEach((article, i) => {
+    const isRelevant = article.title.toLowerCase().includes('helmplicht') && 
+                      (article.title.toLowerCase().includes('e-bike') || article.title.toLowerCase().includes('step'));
+    const relevantMarker = isRelevant ? ' 🎯' : '';
+    console.log(`${i + 1}. ${article.title} (${article.source})${relevantMarker}`);
   });
   console.log('');
 
-  for (const article of allArticles.slice(0, 20)) { // Limit to prevent API overuse
+  // Smart selection: prioritize potentially relevant articles
+  const potentiallyRelevant = allArticles.filter(article => {
+    const title = article.title.toLowerCase();
+    const summary = article.summary.toLowerCase();
+    return title.includes('helmplicht') || title.includes('e-step') || title.includes('e-bike') || 
+           title.includes('rdw') || title.includes('kenteken') || title.includes('verzekering') ||
+           summary.includes('step') || summary.includes('e-bike');
+  });
+  
+  // Take 3 potentially relevant + 2 random articles
+  const articlesToProcess = [
+    ...potentiallyRelevant.slice(0, 3),
+    ...allArticles.filter(a => !potentiallyRelevant.includes(a)).slice(0, 2)
+  ].slice(0, 5);
+  
+  console.log(`📋 Processing ${articlesToProcess.length} articles (${potentiallyRelevant.length} potentially relevant)`);
+  console.log('');
+  
+  for (const article of articlesToProcess) {
     const assessment = await assessRelevance(article);
     
     console.log(`🤖 Beoordeling: "${article.title.substring(0, 50)}..." - ${assessment.relevant ? 'RELEVANT' : 'NIET relevant'} (P${assessment.priority})`);
