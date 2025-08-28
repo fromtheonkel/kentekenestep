@@ -145,6 +145,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 🆕 BLOG SECTIE - VERPLAATST NAAR TOP */}
+      <LatestBlog />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {isHeaderSticky && <div className="h-16 -mt-12"></div>}
         
@@ -485,8 +488,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🆕 BLOG SECTIE - TOEGEVOEGD HIER */}
-      <LatestBlog />
 
       {/* FAQ Section voor betere discoverability */}
       <section className="py-16 bg-slate-50">
