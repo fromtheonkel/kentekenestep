@@ -263,7 +263,7 @@ Retourneer JSON format:
 };
 
 const generateImageWithGemini = async (prompt, title) => {
-  // For now, return a placeholder path
+  // For now, return a working Unsplash image
   // In a full implementation, you'd generate the actual image
   const slug = generateSlug(title);
   const imageName = `${slug}.webp`;
@@ -272,8 +272,8 @@ const generateImageWithGemini = async (prompt, title) => {
   console.log(`   Prompt: ${prompt.substring(0, 100)}...`);
   
   // TODO: Implement actual image generation
-  // For now, return path to a default image
-  return `/images/news-default.webp`;
+  // Return working Unsplash image for now
+  return "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80";
 };
 
 const addArticleToFile = async (article) => {
