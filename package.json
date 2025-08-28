@@ -2,21 +2,29 @@
   "name": "kentekenestep",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build --no-lint",
     "build:env": "set SKIP_ENV_VALIDATION=true&& next build --no-lint",
     "build:safe": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "news:monitor": "node scripts/news-monitor.js",
+    "news:generate": "node scripts/news-to-blog-pipeline.js",
+    "blog:auto": "node scripts/news-to-blog-pipeline.js 2 4"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@tailwindcss/typography": "^0.5.16",
+    "dotenv": "^17.2.1",
+    "jsdom": "^25.0.1",
     "lucide-react": "^0.525.0",
     "marked": "^16.2.0",
     "next": "15.3.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

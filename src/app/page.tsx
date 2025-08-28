@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import LatestBlog from '@/components/LatestBlog';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -50,19 +49,6 @@ export default function Home() {
     }
   };
 
-  // Scroll event for sticky header
-  useEffect(() => {
-    const handleScroll = () => {
-      const heroSection = document.querySelector('.hero-section') as HTMLElement;
-      if (heroSection) {
-        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-        setIsHeaderSticky(window.scrollY > heroBottom);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <>
@@ -71,8 +57,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className={`bg-white shadow-sm border-b transition-all duration-300 ${isHeaderSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}>
+      {/* Header - Always Fixed */}
+      <header className="bg-white shadow-sm border-b fixed top-0 left-0 right-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -99,7 +85,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white py-16 relative overflow-hidden">
+      <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white pt-32 pb-16 relative overflow-hidden">
         {/* Background Video */}
         <video 
           autoPlay 
@@ -126,7 +112,6 @@ export default function Home() {
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
         
-        {isHeaderSticky && <div className="h-16"></div>}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -149,7 +134,6 @@ export default function Home() {
       <LatestBlog />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {isHeaderSticky && <div className="h-16 -mt-12"></div>}
         
         {/* E-Step Vergelijker Widget */}
         <section className="py-16 bg-gradient-to-br from-slate-50 to-orange-50 rounded-3xl">

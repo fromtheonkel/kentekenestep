@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# automated blog generation
+news-report.txt
+generation-summary.md
 
 # vercel
 .vercel
