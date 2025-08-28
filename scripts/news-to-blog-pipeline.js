@@ -18,8 +18,9 @@ const generateSlug = (title) => {
     .replace(/[^a-z0-9\s-]/g, '')
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
-    .substring(0, 60)
-    .replace(/^-|-$/g, '');
+    .substring(0, 80) // Increase limit
+    .replace(/^-|-$/g, '')
+    .replace(/-$/, ''); // Ensure no trailing dash
 };
 
 const calculateReadTime = (content) => {

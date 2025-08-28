@@ -53,7 +53,7 @@ export const blogArticles: BlogArticle[] = [
   {
     id: 1756418397936, // Temporary ID, should be replaced with proper ID management
     title: "Helmplicht E-bikes: Rampspoed of Redder voor de Nederlandse E-step Markt?",
-    slug: "helmplicht-e-bikes-rampspoed-of-redder-voor-de-nederlandse-e",
+    slug: "helmplicht-e-bikes-rampspoed-redder-nederlandse-estep-markt",
     excerpt: "Het recente voorstel voor een helmplicht voor e-bikes tot 18 jaar roept gemengde reacties op.  KentekenEstep.nl analyseert de impact op de Nederlandse e-step markt, inclusief de gevolgen voor de SELANA Alpha, RDW regelgeving, en de toekomst van micromobiliteit.  De analyse duikt in de prijsimplicaties, potentiële boetes en geeft praktisch advies aan huidige en toekomstige e-step eigenaren.  De vraag is: lost een helmplicht het kernprobleem op, of creëert het nieuwe uitdagingen?",
     author: "Iwan",
     date: "2025-08-28",
