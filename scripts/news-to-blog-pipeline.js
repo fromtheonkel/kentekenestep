@@ -67,7 +67,7 @@ const fetchArticleContent = async (url) => {
 
 const generateAnalysisArticle = async (newsArticle) => {
   const model = genAI.getGenerativeModel({ 
-    model: "gemini-2.0-flash-exp",
+    model: "gemini-1.5-flash",
     generationConfig: {
       temperature: 0.7,
       topP: 0.8,
@@ -156,7 +156,12 @@ Retourneer JSON format:
 
   try {
     const response = await model.generateContent(analysisPrompt);
-    const result = JSON.parse(response.response.text());
+    const responseText = response.response.text().trim();
+    
+    // Clean up response - remove markdown code blocks if present
+    const cleanResponse = responseText.replace(/```json\s*|\s*```/g, '').trim();
+    
+    const result = JSON.parse(cleanResponse);
     
     return {
       ...result,
