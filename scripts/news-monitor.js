@@ -38,6 +38,11 @@ const RSS_SOURCES = [
 // Fallback manual news sources with working selectors
 const MANUAL_SOURCES = [
   {
+    name: 'RDW Nieuws 2025',
+    url: 'https://www.rdw.nl/nieuws/2025/',
+    selector: 'article h2 a, .article-title a, h3 a, .news-item a'
+  },
+  {
     name: 'NOS Homepage',
     url: 'https://nos.nl',
     selector: 'article h2 a, .list-item h2 a, .article-title a'
@@ -125,9 +130,16 @@ const extractArticles = (html, source) => {
       const href = element.getAttribute('href');
       
       if (title && href && title.length > 10) {
-        const url = href.startsWith('http') ? href : 
-                   href.startsWith('/') ? `https://${source.name.toLowerCase().includes('nos') ? 'nos.nl' : 'nu.nl'}${href}` : 
-                   `https://${source.name.toLowerCase().includes('nos') ? 'nos.nl' : 'nu.nl'}/${href}`;
+        let url = href;
+        if (!href.startsWith('http')) {
+          if (source.name.includes('RDW')) {
+            url = href.startsWith('/') ? `https://www.rdw.nl${href}` : `https://www.rdw.nl/${href}`;
+          } else if (source.name.includes('NOS')) {
+            url = href.startsWith('/') ? `https://nos.nl${href}` : `https://nos.nl/${href}`;
+          } else {
+            url = href.startsWith('/') ? `https://www.nu.nl${href}` : `https://www.nu.nl/${href}`;
+          }
+        }
                    
         articles.push({
           title,
