@@ -11,41 +11,41 @@ config({ path: '.env.local' });
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-const NEWS_SOURCES = [
+// RSS feeds are more reliable than HTML scraping
+const RSS_SOURCES = [
   {
-    name: 'NU.nl',
-    urls: [
-      'https://www.nu.nl/zoeken?q=rdw+goedgekeurde+step',
-      'https://www.nu.nl/zoeken?q=e-step+rdw',
-      'https://www.nu.nl/zoeken?q=elektrische+step+rdw',
-      'https://www.nu.nl/zoeken?q=elektrische+step'
-    ],
-    selector: 'article, .list-item, .article'
+    name: 'NU.nl Binnenland',
+    url: 'https://www.nu.nl/rss/Binnenland',
+    type: 'rss'
   },
   {
-    name: 'NOS.nl', 
-    urls: [
-      'https://nos.nl/zoeken?q=rdw+step',
-      'https://nos.nl/zoeken?q=e-step+rdw',
-      'https://nos.nl/zoeken?q=elektrische+step+rdw',
-      'https://nos.nl/zoeken?q=e-step'
-    ],
-    selector: '.search-result-item, article, .article'
+    name: 'NOS Binnenland', 
+    url: 'https://feeds.nos.nl/nosnieuwsbinnenland',
+    type: 'rss'
   },
   {
-    name: 'AD.nl',
-    urls: [
-      'https://www.ad.nl/zoeken?q=rdw+goedgekeurde+step',
-      'https://www.ad.nl/zoeken?q=e-step+rdw',
-      'https://www.ad.nl/zoeken?q=elektrische+step+rdw',
-      'https://www.ad.nl/zoeken?q=elektrische+step'
-    ],
-    selector: '.teaser, article, .article'
+    name: 'RTL Nieuws',
+    url: 'https://www.rtlnieuws.nl/rss.xml',
+    type: 'rss'
   },
   {
-    name: 'Rijksoverheid',
-    url: 'https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg',
-    selector: '.news-item, article'
+    name: 'Telegraaf Binnenland',
+    url: 'https://www.telegraaf.nl/rss/binnenland',
+    type: 'rss'
+  }
+];
+
+// Fallback manual news sources with working selectors
+const MANUAL_SOURCES = [
+  {
+    name: 'NOS Homepage',
+    url: 'https://nos.nl',
+    selector: 'article h2 a, .list-item h2 a, .article-title a'
+  },
+  {
+    name: 'NU.nl Homepage',
+    url: 'https://www.nu.nl',
+    selector: 'article h2 a, .list-item h2 a, h3 a'
   }
 ];
 
@@ -76,35 +76,66 @@ const fetchPage = (url) => {
   });
 };
 
+const parseRSSFeed = (xml, source) => {
+  try {
+    const dom = new JSDOM(xml, { contentType: 'text/xml' });
+    const document = dom.window.document;
+    
+    const articles = [];
+    const items = document.querySelectorAll('item');
+    
+    items.forEach((item, index) => {
+      if (index >= 20) return; // Limit to first 20 per RSS feed
+      
+      const title = item.querySelector('title')?.textContent?.trim();
+      const link = item.querySelector('link')?.textContent?.trim();
+      const description = item.querySelector('description')?.textContent?.trim();
+      const pubDate = item.querySelector('pubDate')?.textContent?.trim();
+      
+      if (title && link) {
+        articles.push({
+          title,
+          url: link,
+          summary: description?.replace(/<[^>]*>/g, '').substring(0, 200) || '', // Strip HTML tags
+          date: pubDate || '',
+          source: source.name
+        });
+      }
+    });
+    
+    return articles;
+  } catch (error) {
+    console.error(`Error parsing RSS from ${source.name}:`, error.message);
+    return [];
+  }
+};
+
 const extractArticles = (html, source) => {
   try {
     const dom = new JSDOM(html);
     const document = dom.window.document;
     
     const articles = [];
-    const elements = document.querySelectorAll('article, .article, .news-item, .teaser, .list-item');
+    const elements = document.querySelectorAll(source.selector);
     
     elements.forEach((element, index) => {
-      if (index >= 10) return; // Limit to first 10 per source
+      if (index >= 15) return; // Limit to first 15 per source
       
-      const titleEl = element.querySelector('h1, h2, h3, h4, .title, .headline, a[title]');
-      const linkEl = element.querySelector('a[href]') || titleEl?.closest('a');
-      const summaryEl = element.querySelector('.summary, .excerpt, .intro, p');
-      const dateEl = element.querySelector('time, .date, .timestamp');
+      const title = element.textContent?.trim();
+      const href = element.getAttribute('href');
       
-      if (titleEl && linkEl) {
-        const title = titleEl.textContent?.trim();
-        const href = linkEl.getAttribute('href');
-        
-        if (title && href) {
-          articles.push({
-            title,
-            url: href.startsWith('http') ? href : `https://${source.name.toLowerCase().replace('.nl', '')}.nl${href}`,
-            summary: summaryEl?.textContent?.trim()?.substring(0, 200) || '',
-            date: dateEl?.textContent?.trim() || '',
-            source: source.name
-          });
-        }
+      if (title && href && title.length > 10) {
+        const url = href.startsWith('http') ? href : 
+                   href.startsWith('/') ? `https://${source.name.toLowerCase().includes('nos') ? 'nos.nl' : 'nu.nl'}${href}` : 
+                   `https://${source.name.toLowerCase().includes('nos') ? 'nos.nl' : 'nu.nl'}/${href}`;
+                   
+        articles.push({
+          title,
+          url,
+          summary: '',
+          date: '',
+          source: source.name
+        });
       }
     });
     
@@ -163,32 +194,42 @@ const monitorNews = async () => {
   
   const allArticles = [];
   
-  for (const source of NEWS_SOURCES) {
-    console.log(`📡 Fetching from ${source.name}...`);
-    let sourceArticles = [];
-    
-    // Handle sources with multiple URLs
-    const urls = source.urls || [source.url];
-    
-    for (const url of urls) {
-      try {
-        console.log(`   📡 Checking: ${url}`);
-        const html = await fetchPage(url);
-        const articles = extractArticles(html, source);
-        sourceArticles.push(...articles);
-        console.log(`   ✅ Gevonden: ${articles.length} artikelen`);
-        
-        // Add small delay to be respectful
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-      } catch (error) {
-        console.log(`   ❌ Fout: ${error.message}`);
-      }
+  // First try RSS feeds (more reliable)
+  console.log('📰 Fetching from RSS feeds...\n');
+  
+  for (const source of RSS_SOURCES) {
+    try {
+      console.log(`📡 ${source.name}...`);
+      const xml = await fetchPage(source.url);
+      const articles = parseRSSFeed(xml, source);
+      allArticles.push(...articles);
+      console.log(`   ✅ Gevonden: ${articles.length} artikelen`);
+      
+      // Add delay to be respectful
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+    } catch (error) {
+      console.log(`   ❌ RSS fout: ${error.message}`);
     }
-    
-    console.log(`📊 ${source.name} totaal: ${sourceArticles.length} artikelen`);
-    allArticles.push(...sourceArticles);
-    console.log('');
+  }
+  
+  console.log(`\n📊 RSS totaal: ${allArticles.length} artikelen`);
+  console.log('\n📰 Fetching from manual sources...\n');
+  
+  // Fallback to manual scraping
+  for (const source of MANUAL_SOURCES) {
+    try {
+      console.log(`📡 ${source.name}...`);
+      const html = await fetchPage(source.url);
+      const articles = extractArticles(html, source);
+      allArticles.push(...articles);
+      console.log(`   ✅ Gevonden: ${articles.length} artikelen`);
+      
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+    } catch (error) {
+      console.log(`   ❌ Scraping fout: ${error.message}`);
+    }
   }
   
   console.log(`\n📊 Totaal gevonden: ${allArticles.length} artikelen`);
