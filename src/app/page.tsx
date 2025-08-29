@@ -2,7 +2,6 @@
 
 import React from 'react';
 import LatestBlog from '@/components/LatestBlog';
-import Header from '@/components/Header';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -58,8 +57,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen bg-gray-50">
-      <Header />
-
       {/* Hero Section */}
       <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white pt-32 pb-16 relative overflow-hidden">
         {/* Background Video */}
@@ -432,14 +429,14 @@ export default function Home() {
 
           {/* Call to Action */}
           <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 rounded-2xl text-white">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-8 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Wil je legaal en verzekerd op pad?</h3>
-              <p className="text-lg mb-6 text-orange-100">
+              <p className="text-lg mb-6 text-green-100">
                 Bekijk de vergelijker voor actuele prijzen en beschikbaarheid van RDW goedgekeurde elektrische steps
               </p>
               <Link 
                 href="/vergelijken"
-                className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+                className="bg-white text-green-600 hover:bg-green-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
               >
                 Vergelijk Elektrische Steps
               </Link>

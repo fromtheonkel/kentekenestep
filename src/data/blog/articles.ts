@@ -52,13 +52,13 @@ export const blogArticles: BlogArticle[] = [
   // 🆕 NEW ARTICLE - Add new articles here at the top
   {
     id: 9,
-    title: "Helmplicht E-Step Nederland: Wordt de Helm Ook Verplicht voor Jongeren?",
+    title: "Helmplicht e-step Nederland: wordt de helm ook verplicht voor jongeren?",
     slug: "helmplicht-e-step-nederland-jongeren-2027-tieman",
     excerpt: "Minister Tieman overweegt een helmplicht voor jongeren tot 18 jaar op e-steps om 'verschuivingseffecten' te voorkomen. Wat betekent dit voor de nog prille e-step markt in Nederland? Een analyse van de plannen en gevolgen.",
     author: "Iwan",
     date: "2025-08-28",
     category: "Nieuws",
-    tags: ["Helmplicht", "Jongeren", "Regelgeving", "Minister Tieman", "Veiligheid"],
+    tags: ["helmplicht", "jongeren", "regelgeving", "Minister Tieman", "veiligheid"],
     image: "/images/e-step-helm.webp",
     featured: true,
     readTime: "7 min",
@@ -85,56 +85,56 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 8,
-    title: "Nieuwe E-Scooter Regels Spanje vs Nederland: Wat Verandert Er?",
+    title: "Nieuwe e-scooter regels Spanje vs Nederland: wat verandert er?",
     slug: "nieuwe-e-scooter-regels-spanje-vs-nederland-wat-verandert-er",
     excerpt: "In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe regelgeving in voor elektrische scooters, maar de aanpak verschilt aanzienlijk.",
     author: "Iwan",
     date: "2025-08-25",
     category: "Nieuws",
-    tags: ["RDW", "Verzekering", "Kenteken", "Regelgeving", "Spanje"],
+    tags: ["RDW", "verzekering", "kenteken", "regelgeving", "Spanje"],
     image: "/images/spanje_estep.webp",
     featured: false,
     readTime: "5 min",
     published: true,
     content: `<p class="lead">In de wereld van elektrische mobiliteit staan zowel Spanje als Nederland voor belangrijke veranderingen in 2025 en 2026. Beide landen voeren nieuwe regelgeving in voor elektrische scooters en andere persoonlijke mobiliteitsmiddelen (PMV's), maar de aanpak verschilt aanzienlijk. Dit artikel analyseert de verschillen en overeenkomsten tussen beide landen.</p>
 
-<h2>Spanje: Revolutionaire Veranderingen in 2026</h2>
+<h2>Spanje: revolutionaire veranderingen in 2026</h2>
 
-<h3>De Nieuwe Wetgeving</h3>
+<h3>De nieuwe wetgeving</h3>
 
 <p>Vanaf januari 2026 wordt het verplicht om een wettelijke aansprakelijkheidsverzekering te hebben en je voertuig te registreren bij de DGT voor elektrische scooters in Spanje. Deze maatregel geldt voor alle voertuigen voor persoonlijke mobiliteit, waaronder:</p>
 
 <ul>
-<li>Elektrische scooters</li>
+<li>elektrische scooters</li>
 <li>Segways</li>
 <li>Monowheels</li>
 <li>Hoverboards</li>
 <li>Andere PMV's</li>
 </ul>
 
-<h3>Doelstellingen van de Spaanse Regelgeving</h3>
+<h3>Doelstellingen van de Spaanse regelgeving</h3>
 
 <p>Het doel is volgens de regering tweeledig: slachtoffers van ongevallen beschermen en voorkomen dat ze hulpeloos achterblijven als de bestuurder insolvent is, en het beheer van schadevergoedingen verbeteren.</p>
 
-<h3>Registratie en Identificatie</h3>
+<h3>Registratie en identificatie</h3>
 
 <p>De nieuwe wet voorziet ook in de oprichting van een openbaar register van scooters en eigenaars tegen 2 januari 2026. Eigenaren van elektrische steps zullen hun voertuigen ook moeten registreren bij de provinciale verkeersautoriteiten. Hier krijgen de steps een soort kentekenplaat of identificatienummer toegewezen.</p>
 
-<h3>Omvang van de Maatregel</h3>
+<h3>Omvang van de maatregel</h3>
 
 <p>Deze maatregel, die naar verwachting in 2026 in werking zal treden, zal van toepassing zijn op alle ongeveer vijf miljoen elektrische steps in Spanje.</p>
 
-<h2>Nederland: Gefaseerde Implementatie Sinds 2025</h2>
+<h2>Nederland: gefaseerde implementatie sinds 2025</h2>
 
-<h3>Huidige Nederlandse Regels</h3>
+<h3>Huidige Nederlandse regels</h3>
 
 <p>Nederland heeft al een voorsprong genomen met regelgeving voor elektrische steps. U moet de e-step verzekeren voor wettelijke aansprakelijkheid (WA). U plakt de sticker van de verzekeraar op de e-step.</p>
 
-<h3>Kentekenplicht Timeline</h3>
+<h3>Kentekenplicht timeline</h3>
 
 <p>Sinds 1 juli 2025 hebben e-steps een kenteken nodig. Dit geldt ook voor alle andere bijzondere bromfietsen. Voor bestaande voertuigen geldt: Goedgekeurde e-steps van vóór 1 juli 2025 hebben vanaf 1 juli 2026 een kenteken nodig.</p>
 
-<h3>Goedkeuring: Het Cruciale Verschil</h3>
+<h3>Goedkeuring: het cruciale verschil</h3>
 
 <p>Een belangrijk punt in Nederland is dat de meeste steps zonder trapondersteuning zijn niet goedgekeurd. Daar mag u niet mee rijden op de weg. Let op: de meeste e-steps die worden aangeboden, zijn niet goedgekeurd. Een kenteken aanvragen voor een niet-goedgekeurde e-step is niet mogelijk.</p>
 
@@ -173,29 +173,29 @@ export const blogArticles: BlogArticle[] = [
     <li><strong>Spanje</strong>: Alles tegelijk vanaf januari 2026</li>
   </ul>
 </li>
-<li><strong>Voertuiggoedkeuring</strong>
+<li><strong>voertuiggoedkeuring</strong>
   <ul>
-    <li><strong>Nederland</strong>: Alleen goedgekeurde e-steps mogen de weg op, met strikte typegoedkeuring</li>
-    <li><strong>Spanje</strong>: Geen duidelijke typegoedkeuringsvereiste genoemd, focus ligt op registratie en verzekering</li>
+    <li><strong>Nederland</strong>: alleen goedgekeurde e-steps mogen de weg op, met strikte typegoedkeuring</li>
+    <li><strong>Spanje</strong>: geen duidelijke typegoedkeuringsvereiste genoemd, focus ligt op registratie en verzekering</li>
   </ul>
 </li>
-<li><strong>Boetes</strong>
+<li><strong>boetes</strong>
   <ul>
-    <li><strong>Nederland</strong>: De politie kan een boete geven. Of uw e-step in beslag nemen, met boetes rond de €340-350 voor niet-verzekerd zijn</li>
-    <li><strong>Spanje</strong>: Nog onduidelijk wat boetes zullen worden</li>
+    <li><strong>Nederland</strong>: de politie kan een boete geven. Of uw e-step in beslag nemen, met boetes rond de €340-350 voor niet-verzekerd zijn</li>
+    <li><strong>Spanje</strong>: nog onduidelijk wat boetes zullen worden</li>
   </ul>
 </li>
-<li><strong>Bestaande Voertuigen</strong>
+<li><strong>bestaande voertuigen</strong>
   <ul>
-    <li><strong>Nederland</strong>: Bestaande goedgekeurde e-steps krijgen uitstel tot juli 2026</li>
-    <li><strong>Spanje</strong>: Alle voertuigen moeten vanaf januari 2026 voldoen</li>
+    <li><strong>Nederland</strong>: bestaande goedgekeurde e-steps krijgen uitstel tot juli 2026</li>
+    <li><strong>Spanje</strong>: alle voertuigen moeten vanaf januari 2026 voldoen</li>
   </ul>
 </li>
 </ul>
 
-<h2>De Nederlandse Voorsprong</h2>
+<h2>De Nederlandse voorsprong</h2>
 
-<h3>Typegoedkeuring als Onderscheidend Element</h3>
+<h3>Typegoedkeuring als onderscheidend element</h3>
 
 <p>Het grootste verschil tussen beide landen ligt in de nadruk op typegoedkeuring. Nederland hanteert een striktere benadering waarbij alleen goedgekeurde voertuigen toegestaan zijn op de openbare weg. Dit betekent dat veel populaire importmodellen niet legaal gebruikt kunnen worden.</p>
 
@@ -204,8 +204,8 @@ export const blogArticles: BlogArticle[] = [
 <p>Deze verschillen hebben belangrijke gevolgen voor fabrikanten en consumenten:</p>
 
 <ul>
-<li><strong>Nederland</strong>: Beperkte keuze, maar garantie op veiligheid en legaliteit</li>
-<li><strong>Spanje</strong>: Mogelijk bredere keuze, maar onzekerheid over specifieke veiligheidsvereisten</li>
+<li><strong>Nederland</strong>: beperkte keuze, maar garantie op veiligheid en legaliteit</li>
+<li><strong>Spanje</strong>: mogelijk bredere keuze, maar onzekerheid over specifieke veiligheidsvereisten</li>
 </ul>
 
 <h2>Conclusie</h2>
@@ -218,18 +218,18 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 7,
-    title: "België verscherpt e-step controles na stijging ongevallen - Volgt Nederland?",
+    title: "België verscherpt e-step controles na stijging ongevallen - volgt Nederland?",
     slug: "belgi-verscherpt-e-step-controles-na-stijging-ongevallen-volgt-nederland",
-    excerpt: "De Belgische Minister van Consumentenbescherming kondigt strengere maatregelen aan na 62% stijging van e-step ongevallen. Nederland voert al jaren een striktere koers - volgen er meer restricties?",
+    excerpt: "De Belgische minister van Consumentenbescherming kondigt strengere maatregelen aan na 62% stijging van e-step ongevallen. Nederland voert al jaren een striktere koers - volgen er meer restricties?",
     author: "Iwan",
     date: "2025-08-24",
     category: "Nieuws",
-    tags: ["België", "Ongevallen", "Regelgeving", "Nederland", "E-step"],
+    tags: ["België", "ongevallen", "regelgeving", "Nederland", "e-step"],
     image: "/images/belgie-estep.png",
     featured: false,
     readTime: "5 min",
     published: true,
-    content: `<p class="lead">De Belgische Minister van Consumentenbescherming Rob Beenders heeft aangekondigd dat er strengere controles komen op de verkoop van elektrische steps na een zorgwekkende stijging van ongevallen. Nederland voert al jaren een striktere koers - wat betekent dit voor Nederlandse consumenten?</p>
+    content: `<p class="lead">De Belgische minister van Consumentenbescherming Rob Beenders heeft aangekondigd dat er strengere controles komen op de verkoop van elektrische steps na een zorgwekkende stijging van ongevallen. Nederland voert al jaren een striktere koers - wat betekent dit voor Nederlandse consumenten?</p>
 
 <h2>Alarmerende cijfers uit België</h2>
 
@@ -252,8 +252,8 @@ export const blogArticles: BlogArticle[] = [
 <p>Sinds 1 juli 2025 hebben e-steps een kenteken nodig. Dit geldt voor alle bijzondere bromfietsen. De kentekenplicht wordt gefaseerd ingevoerd:</p>
 
 <ul>
-<li>Nieuwe e-steps vanaf juli 2025: direct kenteken verplicht</li>
-<li>Goedgekeurde e-steps van vóór 1 juli 2025 hebben vanaf 1 juli 2026 een kenteken nodig</li>
+<li>nieuwe e-steps vanaf juli 2025: direct kenteken verplicht</li>
+<li>goedgekeurde e-steps van vóór 1 juli 2025 hebben vanaf 1 juli 2026 een kenteken nodig</li>
 </ul>
 
 <h2>Beperkt aanbod legale e-steps in Nederland</h2>
@@ -265,9 +265,9 @@ export const blogArticles: BlogArticle[] = [
 <p>Voor Nederlandse consumenten zijn de gevolgen van het rijden met een niet-goedgekeurde e-step aanzienlijk:</p>
 
 <ul>
-<li>De politie kan een boete geven of de e-step in beslag nemen</li>
-<li>Je bent niet verzekerd voor schade die je veroorzaakt bij anderen. Je aansprakelijkheidsverzekering dekt de schade niet</li>
-<li>Wie na 1 juli 2026 zonder kenteken op een elektrische step rijdt, riskeert een boete van honderden euro's</li>
+<li>de politie kan een boete geven of de e-step in beslag nemen</li>
+<li>je bent niet verzekerd voor schade die je veroorzaakt bij anderen. Je aansprakelijkheidsverzekering dekt de schade niet</li>
+<li>wie na 1 juli 2026 zonder kenteken op een elektrische step rijdt, riskeert een boete van honderden euro's</li>
 </ul>
 
 <h2>Verschillen in aanpak België vs Nederland</h2>
@@ -282,24 +282,24 @@ export const blogArticles: BlogArticle[] = [
 </thead>
 <tbody>
 <tr>
-<td className="border border-gray-300 px-4 py-2"><strong>Huidige situatie</strong></td>
-<td className="border border-gray-300 px-4 py-2">Veel e-steps legaal toegestaan</td>
-<td className="border border-gray-300 px-4 py-2">Zeer beperkt aantal toegestaan</td>
+<td className="border border-gray-300 px-4 py-2"><strong>huidige situatie</strong></td>
+<td className="border border-gray-300 px-4 py-2">veel e-steps legaal toegestaan</td>
+<td className="border border-gray-300 px-4 py-2">zeer beperkt aantal toegestaan</td>
 </tr>
 <tr>
-<td className="border border-gray-300 px-4 py-2"><strong>Nieuwe maatregelen</strong></td>
-<td className="border border-gray-300 px-4 py-2">Scherpere controles, mogelijk nummerplaten</td>
-<td className="border border-gray-300 px-4 py-2">Kentekenplicht al ingevoerd</td>
+<td className="border border-gray-300 px-4 py-2"><strong>nieuwe maatregelen</strong></td>
+<td className="border border-gray-300 px-4 py-2">scherpere controles, mogelijk nummerplaten</td>
+<td className="border border-gray-300 px-4 py-2">kentekenplicht al ingevoerd</td>
 </tr>
 <tr>
-<td className="border border-gray-300 px-4 py-2"><strong>Ongevallen trend</strong></td>
+<td className="border border-gray-300 px-4 py-2"><strong>ongevallen trend</strong></td>
 <td className="border border-gray-300 px-4 py-2">+62% in Q1 2025</td>
-<td className="border border-gray-300 px-4 py-2">Beperkte data door laag gebruik</td>
+<td className="border border-gray-300 px-4 py-2">beperkte data door laag gebruik</td>
 </tr>
 <tr>
-<td className="border border-gray-300 px-4 py-2"><strong>Regelgeving</strong></td>
-<td className="border border-gray-300 px-4 py-2">Reactief (na problemen)</td>
-<td className="border border-gray-300 px-4 py-2">Proactief (preventie-gericht)</td>
+<td className="border border-gray-300 px-4 py-2"><strong>regelgeving</strong></td>
+<td className="border border-gray-300 px-4 py-2">reactief (na problemen)</td>
+<td className="border border-gray-300 px-4 py-2">proactief (preventie-gericht)</td>
 </tr>
 </tbody>
 </table>
@@ -310,8 +310,8 @@ export const blogArticles: BlogArticle[] = [
 
 <ul>
 <li><strong>Nederland heeft al strengere regels</strong>: Nederland blijft achter op het gebied van e-step beschikbaarheid door de strikte regelgeving. Verhuurdiensten van e-steps, zoals Lime en Tier, zijn hier nog niet op grote schaal beschikbaar.</li>
-<li><strong>Andere problematiek</strong>: Terwijl België reageert op een stijging van ongevallen, probeert Nederland juist de markt gecontroleerd open te stellen met strikte veiligheidseisen vooraf.</li>
-<li><strong>Focus op toelating, niet handhaving</strong>: Met de aankomende regelgeving wordt een belangrijke stap gezet richting een veiligere en beter gereguleerde inzet van e-steps in Nederland.</li>
+<li><strong>andere problematiek</strong>: terwijl België reageert op een stijging van ongevallen, probeert Nederland juist de markt gecontroleerd open te stellen met strikte veiligheidseisen vooraf.</li>
+<li><strong>focus op toelating, niet handhaving</strong>: met de aankomende regelgeving wordt een belangrijke stap gezet richting een veiligere en beter gereguleerde inzet van e-steps in Nederland.</li>
 </ul>
 
 <h2>Conclusie voor Nederlandse consumenten</h2>
@@ -319,10 +319,10 @@ export const blogArticles: BlogArticle[] = [
 <p>Voor consumenten die een e-step overwegen, betekent dit:</p>
 
 <ol>
-<li><strong>Controleer altijd de toelating</strong>: Controleer of het model goedgekeurd is voor de openbare weg en vraag of de fabrikant of verkoper registratie bij de RDW aanbiedt</li>
-<li><strong>Reken op beperkte keuze</strong>: Het aanbod legale e-steps in Nederland blijft voorlopig zeer beperkt</li>
-<li><strong>Bereid je voor op kosten</strong>: Naast de aanschafprijs moet je rekenen op kentekenkosten (€18 voor bestaande modellen) en WA-verzekering</li>
-<li><strong>Geen versoepelingen verwacht</strong>: De Nederlandse aanpak lijkt eerder te leiden tot meer restricties dan minder</li>
+<li><strong>controleer altijd de toelating</strong>: controleer of het model goedgekeurd is voor de openbare weg en vraag of de fabrikant of verkoper registratie bij de RDW aanbiedt</li>
+<li><strong>reken op beperkte keuze</strong>: het aanbod legale e-steps in Nederland blijft voorlopig zeer beperkt</li>
+<li><strong>bereid je voor op kosten</strong>: naast de aanschafprijs moet je rekenen op kentekenkosten (€18 voor bestaande modellen) en WA-verzekering</li>
+<li><strong>geen versoepelingen verwacht</strong>: de Nederlandse aanpak lijkt eerder te leiden tot meer restricties dan minder</li>
 </ol>
 
 <p>De Belgische ontwikkelingen onderstrepen het belang van veiligheid bij e-steps, maar zullen waarschijnlijk niet leiden tot een koerswijziging in Nederland. Ons land kiest bewust voor een voorzichtige, veiligheid-gerichte aanpak die probeert problemen te voorkomen in plaats van te reageren op ontstane situaties.</p>
@@ -333,13 +333,13 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 6,
-    title: "E-step Ongeluk in Gouda: Wat Als De Step WEL Verzekerd Was Geweest?",
+    title: "E-step ongeluk in Gouda: wat als de step WEL verzekerd was geweest?",
     slug: "gouda-estep-vonnis-verzekering-analyse",
     excerpt: "Een recent vonnis uit Gouda toont de enorme financiële risico's van onverzekerde e-steps. Maar wat waren de gevolgen geweest als dezelfde tiener een goedgekeurde, verzekerde e-step had gebruikt? Een analyse van de rechtszaak en de nieuwe wetgeving.",
     author: "Iwan",
     date: "2025-08-24",
     category: "Nieuws", 
-    tags: ["Rechtszaak", "Verzekering", "Gouda", "Aansprakelijkheid", "RDW"],
+    tags: ["rechtszaak", "verzekering", "Gouda", "aansprakelijkheid", "RDW"],
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop&crop=center&q=80",
     featured: true,
     readTime: "8 min",
@@ -431,13 +431,13 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 2,
-    title: "RDW Regelgeving 2025: Wat je moet weten over kenteken en verzekering",
+    title: "RDW regelgeving 2025: wat je moet weten over kenteken en verzekering",
     slug: "rdw-regelgeving-2025-kenteken-verzekering",
     excerpt: "Een complete gids over de nieuwe RDW regelgeving voor e-steps in 2025. Van kenteken aanvragen tot verplichte verzekeringen - alles wat je moet weten.",
     author: "Iwan",
     date: "2025-08-02",
     category: "Regelgeving",
-    tags: ["RDW", "Kenteken", "Verzekering", "Wet", "2025"],
+    tags: ["RDW", "kenteken", "verzekering", "wet", "2025"],
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop&crop=center&q=80", // Legal documents/regulations
     featured: true,
     readTime: "5 min",
@@ -458,13 +458,13 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 3,
-    title: "Top 5 Illegale E-Steps: Wat je koopt maar niet mag rijden",
+    title: "Top 5 illegale e-steps: wat je koopt maar niet mag rijden",
     slug: "top-5-illegale-e-steps-2025",
     excerpt: "Een overzicht van de populairste e-steps die je overal kunt kopen, maar niet legaal mag gebruiken op Nederlandse wegen. Van Segway tot Xiaomi.",
     author: "Iwan", 
     date: "2025-07-28",
     category: "Reviews",
-    tags: ["Segway", "Xiaomi", "Illegaal", "Populair"],
+    tags: ["Segway", "Xiaomi", "illegaal", "populair"],
     image: "/images/segway-e2-pro.jpeg", // Segway e-scooter (popular but illegal)
     featured: false,
     readTime: "4 min",
@@ -482,13 +482,13 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 4,
-    title: "E-Step Verzekering: Complete gids voor 2025",
+    title: "E-step verzekering: complete gids voor 2025",
     slug: "e-step-verzekering-gids-2025",
     excerpt: "Alles over e-step verzekeringen: welke zijn verplicht, wat kosten ze, en waar kun je het beste terecht? Complete vergelijking van alle opties.",
     author: "Iwan",
     date: "2025-07-25",
     category: "Tips",
-    tags: ["Verzekering", "WA", "Kosten", "Vergelijking"],
+    tags: ["verzekering", "WA", "kosten", "vergelijking"],
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=400&fit=crop&crop=center&q=80", // Insurance/protection shield
     featured: false,
     readTime: "6 min", 
@@ -506,13 +506,13 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     id: 5,
-    title: "Kenteken Aanvragen: Stap-voor-stap handleiding",
+    title: "Kenteken aanvragen: stap-voor-stap handleiding",
     slug: "kenteken-aanvragen-e-step-handleiding",
     excerpt: "Een praktische handleiding voor het aanvragen van een kenteken voor je RDW-goedgekeurde e-step. Inclusief kosten, benodigde documenten en verwachte doorlooptijd.",
     author: "Iwan",
     date: "2025-07-20",
     category: "Tips", 
-    tags: ["Kenteken", "RDW", "Aanvragen", "Handleiding"],
+    tags: ["kenteken", "RDW", "aanvragen", "handleiding"],
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&crop=center&q=80", // Application process/forms
     featured: false,
     readTime: "4 min",
