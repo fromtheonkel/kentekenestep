@@ -28,20 +28,64 @@ export default function ContactPage() {
   const [generalSubmitted, setGeneralSubmitted] = useState(false);
   const [productSubmitted, setProductSubmitted] = useState(false);
 
-  const handleGeneralSubmit = (e: React.FormEvent) => {
+  const handleGeneralSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('General form submitted:', generalForm);
-    setGeneralSubmitted(true);
-    setTimeout(() => setGeneralSubmitted(false), 3000);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'general',
+          ...generalForm
+        }),
+      });
+
+      if (response.ok) {
+        setGeneralSubmitted(true);
+        setGeneralForm({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setGeneralSubmitted(false), 60000); // 1 minute
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Er is iets misgegaan. Probeer het later opnieuw of stuur een email naar iwanvandenenk@gmail.com');
+    }
   };
 
-  const handleProductSubmit = (e: React.FormEvent) => {
+  const handleProductSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Product form submitted:', productForm);
-    setProductSubmitted(true);
-    setTimeout(() => setProductSubmitted(false), 3000);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'product',
+          ...productForm
+        }),
+      });
+
+      if (response.ok) {
+        setProductSubmitted(true);
+        setProductForm({
+          companyName: '', contactPerson: '', email: '', phone: '', 
+          productName: '', rdwNumber: '', price: '', website: '', 
+          affiliateProgram: '', description: '', specifications: ''
+        });
+        setTimeout(() => setProductSubmitted(false), 60000); // 1 minute
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Er is iets misgegaan. Probeer het later opnieuw of stuur een email naar iwanvandenenk@gmail.com');
+    }
   };
 
   return (
@@ -89,24 +133,6 @@ export default function ContactPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        {/* Contact Info */}
-        <div className="text-center mb-12">
-          <div className="bg-white rounded-lg shadow border p-8 max-w-2xl mx-auto">
-            <div className="flex justify-center mb-4">
-              <div className="bg-blue-100 p-3 rounded-full">
-                <Mail className="h-8 w-8 text-blue-600" />
-              </div>
-            </div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Direct Contact</h2>
-            <p className="text-slate-600 mb-4">
-              Voor vragen, suggesties of samenwerking kunt u direct contact opnemen:
-            </p>
-            <div className="bg-slate-50 p-4 rounded-lg">
-              <p className="text-lg font-semibold text-slate-900">info@kentekenestep.nl</p>
-              <p className="text-sm text-slate-600 mt-1">Wij streven ernaar binnen 24 uur te reageren</p>
-            </div>
-          </div>
-        </div>
 
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
