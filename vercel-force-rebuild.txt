@@ -1,0 +1,13 @@
+Force Vercel rebuild - timestamp: 2025-08-29 15:30:00
+
+This file exists solely to trigger a fresh Vercel build and bypass cache issues.
+
+All changes should be deployed:
+- Mobile hamburger menu on homepage ✓
+- Contact form working with Resend emails ✓  
+- No direct contact section ✓
+- Single header (no duplication) ✓
+- 60 second success message ✓
+- Email to iwanvandenenk@gmail.com ✓
+
+DELETE THIS FILE AFTER SUCCESSFUL DEPLOYMENT
