@@ -49,7 +49,7 @@ const checkForDuplicates = async (newsArticle, analysisTitle) => {
     const newsKeywords = [
       ...newsArticle.title.toLowerCase().split(/\s+/).filter(w => w.length > 3),
       ...(newsArticle.keywords || []).map(k => k.toLowerCase()),
-      'helmplicht', 'e-step', 'e-bike', 'rdw'
+      'helmplicht', 'elektrische step', 'e-step', 'e-bike', 'rdw'
     ].filter((v, i, arr) => arr.indexOf(v) === i); // unique
     
     const analysisKeywords = analysisTitle.toLowerCase().split(/\s+/).filter(w => w.length > 3);
@@ -71,7 +71,7 @@ const checkForDuplicates = async (newsArticle, analysisTitle) => {
         existingKeywords.some(ek => ek.includes(k) || k.includes(ek))
       ).length;
       
-      if (keywordOverlap >= 2 && (existingTitle.includes('helmplicht') || existingTitle.includes('e-step'))) {
+      if (keywordOverlap >= 2 && (existingTitle.includes('helmplicht') || existingTitle.includes('elektrische step') || existingTitle.includes('e-step'))) {
         return {
           isDuplicate: true,
           reason: `Similar topic covered recently: "${existingTitle}"`,
@@ -162,7 +162,7 @@ const generateAnalysisArticle = async (newsArticle) => {
   }
 
   const analysisPrompt = `
-Je bent een expert Nederlandse e-step journalist voor KentekenEstep.nl. Schrijf een diepgaande analyse artikel gebaseerd op dit nieuws:
+Je bent een expert Nederlandse elektrische step journalist voor KentekenEstep.nl. Schrijf een diepgaande analyse artikel gebaseerd op dit nieuws:
 
 ORIGINEEL NIEUWS:
 Titel: ${newsArticle.title}
@@ -179,7 +179,7 @@ STRUCTUUR VEREISTEN:
    - Vermeld de bron
 
 2. NEDERLANDSE CONTEXT (2-3 alineas)  
-   - Plaats in Nederlandse e-step markt context
+   - Plaats in Nederlandse elektrische step markt context
    - Relatie tot SELANA Alpha (€1.900, enige goedgekeurde model)
    - RDW regelgeving, kenteken, verzekering (€6/maand)
    - Vergelijking met huidige situatie
@@ -214,7 +214,7 @@ TECHNISCHE VEREISTEN:
 STIJL:
 - Analytisch maar toegankelijk
 - Feitelijk met onderbouwing
-- Nederlandse e-step focus
+- Nederlandse elektrische step focus (gebruik "elektrische step" als primaire term, "e-step" als variatie)
 - Vergelijkingen met EU waar relevant
 
 Retourneer JSON format:

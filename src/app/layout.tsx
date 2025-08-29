@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Nederland 2025',
-  description: "✓ Officiële RDW goedgekeurde e-steps ✓ Verzekeringsinformatie ✓ Kenteken & regelgeving ✓ Boetes vermijden ✓ SELANA Alpha €1.900 ✓ Legaal op fietspad rijden",
-  keywords: "RDW goedgekeurde e-step, elektrische step Nederland, e-step verzekering, e-step kenteken, SELANA Alpha, e-step boete, legale e-step, e-step regelgeving 2025",
+  title: 'KentekenEstep.nl - RDW Goedgekeurde Elektrische Steps Nederland 2025',
+  description: "✓ Officiële RDW goedgekeurde elektrische steps ✓ Verzekeringsinformatie ✓ Kenteken & regelgeving ✓ Boetes vermijden ✓ SELANA Alpha €1.900 ✓ Legaal op fietspad rijden",
+  keywords: "elektrische step Nederland, RDW goedgekeurde elektrische step, elektrische step verzekering, elektrische step kenteken, e-step, SELANA Alpha, elektrische step boete, legale elektrische step, elektrische step regelgeving 2025",
   openGraph: {
-    title: 'KentekenEstep.nl - RDW Goedgekeurde E-Steps Nederland 2025',
-    description: 'Alles over legale e-steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen. SELANA Alpha €1.900.',
+    title: 'KentekenEstep.nl - RDW Goedgekeurde Elektrische Steps Nederland 2025',
+    description: 'Alles over legale elektrische steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen. SELANA Alpha €1.900.',
     url: 'https://kentekenestep.nl',
     siteName: 'KentekenEstep.nl',
     locale: 'nl_NL',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RDW Goedgekeurde E-Steps Nederland 2025',
-    description: 'Vergelijk legale e-steps, verzekeringen en regelgeving. SELANA Alpha €1.900.',
+    title: 'RDW Goedgekeurde Elektrische Steps Nederland 2025',
+    description: 'Vergelijk legale elektrische steps, verzekeringen en regelgeving. SELANA Alpha €1.900.',
     images: ['https://kentekenestep.nl/logo_estep_rdw.svg'],
   },
   robots: {

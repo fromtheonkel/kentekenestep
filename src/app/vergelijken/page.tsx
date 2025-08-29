@@ -223,7 +223,7 @@ export default function VergelijkenPage() {
         {/* Page Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            E-Step Vergelijker
+            Elektrische Step Vergelijker
           </h1>
           <p className="text-xl text-slate-600">
             Vergelijk alle e-steps en vind het perfecte model voor jouw situatie

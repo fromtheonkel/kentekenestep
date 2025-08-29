@@ -170,7 +170,7 @@ Samenvatting: ${article.summary}
 Bron: ${article.source}
 
 Relevant als het gaat over:
-- E-steps, elektrische steps, e-scooters, step, elektrische mobiliteit
+- Elektrische steps, e-steps, e-scooters, step, elektrische mobiliteit
 - Nederlandse regelgeving (RDW, kenteken, verzekering, boetes)
 - Europese micromobiliteit regelgeving
 - Nieuwe e-step modellen/merken (SELANA, NIU, Segway, etc.)

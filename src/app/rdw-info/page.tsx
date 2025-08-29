@@ -121,7 +121,7 @@ const RDWInfoPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Shield className="w-16 h-16 text-blue-400 mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            RDW E-Step Regelgeving
+            RDW Elektrische Step Regelgeving
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-slate-200">
             Alles wat je moet weten over legale elektrische steps in Nederland

@@ -115,7 +115,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              E-Steps met <span className="text-orange-400">goedkeuring!</span>
+              Elektrische Steps met <span className="text-orange-400">RDW Goedkeuring!</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
               Een overzicht van goedgekeurde E-Steps waarmee je nu of binnenkort het fietspad mee op mag

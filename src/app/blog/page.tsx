@@ -33,7 +33,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              E-Step <span className="text-orange-400">Blog</span>
+              Elektrische Step <span className="text-orange-400">Blog</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
               Laatste nieuws, reviews en informatie over RDW goedgekeurde e-steps
