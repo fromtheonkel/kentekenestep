@@ -23,26 +23,26 @@ export default function Home() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Welke e-steps zijn toegestaan in Nederland?",
+          "name": "Welke elektrische steps zijn toegestaan in Nederland?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Alleen door de RDW goedgekeurde e-steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900)."
+            "text": "Alleen door de RDW goedgekeurde elektrische steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900)."
           }
         },
         {
           "@type": "Question", 
-          "name": "Is een verzekering verplicht voor e-steps?",
+          "name": "Is een verzekering verplicht voor elektrische steps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ja, een WA-verzekering is verplicht voor alle e-steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand."
+            "text": "Ja, een WA-verzekering is verplicht voor alle elektrische steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand."
           }
         },
         {
           "@type": "Question",
-          "name": "Heb ik een rijbewijs nodig voor een e-step?", 
+          "name": "Heb ik een rijbewijs nodig voor een elektrische step?", 
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Voor RDW goedgekeurde e-steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook rijden."
+            "text": "Voor RDW goedgekeurde elektrische steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook rijden."
           }
         }
       ]
@@ -77,7 +77,7 @@ export default function Home() {
               <Link href="/" className="text-slate-600 hover:text-slate-800 font-semibold">Home</Link>
               <Link href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</Link>
               <Link href="/blog" className="text-slate-600 hover:text-slate-800">Blog</Link>
-              <Link href="/rdw-info" className="text-slate-600 hover:text-slate-800">E-Step Regelgeving</Link>
+              <Link href="/rdw-info" className="text-slate-600 hover:text-slate-800">Elektrische Step Regelgeving</Link>
               <Link href="/contact" className="text-slate-600 hover:text-slate-800">Contact</Link>
             </nav>
           </div>
@@ -118,13 +118,13 @@ export default function Home() {
               Elektrische Steps met <span className="text-orange-400">RDW Goedkeuring!</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
-              Een overzicht van goedgekeurde E-Steps waarmee je nu of binnenkort het fietspad mee op mag
+              Een overzicht van goedgekeurde elektrische steps waarmee je nu of binnenkort het fietspad mee op mag
             </p>
             <Link 
               href="/vergelijken"
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
             >
-              Vergelijk E-Steps
+              Vergelijk Elektrische Steps
             </Link>
           </div>
         </div>
@@ -143,11 +143,11 @@ export default function Home() {
                 {/* Left Side - Content */}
                 <div className="lg:w-3/5 p-8 lg:p-12">
                   <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                    RDW Goedgekeurde E-Steps
+                    RDW Goedgekeurde Elektrische Steps
                   </h2>
                   
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    E-steps zijn ideaal voor de laatste mile. Van huis naar de trein, van de trein naar kantoor, even bij vrienden langs op iets meer dan loopafstand. Om het veilig te houden heb je in Nederland een door het RDW goedgekeurde step nodig om legaal het fietspad op te gaan.
+                    Elektrische steps zijn ideaal voor de laatste mile. Van huis naar de trein, van de trein naar kantoor, even bij vrienden langs op iets meer dan loopafstand. Om het veilig te houden heb je in Nederland een door het RDW goedgekeurde elektrische step nodig om legaal het fietspad op te gaan.
                   </p>
                   
                   <div className="space-y-4 mb-8">
@@ -204,7 +204,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-slate-900">SELANA Alpha</h3>
-                        <p className="text-slate-600">Eerste RDW Goedgekeurde E-Step</p>
+                        <p className="text-slate-600">Eerste RDW Goedgekeurde Elektrische Step</p>
                       </div>
                     </div>
                     
@@ -282,15 +282,15 @@ export default function Home() {
         </section>
       </div>
 
-      {/* SEO Rich Content - Nederlandse E-Step Regelgeving */}
+      {/* SEO Rich Content - Nederlandse Elektrische Step Regelgeving */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              E-Step Regelgeving <span className="text-orange-500">Nederland 2025</span>
+              Elektrische Step Regelgeving <span className="text-orange-500">Nederland 2025</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Alles wat je moet weten over legale e-steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen
+              Alles wat je moet weten over legale elektrische steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen
             </p>
           </div>
 
@@ -304,14 +304,14 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  Legale E-Steps in Nederland
+                  Legale Elektrische Steps in Nederland
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-semibold text-green-900">RDW Typegoedkeuring Verplicht</h4>
-                      <p className="text-green-700">Alleen door RDW goedgekeurde e-steps mogen op openbare wegen rijden sinds juli 2025</p>
+                      <p className="text-green-700">Alleen door RDW goedgekeurde elektrische steps mogen op openbare wegen rijden sinds juli 2025</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -325,7 +325,7 @@ export default function Home() {
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-semibold text-green-900">Kenteken Nodig</h4>
-                      <p className="text-green-700">Alle nieuwe e-steps hebben vanaf juli 2025 een kenteken nodig, bestaande tot juli 2026</p>
+                      <p className="text-green-700">Alle nieuwe elektrische steps hebben vanaf juli 2025 een kenteken nodig, bestaande tot juli 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -373,7 +373,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  RDW Goedgekeurde E-Steps (2025)
+                  RDW Goedgekeurde Elektrische Steps (2025)
                 </h3>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-200 mb-6">
@@ -428,7 +428,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900">Juli 2025</h4>
-                      <p className="text-slate-600 text-sm">Kentekenplicht van kracht voor nieuwe e-steps</p>
+                      <p className="text-slate-600 text-sm">Kentekenplicht van kracht voor nieuwe elektrische steps</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -437,7 +437,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900">Juli 2026</h4>
-                      <p className="text-slate-600 text-sm">Deadline kenteken voor bestaande goedgekeurde e-steps</p>
+                      <p className="text-slate-600 text-sm">Deadline kenteken voor bestaande goedgekeurde elektrische steps</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -446,7 +446,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900">Sinds 2024</h4>
-                      <p className="text-slate-600 text-sm">WA-verzekering al verplicht voor alle e-steps</p>
+                      <p className="text-slate-600 text-sm">WA-verzekering al verplicht voor alle elektrische steps</p>
                     </div>
                   </div>
                 </div>
@@ -459,13 +459,13 @@ export default function Home() {
             <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-8 rounded-2xl text-white">
               <h3 className="text-2xl font-bold mb-4">Wil je legaal en verzekerd op pad?</h3>
               <p className="text-lg mb-6 text-orange-100">
-                Bekijk de vergelijker voor actuele prijzen en beschikbaarheid van RDW goedgekeurde e-steps
+                Bekijk de vergelijker voor actuele prijzen en beschikbaarheid van RDW goedgekeurde elektrische steps
               </p>
               <Link 
                 href="/vergelijken"
                 className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
               >
-                Vergelijk E-Steps
+                Vergelijk Elektrische Steps
               </Link>
             </div>
           </div>
@@ -481,36 +481,36 @@ export default function Home() {
               Veelgestelde <span className="text-orange-500">Vragen</span>
             </h2>
             <p className="text-xl text-slate-600">
-              De belangrijkste vragen over e-steps in Nederland beantwoord
+              De belangrijkste vragen over elektrische steps in Nederland beantwoord
             </p>
           </div>
 
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Welke e-steps zijn toegestaan in Nederland?</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Welke elektrische steps zijn toegestaan in Nederland?</h3>
               <p className="text-slate-600 leading-relaxed">
-                Alleen door de RDW goedgekeurde e-steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900). NIU, Segway en andere merken werken aan goedkeuring voor hun modellen.
+                Alleen door de RDW goedgekeurde elektrische steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900). NIU, Segway en andere merken werken aan goedkeuring voor hun modellen.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Is een verzekering verplicht voor e-steps?</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Is een verzekering verplicht voor elektrische steps?</h3>
               <p className="text-slate-600 leading-relaxed">
-                Ja, een WA-verzekering is verplicht voor alle e-steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand. Zonder verzekering riskeer je een boete van €340-350 en persoonlijke aansprakelijkheid voor alle schade.
+                Ja, een WA-verzekering is verplicht voor alle elektrische steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand. Zonder verzekering riskeer je een boete van €340-350 en persoonlijke aansprakelijkheid voor alle schade.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Heb ik een rijbewijs nodig voor een e-step?</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Heb ik een rijbewijs nodig voor een elektrische step?</h3>
               <p className="text-slate-600 leading-relaxed">
-                Voor RDW goedgekeurde e-steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook op een RDW goedgekeurde e-step rijden.
+                Voor RDW goedgekeurde elektrische steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook op een RDW goedgekeurde elektrische step rijden.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-slate-900 mb-3">Wanneer heb ik een kenteken nodig?</h3>
               <p className="text-slate-600 leading-relaxed">
-                Nieuwe e-steps hebben sinds juli 2025 een kenteken nodig. Voor bestaande goedgekeurde e-steps geldt een uitstel tot juli 2026. Het kenteken wordt geregeld door de dealer bij aankoop.
+                Nieuwe elektrische steps hebben sinds juli 2025 een kenteken nodig. Voor bestaande goedgekeurde elektrische steps geldt een uitstel tot juli 2026. Het kenteken wordt geregeld door de dealer bij aankoop.
               </p>
             </div>
 
@@ -522,9 +522,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Waar mag ik rijden met een RDW goedgekeurde e-step?</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Waar mag ik rijden met een RDW goedgekeurde elektrische step?</h3>
               <p className="text-slate-600 leading-relaxed">
-                Met een RDW goedgekeurde e-step mag je op fietspaden, fietsstroken en wegen waar maximaal 50 km/h geldt. Je mag NIET op de stoep, in voetgangerszones of op snelwegen rijden.
+                Met een RDW goedgekeurde elektrische step mag je op fietspaden, fietsstroken en wegen waar maximaal 50 km/h geldt. Je mag NIET op de stoep, in voetgangerszones of op snelwegen rijden.
               </p>
             </div>
           </div>
@@ -545,7 +545,7 @@ export default function Home() {
         <section className="mt-16 bg-slate-700 text-white rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Blijf op de hoogte</h2>
           <p className="text-xl text-slate-200 mb-8">
-            Ontvang de laatste updates over RDW goedkeuringen en e-step regelgeving
+            Ontvang de laatste updates over RDW goedkeuringen en elektrische step regelgeving
           </p>
           
           <div className="max-w-md mx-auto">
@@ -590,7 +590,7 @@ export default function Home() {
             <div>
               <div className="text-xl font-bold mb-4">KentekenEstep.nl</div>
               <p className="text-slate-400">
-                Onafhankelijke informatie over e-steps en RDW regelgeving
+                Onafhankelijke informatie over elektrische steps en RDW regelgeving
               </p>
             </div>
             <div>
@@ -605,7 +605,7 @@ export default function Home() {
               <h3 className="font-semibold mb-4">Informatie</h3>
               <ul className="space-y-2 text-slate-400">
                 <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-                <li><Link href="/rdw-info" className="hover:text-white">E-Step Regelgeving</Link></li>
+                <li><Link href="/rdw-info" className="hover:text-white">Elektrische Step Regelgeving</Link></li>
                 <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
