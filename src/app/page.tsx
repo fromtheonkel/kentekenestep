@@ -2,6 +2,7 @@
 
 import React from 'react';
 import LatestBlog from '@/components/LatestBlog';
+import Header from '@/components/Header';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -57,32 +58,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen bg-gray-50">
-      {/* Header - Always Fixed */}
-      <header className="bg-white shadow-sm border-b fixed top-0 left-0 right-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="flex items-center gap-3">
-                <Image 
-                  src="/logo_estep_rdw.svg" 
-                  alt="KentekenEstep.nl Logo" 
-                  width={40} 
-                  height={40} 
-                  className="h-10 w-auto"
-                />
-                <div className="text-2xl font-bold text-slate-700">KentekenEstep.nl</div>
-              </div>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-slate-600 hover:text-slate-800 font-semibold">Home</Link>
-              <Link href="/vergelijken" className="text-slate-600 hover:text-slate-800">Vergelijken</Link>
-              <Link href="/blog" className="text-slate-600 hover:text-slate-800">Blog</Link>
-              <Link href="/rdw-info" className="text-slate-600 hover:text-slate-800">Elektrische Step Regelgeving</Link>
-              <Link href="/contact" className="text-slate-600 hover:text-slate-800">Contact</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="hero-section bg-gradient-to-br from-slate-700 to-slate-900 text-white pt-32 pb-16 relative overflow-hidden">

@@ -43,7 +43,7 @@ export default function Header() {
               href="/rdw-info" 
               className="text-slate-600 hover:text-slate-800 transition-colors"
             >
-              E-Step Regelgeving
+              Elektrische Step Regelgeving
             </Link>
             <Link 
               href="/blog" 
@@ -95,7 +95,7 @@ export default function Header() {
                 className="block px-3 py-2 text-slate-600 hover:text-slate-800"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                E-Step Regelgeving
+                Elektrische Step Regelgeving
               </Link>
               <Link 
                 href="/blog" 
