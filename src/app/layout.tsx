@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     siteName: 'KentekenEstep.nl',
     locale: 'nl_NL',
     type: 'website',
+    images: [
+      {
+        url: 'https://kentekenestep.nl/logo_estep_rdw.svg',
+        width: 512,
+        height: 512,
+        alt: 'KentekenEstep.nl Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'RDW Goedgekeurde E-Steps Nederland 2025',
     description: 'Vergelijk legale e-steps, verzekeringen en regelgeving. SELANA Alpha €1.900.',
+    images: ['https://kentekenestep.nl/logo_estep_rdw.svg'],
   },
   robots: {
     index: true,
@@ -47,6 +56,13 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo_estep_rdw.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/logo_estep_rdw.svg', sizes: '180x180', type: 'image/svg+xml' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/logo_estep_rdw.svg', color: '#000000' },
     ],
   },
 };
