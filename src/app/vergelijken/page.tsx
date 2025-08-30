@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { Search, Filter, Zap, Battery, Weight, CheckCircle, AlertTriangle, ExternalLink, ChevronDown, ChevronUp, Star, RotateCcw } from 'lucide-react';
 
 export default function VergelijkenPage() {
@@ -287,9 +288,14 @@ export default function VergelijkenPage() {
                       </div>
                     )}
                     
-                    <button className="w-full bg-slate-700 text-white py-2 rounded hover:bg-slate-800 transition-colors">
-                      Bekijk Details
-                    </button>
+                    {scooter.isRDWApproved && (
+                      <Link 
+                        href="/selana-alpha"
+                        className="block w-full bg-slate-700 text-white py-2 rounded hover:bg-slate-800 transition-colors text-center"
+                      >
+                        Bekijk Details
+                      </Link>
+                    )}
                   </div>
                 ))}
               </div>
@@ -573,22 +579,27 @@ export default function VergelijkenPage() {
                       </div>
                     </div>
 
-                    <div className="flex gap-3">
-                      <button className="flex-1 bg-slate-700 text-white py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors">
-                        Details
-                      </button>
-                      {scooter.affiliate && (
-                        <a 
-                          href={scooter.affiliate}
-                          target="_blank"
-                          rel="nofollow noopener"
-                          className="px-4 py-2 border border-orange-500 text-orange-600 rounded-lg hover:bg-orange-50 transition-colors flex items-center gap-1"
+                    {scooter.isRDWApproved && (
+                      <div className="flex gap-3">
+                        <Link 
+                          href="/selana-alpha"
+                          className="flex-1 bg-slate-700 text-white py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors text-center"
                         >
-                          <ExternalLink className="w-4 h-4" />
-                          Kopen
-                        </a>
-                      )}
-                    </div>
+                          Details
+                        </Link>
+                        {scooter.affiliate && (
+                          <a 
+                            href={scooter.affiliate}
+                            target="_blank"
+                            rel="nofollow noopener"
+                            className="px-4 py-2 border border-orange-500 text-orange-600 rounded-lg hover:bg-orange-50 transition-colors flex items-center gap-1"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            Kopen
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

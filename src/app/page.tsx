@@ -239,14 +239,12 @@ export default function Home() {
                     </div>
                     
                     {/* CTA Button */}
-                    <a 
-                      href="https://selana.nl/?utm_source=kentekenestep&utm_medium=referral&utm_campaign=homepage"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link 
+                      href="/selana-alpha"
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-xl font-bold text-base transition-all transform hover:scale-105 shadow-lg text-center block"
                     >
                       Bekijk SELANA Alpha
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
