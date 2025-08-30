@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Mail, MessageCircle, Plus, CheckCircle, Send, User, Building, ExternalLink, AlertTriangle, FileText } from 'lucide-react';
+import { trackFormStart, trackFormSubmit } from '@/lib/gtm';
 
 export default function ContactPage() {
   const [generalForm, setGeneralForm] = useState({
@@ -32,6 +33,9 @@ export default function ContactPage() {
     e.preventDefault();
     
     try {
+      // Track form submission attempt
+      trackFormSubmit('contact_general');
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -60,6 +64,9 @@ export default function ContactPage() {
     e.preventDefault();
     
     try {
+      // Track form submission attempt
+      trackFormSubmit('contact_product_addition');
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -167,6 +174,7 @@ export default function ContactPage() {
                         type="text"
                         value={generalForm.name}
                         onChange={(e) => setGeneralForm({...generalForm, name: e.target.value})}
+                        onFocus={() => trackFormStart('contact_general')}
                         className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         required
                       />
@@ -282,6 +290,7 @@ export default function ContactPage() {
                           type="text"
                           value={productForm.companyName}
                           onChange={(e) => setProductForm({...productForm, companyName: e.target.value})}
+                          onFocus={() => trackFormStart('contact_product_addition')}
                           className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                           required
                         />

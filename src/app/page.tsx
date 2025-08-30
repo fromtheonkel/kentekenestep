@@ -4,6 +4,7 @@ import React from 'react';
 import LatestBlog from '@/components/LatestBlog';
 import Image from 'next/image';
 import Link from 'next/link';
+import { trackCTA } from '@/lib/gtm';
 
 export default function Home() {
 
@@ -95,6 +96,7 @@ export default function Home() {
             </p>
             <Link 
               href="/vergelijken"
+              onClick={trackCTA.homeHeroButton}
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
             >
               Vergelijk Elektrische Steps
@@ -154,6 +156,7 @@ export default function Home() {
                   
                   <Link 
                     href="/vergelijken"
+                    onClick={trackCTA.homeVergelijkenButton}
                     className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-bold text-base transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
                   >
                     Vergelijk alle modellen
@@ -241,6 +244,7 @@ export default function Home() {
                     {/* CTA Button */}
                     <Link 
                       href="/selana-alpha"
+                      onClick={trackCTA.homeSelanaButton}
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-xl font-bold text-base transition-all transform hover:scale-105 shadow-lg text-center block"
                     >
                       Bekijk SELANA Alpha
@@ -434,6 +438,7 @@ export default function Home() {
               </p>
               <Link 
                 href="/vergelijken"
+                onClick={trackCTA.homeVergelijkenButton}
                 className="bg-white text-green-600 hover:bg-green-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
               >
                 Vergelijk Elektrische Steps
@@ -503,6 +508,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link 
               href="/faq"
+              onClick={trackCTA.faqMoreQuestions}
               className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105"
             >
               Meer vragen? Bekijk volledige FAQ →

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, Battery, Zap, Weight, Ruler, Shield, Navigation, Eye, Bluetooth, Wrench, Euro, Calendar, MapPin } from 'lucide-react';
+import { trackCTA } from '@/lib/gtm';
 
 export default function SelanaAlphaPage() {
   return (
@@ -95,6 +96,7 @@ export default function SelanaAlphaPage() {
                 href="https://selana.nl/?utm_source=kentekenestep&utm_medium=referral&utm_campaign=details"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackCTA.selanaBestellenButton}
                 className="w-full bg-green-600 hover:bg-green-700 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg text-center block"
               >
                 Bekijk op Selana.nl
@@ -419,6 +421,7 @@ export default function SelanaAlphaPage() {
               href="https://selana.nl/?utm_source=kentekenestep&utm_medium=referral&utm_campaign=details_cta"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackCTA.selanaBestellenFooter}
               className="bg-white text-green-600 hover:bg-green-50 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Bestel bij SELANA

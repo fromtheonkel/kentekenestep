@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Search, Filter, Zap, Battery, Weight, CheckCircle, AlertTriangle, ExternalLink, ChevronDown, ChevronUp, Star, RotateCcw } from 'lucide-react';
+import { trackCTA } from '@/lib/gtm';
 
 export default function VergelijkenPage() {
   const [showTop3, setShowTop3] = useState(true);
@@ -291,6 +292,7 @@ export default function VergelijkenPage() {
                     {scooter.isRDWApproved && (
                       <Link 
                         href="/selana-alpha"
+                        onClick={() => trackCTA.vergelijkenDetailsButton(`${scooter.brand} ${scooter.model}`)}
                         className="block w-full bg-slate-700 text-white py-2 rounded hover:bg-slate-800 transition-colors text-center"
                       >
                         Bekijk Details
@@ -583,6 +585,7 @@ export default function VergelijkenPage() {
                       <div className="flex gap-3">
                         <Link 
                           href="/selana-alpha"
+                          onClick={() => trackCTA.vergelijkenDetailsButton(`${scooter.brand} ${scooter.model}`)}
                           className="flex-1 bg-slate-700 text-white py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors text-center"
                         >
                           Details
@@ -592,6 +595,7 @@ export default function VergelijkenPage() {
                             href={scooter.affiliate}
                             target="_blank"
                             rel="nofollow noopener"
+                            onClick={() => trackCTA.vergelijkenKopenButton(`${scooter.brand} ${scooter.model}`, scooter.affiliate)}
                             className="px-4 py-2 border border-orange-500 text-orange-600 rounded-lg hover:bg-orange-50 transition-colors flex items-center gap-1"
                           >
                             <ExternalLink className="w-4 h-4" />
