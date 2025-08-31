@@ -469,16 +469,374 @@ export const blogArticles: BlogArticle[] = [
     featured: false,
     readTime: "4 min",
     published: true,
-    content: `
-      <h2>Waarom zijn ze illegaal?</h2>
-      <p>Deze e-steps hebben geen RDW-goedkeuring en mogen daarom niet op de openbare weg gebruikt worden. Toch zijn ze populair vanwege hun lagere prijs.</p>
-      
-      <h2>De populairste modellen</h2>
-      <p>Segway Ninebot, Xiaomi Mi, en andere bekende merken staan hoog in de populariteit maar laag in legaliteit. Ze kosten vaak 3-4x minder dan legale alternatieven.</p>
-      
-      <h2>Risico's</h2>
-      <p>Rijden met een illegale e-step kan leiden tot boetes en inbeslagname. De kosten kunnen uiteindelijk hoger uitvallen dan een legale e-step.</p>
-    `
+    content: `<p class="lead">Nederland heeft strenge regels voor e-steps: alleen RDW goedgekeurde modellen mogen de openbare weg op. Helaas zijn de meeste populaire e-steps die je in winkels ziet niet goedgekeurd. Hier zijn de 5 meest verkochte modellen die je alleen op eigen terrein mag gebruiken.</p>
+
+<h2>Waarom zijn deze e-steps niet toegestaan?</h2>
+
+<h3>Geen RDW goedkeuring</h3>
+
+<p>Voor gebruik op de openbare weg moet een e-step voldoen aan strenge Nederlandse en Europese regelgeving:</p>
+
+<ul>
+<li><strong>Type goedkeuring:</strong> Officiële certificering door RDW</li>
+<li><strong>Veiligheidsnormen:</strong> Verlichting, remmen, richtingaanwijzers</li>
+<li><strong>Technische eisen:</strong> Maximum snelheid, vermogen, constructie</li>
+<li><strong>Kwaliteitscontrole:</strong> Productieproces volgens EU normen</li>
+</ul>
+
+<p>De meeste consumenten e-steps zijn ontworpen voor internationale markten met minder strenge regels. Ze hebben vaak:</p>
+
+<ul>
+<li>Geen richtingaanwijzers</li>
+<li>Onvoldoende verlichting</li>
+<li>Geen typegoedkeuring certificaat</li>
+<li>Afwijkende technische specificaties</li>
+</ul>
+
+<h3>Gevolgen van rijden zonder goedkeuring</h3>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>Sancties bij controle:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>€340 boete</strong> voor rijden zonder geldige verzekering</li>
+<li><strong>Inbeslagname</strong> van de e-step door politie</li>
+<li><strong>Geen verzekering mogelijk</strong> - persoonlijke aansprakelijkheid</li>
+<li><strong>Proces-verbaal</strong> voor rijden met niet-toegelaten voertuig</li>
+</ul>
+</div>
+
+<h2>Top 5 populaire maar illegale e-steps</h2>
+
+<h3>1. Segway Ninebot E2 Pro E</h3>
+
+<div class="bg-gray-50 rounded-lg p-4 my-4">
+<p><strong>Prijs:</strong> €299 - €349</p>
+<p><strong>Max snelheid:</strong> 25 km/h</p>
+<p><strong>Bereik:</strong> Tot 35 km</p>
+<p><strong>Gewicht:</strong> 18,8 kg</p>
+</div>
+
+<p><strong>Waarom populair:</strong></p>
+<ul>
+<li>Bekend merk met goede reputatie</li>
+<li>Opvouwbaar design</li>
+<li>App connectiviteit</li>
+<li>10 inch luchtbanden</li>
+<li>Redelijke prijs-kwaliteit verhouding</li>
+</ul>
+
+<p><strong>Waarom niet toegestaan:</strong></p>
+<ul>
+<li>Geen RDW typegoedkeuring</li>
+<li>Ontbrekende richtingaanwijzers</li>
+<li>Onvoldoende verlichtingsysteem</li>
+<li>Geen Nederlandse importeur voor certificering</li>
+</ul>
+
+<p><strong>Waar te koop:</strong> MediaMarkt, Coolblue, online retailers</p>
+
+<h3>2. Xiaomi Mi Electric Scooter 4</h3>
+
+<div class="bg-gray-50 rounded-lg p-4 my-4">
+<p><strong>Prijs:</strong> €399 - €449</p>
+<p><strong>Max snelheid:</strong> 25 km/h</p>
+<p><strong>Bereik:</strong> Tot 30 km</p>
+<p><strong>Gewicht:</strong> 14,2 kg</p>
+</div>
+
+<p><strong>Waarom populair:</strong></p>
+<ul>
+<li>Lichtgewicht en compact</li>
+<li>Xiaomi ecosysteem integratie</li>
+<li>Goede app functionaliteit</li>
+<li>Betrouwbare Chinese kwaliteit</li>
+<li>Wijdverspreid verkrijgbaar</li>
+</ul>
+
+<p><strong>Waarom niet toegestaan:</strong></p>
+<ul>
+<li>Geen Europese typegoedkeuring</li>
+<li>Minimale veiligheidssystemen</li>
+<li>Ontbrekende wettelijk verplichte onderdelen</li>
+<li>Xiaomi heeft geen RDW aanvraag ingediend</li>
+</ul>
+
+<p><strong>Waar te koop:</strong> Bol.com, Mi Store, elektronica winkels</p>
+
+<h3>3. Segway Ninebot Max G2</h3>
+
+<div class="bg-gray-50 rounded-lg p-4 my-4">
+<p><strong>Prijs:</strong> €649 - €749</p>
+<p><strong>Max snelheid:</strong> 25 km/h</p>
+<p><strong>Bereik:</strong> Tot 65 km</p>
+<p><strong>Gewicht:</strong> 24,3 kg</p>
+</div>
+
+<p><strong>Waarom populair:</strong></p>
+<ul>
+<li>Zeer lange range voor woon-werk verkeer</li>
+<li>Robuuste constructie</li>
+<li>IPX5 waterbestendig</li>
+<li>10.5 inch tubeless banden</li>
+<li>Cruise control functie</li>
+</ul>
+
+<p><strong>Waarom niet toegestaan:</strong></p>
+<ul>
+<li>Geen Nederlandse certificering aangevraagd</li>
+<li>Ontbrekende richtingaanwijzers</li>
+<li>Segway richt zich nog niet op Nederlandse markt</li>
+<li>Technische specificaties niet aangepast voor EU</li>
+</ul>
+
+<p><strong>Waar te koop:</strong> Gespecialiseerde e-step dealers, online</p>
+
+<h3>4. Xiaomi Pro 2</h3>
+
+<div class="bg-gray-50 rounded-lg p-4 my-4">
+<p><strong>Prijs:</strong> €379 - €429</p>
+<p><strong>Max snelheid:</strong> 25 km/h</p>
+<p><strong>Bereik:</strong> Tot 45 km</p>
+<p><strong>Gewicht:</strong> 14,2 kg</p>
+</div>
+
+<p><strong>Waarom populair:</strong></p>
+<ul>
+<li>Uitstekende prijs-prestatie verhouding</li>
+<li>Lichtgewicht maar lange range</li>
+<li>8.5 inch pneumatische banden</li>
+<li>E-ABS regeneratieve remmen</li>
+<li>Veel positieve reviews</li>
+</ul>
+
+<p><strong>Waarom niet toegestaan:</strong></p>
+<ul>
+<li>Oudere Xiaomi model zonder EU certificering</li>
+<li>Basis verlichtingsysteem</li>
+<li>Geen Nederlandse distributeur voor goedkeuring</li>
+<li>Veiligheidssystemen voldoen niet aan eisen</li>
+</ul>
+
+<p><strong>Waar te koop:</strong> Diverse online retailers, tweedehands markt</p>
+
+<h3>5. NIU KQi3 Sport</h3>
+
+<div class="bg-gray-50 rounded-lg p-4 my-4">
+<p><strong>Prijs:</strong> €499 - €599</p>
+<p><strong>Max snelheid:</strong> 25 km/h</p>
+<p><strong>Bereik:</strong> Tot 50 km</p>
+<p><strong>Gewicht:</strong> 17,5 kg</p>
+</div>
+
+<p><strong>Waarom populair:</strong></p>
+<ul>
+<li>Premium Chinese e-mobility merk</li>
+<li>Sportieve uitstraling en prestaties</li>
+<li>9 inch tubeless banden</li>
+<li>Dual remmen (schijf + E-ABS)</li>
+<li>App met GPS tracking</li>
+</ul>
+
+<p><strong>Waarom niet toegestaan:</strong></p>
+<ul>
+<li>NIU heeft geen RDW aanvraag ingediend</li>
+<li>Ontbrekende richtingaanwijzers</li>
+<li>Geen Europese distributeur voor certificering</li>
+<li>Focus ligt op Aziatische markt</li>
+</ul>
+
+<p><strong>Waar te koop:</strong> NIU dealers, premium e-step winkels</p>
+
+<h2>Kostenvergelijking: illegaal vs legaal</h2>
+
+<table class="w-full border-collapse border border-gray-300 my-6">
+<thead class="bg-gray-100">
+<tr>
+<th class="border border-gray-300 px-4 py-2 text-left">Aspect</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Illegale E-Step</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Legale E-Step (SELANA)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Aanschafprijs</td>
+<td class="border border-gray-300 px-4 py-2">€299 - €749</td>
+<td class="border border-gray-300 px-4 py-2">€1.900</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Verzekering per jaar</td>
+<td class="border border-gray-300 px-4 py-2">Niet mogelijk</td>
+<td class="border border-gray-300 px-4 py-2">€42 - €60</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Kenteken kosten</td>
+<td class="border border-gray-300 px-4 py-2">Niet mogelijk</td>
+<td class="border border-gray-300 px-4 py-2">€18 (bestaand) / €40 (nieuw)</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Gebruikslocatie</td>
+<td class="border border-gray-300 px-4 py-2">Alleen eigen terrein</td>
+<td class="border border-gray-300 px-4 py-2">Overal op openbare weg</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Boete risico</td>
+<td class="border border-gray-300 px-4 py-2">€340 + inbeslagname</td>
+<td class="border border-gray-300 px-4 py-2">Geen</td>
+</tr>
+<tr class="bg-gray-50 font-semibold">
+<td class="border border-gray-300 px-4 py-2">5-jaar totaal (excl. boetes)</td>
+<td class="border border-gray-300 px-4 py-2">€299 - €749</td>
+<td class="border border-gray-300 px-4 py-2">€2.150 - €2.240</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Waarom kiezen mensen toch voor illegale modellen?</h2>
+
+<h3>Prijsverschil</h3>
+
+<p>Het grootste verschil zit in de aanschafprijs. Waar een illegale e-step voor €300-700 te koop is, kost de enige legale optie €1.900. Dit is een verschil van 3-6x de prijs.</p>
+
+<h3>Onwetendheid</h3>
+
+<p>Veel kopers realiseren zich niet dat:</p>
+<ul>
+<li>Hun e-step niet legaal is op openbare wegen</li>
+<li>Een verzekering verplicht maar niet mogelijk is</li>
+<li>Controles kunnen leiden tot inbeslagname</li>
+<li>Ze persoonlijk aansprakelijk zijn voor schade</li>
+</ul>
+
+<h3>Misleidende marketing</h3>
+
+<p>Veel verkopers suggereren dat hun e-steps "geschikt zijn voor Nederlandse wegen" zonder de juridische nuances uit te leggen. Consumenten denken ten onrechte dat:</p>
+<ul>
+<li>"25 km/h" automatisch betekent "legaal"</li>
+<li>Verkoop in Nederland impliceert legaliteit</li>
+<li>CE markering gelijk staat aan wegtoelating</li>
+</ul>
+
+<h2>Toekomstperspectief</h2>
+
+<h3>Kunnen deze modellen nog legaal worden?</h3>
+
+<p>Theoretisch kunnen fabrikanten hun bestaande modellen laten certificeren voor de Nederlandse markt. Dit vereist:</p>
+
+<ul>
+<li><strong>Technische aanpassingen:</strong> Richtingaanwijzers, verlichting, remmen</li>
+<li><strong>Type goedkeuring:</strong> Dure en tijdrovende certificering bij RDW</li>
+<li><strong>Nederlandse importeur:</strong> Lokale distributeur die proces begeleidt</li>
+<li><strong>Marktpotentieel:</strong> Voldoende verwachte verkoop om kosten te rechtvaardigen</li>
+</ul>
+
+<h3>Marktdruk</h3>
+
+<p>De huidige situatie met slechts één legale e-step creëert druk op andere fabrikanten om certificering aan te vragen. Mogelijk zien we in 2025-2026:</p>
+
+<ul>
+<li>Segway met aangepaste modellen</li>
+<li>Xiaomi met EU-specifieke versies</li>
+<li>Nieuwe merken die direct op certificering inzetten</li>
+<li>Prijsdaling door meer concurrentie</li>
+</ul>
+
+<h2>Alternatieven en oplossingen</h2>
+
+<h3>Wachten op meer opties</h3>
+
+<p>Als je geen €1.900 voor SELANA wilt uitgeven, kun je:</p>
+<ul>
+<li><strong>Wachten:</strong> Meer merken kunnen certificering aanvragen</li>
+<li><strong>Tweedehands:</strong> SELANA modellen kunnen goedkoper worden</li>
+<li><strong>Fatbike overwegen:</strong> Elektrische fatbikes met veel minder restricties</li>
+</ul>
+
+<h3>Alleen eigen terrein gebruik</h3>
+
+<p>Illegale e-steps zijn wel toegestaan op:</p>
+<ul>
+<li>Eigen privé terrein</li>
+<li>Bedrijfsterreinen (met toestemming)</li>
+<li>Recreatieparken (waar toegestaan)</li>
+<li>Private campings (met toestemming eigenaar)</li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Let op:</strong> Ook op eigen terrein moet je rekening houden met verzekering. Bij ongevallen ben je mogelijk persoonlijk aansprakelijk voor schade.
+</div>
+
+<h2>Handhaving en controles</h2>
+
+<h3>Hoe controleren politie en BOA's?</h3>
+
+<p>Handhaving gebeurt op verschillende manieren:</p>
+
+<ul>
+<li><strong>Visuele controle:</strong> Ontbrekende richtingaanwijzers zijn direct zichtbaar</li>
+<li><strong>Documentencontrole:</strong> Verzekeringssticker en kenteken worden gecontroleerd</li>
+<li><strong>RDW database:</strong> Model en merk worden vergeleken met goedkeuringslijst</li>
+<li><strong>Technische inspectie:</strong> Maximale snelheid kan worden gemeten</li>
+</ul>
+
+<h3>Waar wordt het meest gecontroleerd?</h3>
+
+<ul>
+<li>Stadscentra en winkelgebieden</li>
+<li>Fietsroutes naar scholen en universiteiten</li>
+<li>Toeristische gebieden</li>
+<li>Na ongevallen of klachten</li>
+<li>Tijdens verkeersacties</li>
+</ul>
+
+<h2>Praktische tips</h2>
+
+<h3>Als je al een illegale e-step hebt</h3>
+
+<ul>
+<li><strong>Gebruik alleen op eigen terrein</strong> - neem geen risico's</li>
+<li><strong>Check verzekering:</strong> Mogelijk dekt je inboedelverzekering diefstal</li>
+<li><strong>Verkoop overwegen:</strong> Voordat strengere handhaving begint</li>
+<li><strong>Wacht op legale alternatieven:</strong> Bewaar voor toekomstig gebruik</li>
+</ul>
+
+<h3>Voor potentiële kopers</h3>
+
+<ul>
+<li><strong>Vraag altijd naar RDW goedkeuring</strong> bij aankoop</li>
+<li><strong>Check de goedkeuringslijst</strong> op de RDW website</li>
+<li><strong>Let op misleidende claims</strong> over legaliteit</li>
+<li><strong>Bereken totale kosten</strong> inclusief verzekering en kenteken</li>
+</ul>
+
+<h2>Conclusie</h2>
+
+<p>De populairste e-steps zijn helaas niet toegestaan op Nederlandse wegen. Hoewel ze technisch vaak uitstekend zijn en veel goedkoper dan legale alternatieven, brengt gebruik op openbare wegen aanzienlijke risico's met zich mee.</p>
+
+<p>Voor woon-werk verkeer is momenteel alleen de SELANA Alpha een optie. Voor recreatief gebruik op eigen terrein kunnen illegale modellen wel een alternatief zijn, maar houd rekening met beperkte gebruiksmogelijkheden en verzekeringskwesties.</p>
+
+<p>De markt zal naar verwachting de komende jaren veranderen. Meer fabrikanten zullen waarschijnlijk certificering aanvragen als de Nederlandse e-step markt groeit. Tot die tijd blijft de keuze beperkt tussen duur-maar-legaal of goedkoop-maar-alleen-thuis.</p>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Handige links:</strong>
+<ul class="mt-2">
+<li><a href="https://www.rdw.nl/particulier/voertuigen/bijzondere-bromfiets" target="_blank" rel="noopener">RDW - Bijzondere bromfietsen</a></li>
+<li><a href="https://www.rdw.nl/particulier/voertuigen/goedgekeurde-voertuigen" target="_blank" rel="noopener">RDW - Goedgekeurde voertuigen lijst</a></li>
+<li><a href="https://www.rijksoverheid.nl/onderwerpen/bijzondere-voertuigen/elektrische-step" target="_blank" rel="noopener">Rijksoverheid - Elektrische step regelgeving</a></li>
+</ul>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<h3 class="font-semibold text-yellow-900 mb-2">⚠️ Belangrijke disclaimer</h3>
+<p class="text-yellow-800 text-sm leading-relaxed">
+<strong>Alleen eigen terrein:</strong> Niet-RDW goedgekeurde e-steps mogen uitsluitend worden gebruikt op eigen privé terrein. Gebruik op openbare wegen, fietspaden of voetgangersgebied is illegaal en kan leiden tot boetes en inbeslagname.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Geen aankoopadvies:</strong> Dit artikel is bedoeld voor informatiedoeleinden. Wij raden aan alleen RDW goedgekeurde e-steps aan te schaffen voor gebruik op openbare wegen. Controleer altijd de actuele regelgeving voordat je een aankoop doet.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Eigen risico:</strong> KentekenEstep.nl aanvaardt geen aansprakelijkheid voor schade, boetes of andere gevolgen van het gebruik van niet-goedgekeurde e-steps. Gebruikers zijn zelf verantwoordelijk voor het naleven van wet- en regelgeving.
+</p>
+</div>`
   },
   {
     id: 4,
@@ -491,18 +849,336 @@ export const blogArticles: BlogArticle[] = [
     tags: ["verzekering", "WA", "kosten", "vergelijking"],
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=400&fit=crop&crop=center&q=80", // Insurance/protection shield
     featured: false,
-    readTime: "6 min", 
+    readTime: "12 min", 
     published: true,
-    content: `
-      <h2>Verplichte verzekering</h2>
-      <p>Voor RDW-goedgekeurde e-steps is een WA-verzekering verplicht. Dit kost tussen €80-150 per jaar, afhankelijk van de verzekeraar.</p>
-      
-      <h2>Beste opties</h2>
-      <p>Verschillende verzekeraars bieden e-step verzekeringen aan. Vergelijk altijd de voorwaarden en dekking.</p>
-      
-      <h2>Wat is gedekt?</h2>
-      <p>Een standaard WA-verzekering dekt schade aan derden. Voor eigen schade heb je aanvullende dekking nodig.</p>
-    `
+    content: `<p class="lead">Per 1 januari 2024 is een WA-verzekering verplicht voor alle elektrische steps in Nederland. Deze gids legt uit alles wat je moet weten over e-step verzekeringen: van wettelijke vereisten tot praktische tips voor de beste dekking.</p>
+
+<h2>Wettelijke vereisten e-step verzekering</h2>
+
+<h3>WA-verzekering verplicht sinds 2024</h3>
+
+<p>Sinds 1 januari 2024 is een wettelijke aansprakelijkheidsverzekering (WA) verplicht voor alle elektrische steps die sneller kunnen dan 6 km/h. Deze verplichting geldt ook als je de step alleen op eigen terrein gebruikt.</p>
+
+<p><strong>Belangrijke wetgeving:</strong></p>
+<ul>
+<li>Wet aansprakelijkheidsverzekering motorrijtuigen (WAM)</li>
+<li>Artikel 2 Wegenverkeerswet 1994</li>
+<li>Besluit voertuigen bijzondere categorie</li>
+</ul>
+
+<h3>Boetes bij geen verzekering</h3>
+
+<p>Rijden zonder WA-verzekering kan dure gevolgen hebben:</p>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>Mogelijke sancties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>€340 boete</strong> voor het niet hebben van een geldige verzekering</li>
+<li><strong>Inbeslagname</strong> van de elektrische step door politie</li>
+<li><strong>Persoonlijke aansprakelijkheid</strong> voor alle schade aan derden</li>
+<li><strong>Waarborgfonds</strong> kan verhaal nemen op jou voor uitgekeerde schades</li>
+</ul>
+</div>
+
+<h2>Soorten verzekeringen voor e-steps</h2>
+
+<h3>1. WA-verzekering (verplicht)</h3>
+
+<p>De wettelijke aansprakelijkheidsverzekering dekt schade die je veroorzaakt aan andere personen of eigendommen. Dit is de minimale verzekering die je moet hebben.</p>
+
+<p><strong>Wat dekt de WA-verzekering:</strong></p>
+<ul>
+<li>Schade aan andere voertuigen, fietsen of eigendommen</li>
+<li>Letselschade aan andere personen</li>
+<li>Rechtsbijstand bij aansprakelijkheidskwesties</li>
+<li>Materiële schade tot maximaal €1.250.000</li>
+<li>Letselschade tot maximaal €6.070.000</li>
+</ul>
+
+<p><strong>Wat dekt de WA-verzekering NIET:</strong></p>
+<ul>
+<li>Schade aan je eigen e-step</li>
+<li>Je eigen letsel</li>
+<li>Diefstal van de step</li>
+<li>Schade door eigen schuld</li>
+</ul>
+
+<h3>2. Casco verzekering (optioneel)</h3>
+
+<p>Een casco verzekering dekt schade aan je eigen e-step. Er zijn twee varianten:</p>
+
+<h4>Beperkt casco</h4>
+<ul>
+<li>Diefstal en poging tot diefstal</li>
+<li>Brand, ontploffing en blikseminslag</li>
+<li>Storm, hagel en waterschade</li>
+<li>Vandalisme en glasschade</li>
+</ul>
+
+<h4>Volledig casco</h4>
+<ul>
+<li>Alle dekkingen van beperkt casco</li>
+<li>Schade door ongevallen</li>
+<li>Schade door eigen schuld</li>
+<li>Omvallen en materiaalfalen</li>
+</ul>
+
+<h3>3. Inzittendenverzekering</h3>
+
+<p>Hoewel e-steps doorgaans voor één persoon zijn, kan een inzittendenverzekering nuttig zijn voor letselschade aan jezelf bij een ongeval.</p>
+
+<h2>Kosten e-step verzekering</h2>
+
+<h3>WA-verzekering prijzen</h3>
+
+<p>De kosten voor een WA-verzekering voor e-steps variëren per verzekeraar:</p>
+
+<table class="w-full border-collapse border border-gray-300 my-6">
+<thead class="bg-gray-100">
+<tr>
+<th class="border border-gray-300 px-4 py-2 text-left">Verzekeraar</th>
+<th class="border border-gray-300 px-4 py-2 text-left">WA per maand</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Bijzonderheden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-gray-300 px-4 py-2">ANWB</td>
+<td class="border border-gray-300 px-4 py-2">€3,50 - €4,50</td>
+<td class="border border-gray-300 px-4 py-2">Inclusief pechhulp</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Allianz Direct</td>
+<td class="border border-gray-300 px-4 py-2">€3,95</td>
+<td class="border border-gray-300 px-4 py-2">Eenvoudig online afsluiten</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">InShared</td>
+<td class="border border-gray-300 px-4 py-2">€4,25</td>
+<td class="border border-gray-300 px-4 py-2">Vaak kortingsacties</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Unive</td>
+<td class="border border-gray-300 px-4 py-2">€4,95</td>
+<td class="border border-gray-300 px-4 py-2">Lokale service</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Factoren die de prijs beïnvloeden</h3>
+
+<ul>
+<li><strong>Type e-step:</strong> RDW goedgekeurd vs niet-goedgekeurd</li>
+<li><strong>Waarde van de step:</strong> Duurdere modellen kosten meer</li>
+<li><strong>Je leeftijd:</strong> Jongeren betalen vaak meer</li>
+<li><strong>Woonplaats:</strong> Stedelijke gebieden hebben hogere premies</li>
+<li><strong>Schadevrij rijden:</strong> Jaren zonder schade geven korting</li>
+<li><strong>Combinatievoordeel:</strong> Korting bij bestaande polissen</li>
+</ul>
+
+<h2>Verzekering afsluiten: stap voor stap</h2>
+
+<h3>Stap 1: Controleer RDW status</h3>
+
+<p>Bepaal eerst of je e-step RDW goedgekeurd is. Dit beïnvloedt welke verzekeraars je kunnen helpen:</p>
+
+<ul>
+<li><strong>RDW goedgekeurd:</strong> Alle verzekeraars accepteren je step</li>
+<li><strong>Niet RDW goedgekeurd:</strong> Beperkte keuze in verzekeraars</li>
+<li><strong>Illegale e-step:</strong> Geen verzekering mogelijk, niet gebruiken op openbare weg</li>
+</ul>
+
+<h3>Stap 2: Vergelijk aanbieders</h3>
+
+<p>Vergelijk niet alleen de prijs, maar ook:</p>
+<ul>
+<li>Dekkingsbedragen</li>
+<li>Eigen risico bedragen</li>
+<li>Extra services (pechhulp, rechtsbijstand)</li>
+<li>Klantenservice beoordelingen</li>
+<li>Schadeafhandeling snelheid</li>
+</ul>
+
+<h3>Stap 3: Bereid documenten voor</h3>
+
+<p>Je hebt nodig:</p>
+<ul>
+<li>Aankoopbon of factuur van de e-step</li>
+<li>Technische specificaties (max snelheid, vermogen)</li>
+<li>RDW goedkeuringsnummer (indien van toepassing)</li>
+<li>Je BSN en adresgegevens</li>
+<li>Eventuele eerdere verzekeringspapieren</li>
+</ul>
+
+<h3>Stap 4: Verzekering afsluiten</h3>
+
+<p>Je kunt kiezen uit:</p>
+<ul>
+<li><strong>Online afsluiten:</strong> Snel en vaak goedkoopst</li>
+<li><strong>Via telefoon:</strong> Persoonlijk advies mogelijk</li>
+<li><strong>Via tussenpersoon:</strong> Lokale verzekeringsadviseur</li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Tip:</strong> Sluit de verzekering af voordat je de e-step gaat gebruiken. De dekking gaat vaak pas de volgende dag in.
+</div>
+
+<h2>Verzekeringssticker en kenteken</h2>
+
+<h3>Verzekeringssticker</h3>
+
+<p>Na het afsluiten van een WA-verzekering ontvang je een sticker die zichtbaar op de e-step moet worden geplakt. Deze sticker toont:</p>
+
+<ul>
+<li>Verzekeraar naam</li>
+<li>Polisperiode</li>
+<li>Contact informatie</li>
+</ul>
+
+<h3>Kenteken vanaf 2025</h3>
+
+<p>Sinds 1 juli 2025 hebben RDW goedgekeurde e-steps ook een kenteken nodig:</p>
+
+<ul>
+<li><strong>Nieuwe e-steps:</strong> Direct kenteken verplicht</li>
+<li><strong>Bestaande goedgekeurde e-steps:</strong> Kenteken verplicht vanaf 1 juli 2026</li>
+<li><strong>Kosten:</strong> €18 voor kentekenregistratie</li>
+</ul>
+
+<h2>Schade claimen: wat te doen?</h2>
+
+<h3>Bij een ongeval</h3>
+
+<p>Volg altijd deze stappen:</p>
+
+<ol>
+<li><strong>Zorg voor veiligheid:</strong> Jezelf en anderen uit gevaar brengen</li>
+<li><strong>Bel 112</strong> bij gewonden of gevaar</li>
+<li><strong>Maak foto's</strong> van schade, voertuigen en situatie</li>
+<li><strong>Wissel gegevens uit</strong> met andere betrokkenen</li>
+<li><strong>Zoek getuigen</strong> en noteer contactgegevens</li>
+<li><strong>Meld schade direct</strong> bij je verzekeraar</li>
+</ol>
+
+<h3>Schadeformulier invullen</h3>
+
+<p>Belangrijk om correct in te vullen:</p>
+<ul>
+<li>Datum, tijd en plaats van het incident</li>
+<li>Beschrijving van wat er gebeurde</li>
+<li>Schade aan voertuigen en personen</li>
+<li>Gegevens van alle betrokkenen</li>
+<li>Polisgegevens van alle verzekeraars</li>
+</ul>
+
+<h2>Veelgemaakte fouten vermijden</h2>
+
+<h3>Fout 1: Te laat verzekeren</h3>
+<p>Veel mensen sluiten pas verzekering af na een ongeval. Dit is te laat - je bent vanaf dag 1 aansprakelijk.</p>
+
+<h3>Fout 2: Verkeerde step opgeven</h3>
+<p>Geef altijd de juiste specificaties door. Een verkeerde maximale snelheid kan tot problemen leiden bij claims.</p>
+
+<h3>Fout 3: Sticker vergeten</h3>
+<p>Zonder zichtbare verzekeringssticker kun je alsnog een boete krijgen, ook met geldige verzekering.</p>
+
+<h3>Fout 4: Geen kenteken aanvragen</h3>
+<p>Voor RDW goedgekeurde e-steps is een kenteken verplicht. Vergeet dit niet aan te vragen bij de RDW.</p>
+
+<h2>Praktische tips</h2>
+
+<h3>Geld besparen op je verzekering</h3>
+
+<ul>
+<li><strong>Verhoog eigen risico:</strong> Hogere eigen risico = lagere premie</li>
+<li><strong>Combineer polissen:</strong> Neem verzekering bij huidige verzekeraar</li>
+<li><strong>Betaal jaarlijks:</strong> Vaak goedkoper dan maandelijks</li>
+<li><strong>Blijf schadevrij:</strong> Elk schadevrij jaar levert korting op</li>
+<li><strong>Vergelijk jaarlijks:</strong> Wissel indien nodig naar goedkopere aanbieder</li>
+</ul>
+
+<h3>Veilig rijden voor lagere premie</h3>
+
+<ul>
+<li>Draag altijd een helm</li>
+<li>Gebruik verlichting en reflecterende kleding</li>
+<li>Rijd defensief en houd afstand</li>
+<li>Respecteer verkeersregels</li>
+<li>Onderhoud je e-step goed</li>
+</ul>
+
+<h2>Toekomst e-step verzekeringen</h2>
+
+<h3>Verwachte ontwikkelingen</h3>
+
+<p>De markt voor e-step verzekeringen ontwikkelt zich snel:</p>
+
+<ul>
+<li><strong>Meer verzekeraars:</strong> Toenemende concurrentie verlaagt prijzen</li>
+<li><strong>Slimmere premies:</strong> Gebruik van GPS en rijgedrag data</li>
+<li><strong>Modulaire dekking:</strong> Betaal alleen voor wat je nodig hebt</li>
+<li><strong>Integratie met apps:</strong> Beheer verzekering via smartphone</li>
+</ul>
+
+<h3>Europese harmonisatie</h3>
+
+<p>De EU werkt aan uniforme regels voor e-step verzekeringen. Dit kan betekenen:</p>
+<ul>
+<li>Grensoverschrijdende dekking</li>
+<li>Gestandaardiseerde polisvoorwaarden</li>
+<li>Betere rechtsbescherming voor consumenten</li>
+</ul>
+
+<h2>Veelgestelde vragen</h2>
+
+<div class="bg-gray-50 rounded-lg p-6 my-6">
+
+<h3>Moet ik mijn e-step verzekeren als ik hem alleen thuis gebruik?</h3>
+<p>Ja, de verzekeringsverplichting geldt ook voor gebruik op eigen terrein. Een step die harder kan dan 6 km/h moet altijd verzekerd zijn.</p>
+
+<h3>Kan ik mijn e-step bij mijn autoverzekeraar verzekeren?</h3>
+<p>Niet alle autoverzekeraars bieden e-step verzekeringen aan. Check bij je huidige verzekeraar of dit mogelijk is.</p>
+
+<h3>Wat als mijn e-step wordt gestolen?</h3>
+<p>Diefstal valt niet onder de verplichte WA-verzekering. Hiervoor heb je een casco verzekering of inboedelverzekering nodig.</p>
+
+<h3>Geldt mijn verzekering ook in het buitenland?</h3>
+<p>De meeste WA-verzekeringen gelden binnen de EU. Check altijd de polisvoorwaarden voor reisdekking.</p>
+
+<h3>Kan ik kiezen voor hoger eigen risico?</h3>
+<p>Ja, bij de meeste verzekeraars kun je kiezen voor €0, €50, €100 of €150 eigen risico. Hoger eigen risico betekent lagere premie.</p>
+
+</div>
+
+<h2>Conclusie</h2>
+
+<p>Een WA-verzekering voor je e-step is niet alleen wettelijk verplicht, maar ook financieel verstandig. Met schadeveroorzaking die kan oplopen tot miljoenen euro's is het risico van rijden zonder verzekering veel te groot.</p>
+
+<p>Vergelijk verschillende aanbieders, let niet alleen op prijs maar ook op service en dekking. Een goedkope verzekering kan uiteindelijk duurder uitpakken als de schadeafhandeling slecht is.</p>
+
+<p>Rijd veilig, houd je aan de verkeersregels en zorg dat je papieren op orde zijn. Dan kun je zorgeloos genieten van je e-step!</p>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Handige links:</strong>
+<ul class="mt-2">
+<li><a href="https://www.rdw.nl" target="_blank" rel="noopener">RDW - Rijksdienst voor het Wegverkeer</a></li>
+<li><a href="https://www.rijksoverheid.nl/onderwerpen/bijzondere-voertuigen" target="_blank" rel="noopener">Rijksoverheid - Bijzondere voertuigen</a></li>
+<li><a href="https://www.verbondvanverzekeraars.nl" target="_blank" rel="noopener">Verbond van Verzekeraars</a></li>
+</ul>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<h3 class="font-semibold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
+<p class="text-yellow-800 text-sm leading-relaxed">
+<strong>Geen financieel advies:</strong> Deze gids is bedoeld voor algemene informatiedoeleinden en vormt geen financieel, juridisch of verzekeringsadvies. Verzekeringswetten en -voorwaarden kunnen wijzigen en verschillen per verzekeraar.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Controleer altijd:</strong> Raadpleeg altijd de actuele polisvoorwaarden van je gekozen verzekeraar en overleg indien nodig met een gekwalificeerde verzekeringsadviseur. Prijzen en voorwaarden kunnen wijzigen zonder vooraankondiging.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Eigen verantwoordelijkheid:</strong> KentekenEstep.nl aanvaardt geen aansprakelijkheid voor schade die voortvloeit uit het gebruik van deze informatie. Controleer altijd de actuele wet- en regelgeving bij officiële bronnen zoals RDW en Rijksoverheid.
+</p>
+</div>`
   },
   {
     id: 5,
@@ -515,21 +1191,387 @@ export const blogArticles: BlogArticle[] = [
     tags: ["kenteken", "RDW", "aanvragen", "handleiding"],
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&crop=center&q=80", // Application process/forms
     featured: false,
-    readTime: "4 min",
+    readTime: "15 min",
     published: true,
-    content: `
-      <h2>Stap 1: Documenten verzamelen</h2>
-      <p>Je hebt het COC (Certificate of Conformity) nodig van je e-step fabrikant, plus een geldig identiteitsbewijs.</p>
-      
-      <h2>Stap 2: Aanvragen bij RDW</h2>
-      <p>Dit kan online of bij een RDW vestiging. Kosten: €40. Verwachte doorlooptijd: 2-3 weken.</p>
-      
-      <h2>Stap 3: Kenteken ontvangen</h2>
-      <p>Je ontvangt het kenteken per post. Monteer het zichtbaar op je e-step volgens de voorschriften.</p>
-      
-      <h2>Tips</h2>
-      <p>Controleer altijd of alle documenten compleet zijn voordat je de aanvraag indient. Dit voorkomt vertraging.</p>
-    `
+    content: `<p class="lead">Sinds 1 juli 2025 hebben alle nieuwe RDW goedgekeurde e-steps een kenteken nodig. Bestaande goedgekeurde modellen krijgen tot 1 juli 2026 de tijd om een kenteken aan te vragen. Deze handleiding legt stap voor stap uit hoe je een kenteken aanvraagt voor je elektrische step.</p>
+
+<h2>Wanneer heb je een kenteken nodig?</h2>
+
+<h3>Nieuwe regelgeving vanaf 2025</h3>
+
+<p>De kentekenplicht is ingevoerd als onderdeel van de nieuwe regelgeving voor elektrische steps en andere bijzondere bromfietsen. Het doel is om meer controle en traceerbaarheid te krijgen van voertuigen op de openbare weg.</p>
+
+<p><strong>Tijdlijn kentekenplicht:</strong></p>
+<ul>
+<li><strong>1 juli 2025:</strong> Kenteken verplicht voor alle nieuwe RDW goedgekeurde e-steps</li>
+<li><strong>1 juli 2026:</strong> Kenteken verplicht voor alle bestaande RDW goedgekeurde e-steps</li>
+<li><strong>Niet-goedgekeurde e-steps:</strong> Geen kenteken mogelijk, niet toegestaan op openbare weg</li>
+</ul>
+
+<h3>Wie moet een kenteken aanvragen?</h3>
+
+<p>Je moet een kenteken aanvragen als je:</p>
+<ul>
+<li>Een RDW goedgekeurde e-step hebt gekocht na 1 juli 2025</li>
+<li>Een bestaande RDW goedgekeurde e-step hebt (uiterlijk 1 juli 2026)</li>
+<li>De e-step op openbare wegen wilt gebruiken</li>
+<li>Een WA-verzekering voor je e-step hebt afgesloten</li>
+</ul>
+
+<div class="bg-orange-50 border border-orange-200 rounded-lg p-4 my-6">
+<strong>Let op:</strong> Alleen RDW goedgekeurde e-steps komen in aanmerking voor een kenteken. Controleer eerst of je model op de RDW goedkeuringslijst staat.
+</div>
+
+<h2>Benodigde documenten</h2>
+
+<h3>Verplichte documenten</h3>
+
+<p>Voor de kentekenaanvraag heb je de volgende documenten nodig:</p>
+
+<ol>
+<li><strong>Certificate of Conformity (COC)</strong>
+   <ul>
+   <li>Officieel document van de fabrikant</li>
+   <li>Bewijst dat de e-step voldoet aan EU regelgeving</li>
+   <li>Bevat technische specificaties</li>
+   <li>Moet origineel zijn, geen kopie</li>
+   </ul>
+</li>
+
+<li><strong>Geldig identiteitsbewijs</strong>
+   <ul>
+   <li>Nederlandse identiteitskaart of paspoort</li>
+   <li>Moet geldig zijn op moment van aanvraag</li>
+   <li>Naam moet overeenkomen met aanvraag</li>
+   </ul>
+</li>
+
+<li><strong>Aankoopbewijsstuk</strong>
+   <ul>
+   <li>Factuur of aankoopbon</li>
+   <li>Toont eigendomsrecht</li>
+   <li>Bevat datum en prijs van aankoop</li>
+   </ul>
+</li>
+
+<li><strong>Bewijs van verzekering</strong>
+   <ul>
+   <li>Geldige WA-verzekeringspolis</li>
+   <li>Moet actief zijn voor het voertuig</li>
+   <li>Polisnummer en contactgegevens verzekeraar</li>
+   </ul>
+</li>
+</ol>
+
+<h3>Aanvullende documenten (indien van toepassing)</h3>
+
+<ul>
+<li><strong>Machtiging:</strong> Als iemand anders de aanvraag doet voor jou</li>
+<li><strong>Uittreksel BRP:</strong> Bij onduidelijkheid over je adres</li>
+<li><strong>Importdocumenten:</strong> Voor e-steps uit het buitenland</li>
+<li><strong>Bewijs van eigendom:</strong> Bij tweedehands aankoop</li>
+</ul>
+
+<h2>Stap voor stap: kenteken aanvragen</h2>
+
+<h3>Stap 1: Voorbereiding</h3>
+
+<p>Controleer voordat je begint:</p>
+<ul>
+<li>Of je e-step RDW goedgekeurd is</li>
+<li>Of alle documenten compleet en geldig zijn</li>
+<li>Of je WA-verzekering actief is</li>
+<li>Of je DigiD toegang hebt (voor online aanvraag)</li>
+</ul>
+
+<h3>Stap 2: Aanvraag indienen</h3>
+
+<p>Je kunt op drie manieren een kenteken aanvragen:</p>
+
+<h4>Online via RDW.nl (aanbevolen)</h4>
+<ul>
+<li>24/7 beschikbaar</li>
+<li>Snelste verwerkingstijd</li>
+<li>Direct overzicht van status</li>
+<li>Digitale upload van documenten</li>
+<li>DigiD inloggen verplicht</li>
+</ul>
+
+<h4>Bij een RDW vestiging</h4>
+<ul>
+<li>Persoonlijk contact mogelijk</li>
+<li>Hulp bij ingewikkelde situaties</li>
+<li>Directe controle van documenten</li>
+<li>Afspraak maken verplicht</li>
+</ul>
+
+<h4>Via een erkende dealer</h4>
+<ul>
+<li>Service bij aankoop nieuwe e-step</li>
+<li>Dealer regelt alles voor je</li>
+<li>Mogelijk extra kosten</li>
+<li>Controleer of dealer RDW erkend is</li>
+</ul>
+
+<h3>Stap 3: Betaling</h3>
+
+<p>De kosten voor een kentekenaanvraag zijn:</p>
+
+<table class="w-full border-collapse border border-gray-300 my-6">
+<thead class="bg-gray-100">
+<tr>
+<th class="border border-gray-300 px-4 py-2 text-left">Type aanvraag</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Kosten</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Opmerking</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Nieuwe e-step</td>
+<td class="border border-gray-300 px-4 py-2">€40,20</td>
+<td class="border border-gray-300 px-4 py-2">Standaard tarief</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Bestaande e-step (tot 1-7-2026)</td>
+<td class="border border-gray-300 px-4 py-2">€18,00</td>
+<td class="border border-gray-300 px-4 py-2">Gereduceerd tarief</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Spoedonvraag</td>
+<td class="border border-gray-300 px-4 py-2">€76,20</td>
+<td class="border border-gray-300 px-4 py-2">Verwerking binnen 3 werkdagen</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Via dealer</td>
+<td class="border border-gray-300 px-4 py-2">€40,20 + servicekosten</td>
+<td class="border border-gray-300 px-4 py-2">Dealer bepaalt eigen tarief</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Betaalmogelijkheden:</strong></p>
+<ul>
+<li>Online: iDEAL, creditcard, bankoverschrijving</li>
+<li>RDW vestiging: Pin, contant (beperkt), overschrijving</li>
+<li>Dealer: Volgens afspraken dealer</li>
+</ul>
+
+<h3>Stap 4: Verwerkingstijd</h3>
+
+<p>De doorlooptijd hangt af van de manier van aanvragen:</p>
+
+<ul>
+<li><strong>Online aanvraag:</strong> 5-10 werkdagen</li>
+<li><strong>RDW vestiging:</strong> 7-14 werkdagen</li>
+<li><strong>Via dealer:</strong> 10-21 werkdagen</li>
+<li><strong>Spoedonvraag:</strong> 2-3 werkdagen</li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Tip:</strong> Tijdens drukke perioden (zoals vlak voor deadlines) kan de verwerkingstijd langer zijn. Plan daarom ruim van tevoren.
+</div>
+
+<h2>Kenteken ontvangen en monteren</h2>
+
+<h3>Ontvangst kenteken</h3>
+
+<p>Het kenteken wordt per post naar je woonadres gestuurd. In het pakketje vind je:</p>
+
+<ul>
+<li>Het blauwe kentekenplaatje</li>
+<li>Kentekenregistratiebewijs (deel I)</li>
+<li>Montage-instructies</li>
+<li>Bevestigingsmaterialen</li>
+</ul>
+
+<h3>Kenteken monteren</h3>
+
+<p>Het kenteken moet volgens RDW voorschriften gemonteerd worden:</p>
+
+<p><strong>Eisen voor plaatsing:</strong></p>
+<ul>
+<li><strong>Positie:</strong> Achterzijde van de e-step</li>
+<li><strong>Hoogte:</strong> Tussen 20 en 120 cm van de grond</li>
+<li><strong>Zichtbaarheid:</strong> Volledig zichtbaar en leesbaar</li>
+<li><strong>Verlichting:</strong> Moet bij duisternis verlicht zijn</li>
+<li><strong>Bevestiging:</strong> Stevig en permanent bevestigd</li>
+</ul>
+
+<p><strong>Wat is niet toegestaan:</strong></p>
+<ul>
+<li>Kenteken afdekken of gedeeltelijk verbergen</li>
+<li>Modificaties aan het kenteken</li>
+<li>Kenteken ondersteboven of zijwaarts monteren</li>
+<li>Gebruik van niet-officiële kentekenplaatjes</li>
+</ul>
+
+<h2>Veelgestelde vragen en problemen</h2>
+
+<h3>Wat als mijn aanvraag wordt afgewezen?</h3>
+
+<p>Een aanvraag kan worden afgewezen om verschillende redenen:</p>
+
+<ul>
+<li><strong>E-step niet RDW goedgekeurd:</strong> Controleer de goedkeuringslijst</li>
+<li><strong>Onvolledige documenten:</strong> Zorg dat alle papieren in orde zijn</li>
+<li><strong>Geen geldige verzekering:</strong> Sluit eerst WA-verzekering af</li>
+<li><strong>Technische afwijkingen:</strong> E-step komt niet overeen met COC</li>
+</ul>
+
+<p>Bij afwijzing krijg je een brief met de reden en mogelijke oplossingen.</p>
+
+<h3>Wat als ik mijn kenteken kwijtraak?</h3>
+
+<p>Voor een nieuw kenteken bij verlies of schade:</p>
+<ol>
+<li>Doe aangifte bij de politie (bij diefstal)</li>
+<li>Vraag duplicaat kenteken aan bij RDW</li>
+<li>Kosten: €40,20 voor nieuw kenteken</li>
+<li>Lever beschadigde kenteken in (indien mogelijk)</li>
+</ol>
+
+<h3>Kan ik mijn kenteken reserveren?</h3>
+
+<p>Nee, kentekens voor e-steps worden automatisch toegekend door het RDW systeem. Je kunt geen wenskenteken aanvragen zoals bij auto's.</p>
+
+<h3>Geldt mijn kenteken ook in het buitenland?</h3>
+
+<p>Een Nederlands kenteken is geldig in:</p>
+<ul>
+<li><strong>EU landen:</strong> Meestal wel, controleer lokale regelgeving</li>
+<li><strong>Niet-EU landen:</strong> Vaak aanvullende documenten nodig</li>
+<li><strong>Verzekering:</strong> Check of je WA-verzekering geldt in bestemmingsland</li>
+</ul>
+
+<h2>Na het kenteken: wat nog meer?</h2>
+
+<h3>Periodieke keuring</h3>
+
+<p>RDW goedgekeurde e-steps met kenteken moeten regelmatig gekeurd worden:</p>
+<ul>
+<li><strong>Eerste keuring:</strong> Na 4 jaar</li>
+<li><strong>Vervolgkeuringen:</strong> Elke 2 jaar</li>
+<li><strong>Kosten:</strong> Ongeveer €35-50 per keuring</li>
+<li><strong>Waar:</strong> Erkende keuringsstations</li>
+</ul>
+
+<h3>Wijzigingen doorgeven</h3>
+
+<p>Meld wijzigingen altijd aan RDW:</p>
+<ul>
+<li>Adreswijziging eigenaar</li>
+<li>Verkoop of overdracht</li>
+<li>Technische modificaties</li>
+<li>Schade of reparaties</li>
+</ul>
+
+<h3>E-step verkopen</h3>
+
+<p>Bij verkoop van je e-step:</p>
+<ol>
+<li>Meld overdracht bij RDW binnen 1 week</li>
+<li>Geef kentekenregistratiebewijs mee aan koper</li>
+<li>Regel overdracht van verzekering</li>
+<li>Kenteken blijft bij de e-step</li>
+</ol>
+
+<h2>Kosten overzicht per jaar</h2>
+
+<p>De totale jaarlijkse kosten voor een gekentekende e-step:</p>
+
+<table class="w-full border-collapse border border-gray-300 my-6">
+<thead class="bg-gray-100">
+<tr>
+<th class="border border-gray-300 px-4 py-2 text-left">Kostenpost</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Bedrag per jaar</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Opmerking</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-gray-300 px-4 py-2">WA-verzekering</td>
+<td class="border border-gray-300 px-4 py-2">€42-60</td>
+<td class="border border-gray-300 px-4 py-2">Verplicht</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Kenteken aanvraag</td>
+<td class="border border-gray-300 px-4 py-2">€40 (eenmalig)</td>
+<td class="border border-gray-300 px-4 py-2">Eerste jaar</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Periodieke keuring</td>
+<td class="border border-gray-300 px-4 py-2">€17-25</td>
+<td class="border border-gray-300 px-4 py-2">Elke 2-4 jaar</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2">Wegenbelasting</td>
+<td class="border border-gray-300 px-4 py-2">€0</td>
+<td class="border border-gray-300 px-4 py-2">Vrijgesteld</td>
+</tr>
+<tr class="bg-gray-50 font-semibold">
+<td class="border border-gray-300 px-4 py-2">Totaal eerste jaar</td>
+<td class="border border-gray-300 px-4 py-2">€82-100</td>
+<td class="border border-gray-300 px-4 py-2">Incl. kenteken</td>
+</tr>
+<tr class="bg-gray-50 font-semibold">
+<td class="border border-gray-300 px-4 py-2">Totaal vervolgjaren</td>
+<td class="border border-gray-300 px-4 py-2">€42-85</td>
+<td class="border border-gray-300 px-4 py-2">Excl. kenteken</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Tips voor een soepele aanvraag</h2>
+
+<h3>Voorbereiding is alles</h3>
+
+<ul>
+<li><strong>Check RDW website:</strong> Zorg dat je de laatste informatie hebt</li>
+<li><strong>Documenten controleren:</strong> Alles compleet en geldig?</li>
+<li><strong>DigiD testen:</strong> Werkt je inlog voor online aanvraag?</li>
+<li><strong>Verzekering regelen:</strong> Eerst verzekering, dan kenteken</li>
+</ul>
+
+<h3>Fouten vermijden</h3>
+
+<ul>
+<li><strong>Niet wachten tot laatste moment:</strong> Plan ruim voor de deadline</li>
+<li><strong>Juiste gegevens invullen:</strong> Controleer alle informatie twee keer</li>
+<li><strong>Originele documenten:</strong> Gebruik geen kopieën of scans</li>
+<li><strong>Contact opnemen bij twijfel:</strong> RDW helpt graag bij vragen</li>
+</ul>
+
+<h3>Na goedkeuring</h3>
+
+<ul>
+<li><strong>Kenteken direct monteren:</strong> Niet rijden zonder gemonteerd kenteken</li>
+<li><strong>Documenten bewaren:</strong> Registratiebewijs altijd bij je hebben</li>
+<li><strong>Aanpassingen melden:</strong> Wijzigingen doorgevan aan RDW</li>
+<li><strong>Keuringsdatum noteren:</strong> Zet in je agenda voor over 4 jaar</li>
+</ul>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Handige links:</strong>
+<ul class="mt-2">
+<li><a href="https://www.rdw.nl/particulier/voertuigen/kenteken" target="_blank" rel="noopener">RDW - Kenteken aanvragen</a></li>
+<li><a href="https://mijn.rdw.nl" target="_blank" rel="noopener">Mijn RDW - Online services</a></li>
+<li><a href="https://www.rdw.nl/over-rdw/contact" target="_blank" rel="noopener">RDW - Contact en vestigingen</a></li>
+<li><a href="https://www.rijksoverheid.nl/onderwerpen/bijzondere-voertuigen/e-step" target="_blank" rel="noopener">Rijksoverheid - E-step regelgeving</a></li>
+</ul>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<h3 class="font-semibold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
+<p class="text-yellow-800 text-sm leading-relaxed">
+<strong>Geen juridisch advies:</strong> Deze handleiding is bedoeld voor algemene informatiedoeleinden en vormt geen juridisch advies. RDW procedures en kosten kunnen wijzigen zonder vooraankondiging.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Controleer altijd:</strong> Raadpleeg altijd de actuele informatie op de officiële RDW website en neem bij twijfel contact op met RDW. Regelgeving kan wijzigen en deze gids kan verouderd zijn.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Eigen verantwoordelijkheid:</strong> KentekenEstep.nl aanvaardt geen aansprakelijkheid voor schade die voortvloeit uit het gebruik van deze informatie. Controleer altijd de actuele procedures bij officiële bronnen.
+</p>
+</div>`
   }
 ];
 
