@@ -90,10 +90,22 @@ export default function RootLayout({
         {/* Then load GTM */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '/analytics/?id='+i+dl;f.parentNode.insertBefore(j,f);
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+              
+              // Check if in GTM preview mode (has gtm_debug or gtm_auth parameters)
+              var isPreviewMode = window.location.search.includes('gtm_debug') || 
+                                  window.location.search.includes('gtm_auth') ||
+                                  window.location.hash.includes('gtm_debug');
+              
+              // Use original GTM URL for preview mode, proxy for normal mode
+              j.src = isPreviewMode ? 
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl :
+                '/analytics/?id='+i+dl;
+                
+              f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-KW6X22NL');
           `}
         </Script>
