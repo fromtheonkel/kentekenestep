@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import { Search, Filter, Zap, Battery, Weight, CheckCircle, AlertTriangle, ExternalLink, ChevronDown, ChevronUp, Star, RotateCcw } from 'lucide-react';
 import { trackCTA } from '@/lib/gtm';
 

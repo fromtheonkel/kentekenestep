@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'KentekenEstep.nl - RDW Goedgekeurde Elektrische Steps Nederland 2025',
-  description: "✓ Officiële RDW goedgekeurde elektrische steps ✓ Verzekeringsinformatie ✓ Kenteken & regelgeving ✓ Boetes vermijden ✓ SELANA Alpha €1.900 ✓ Legaal op fietspad rijden",
-  keywords: "elektrische step Nederland, RDW goedgekeurde elektrische step, elektrische step verzekering, elektrische step kenteken, e-step, SELANA Alpha, elektrische step boete, legale elektrische step, elektrische step regelgeving 2025",
+  title: 'Goedgekeurde Elektrische Steps Nederland 2025 | RDW Kenteken & Verzekering',
+  description: "✓ Goedgekeurde elektrische steps met kenteken ✓ RDW typegoedkeuring ✓ Verzekeringsinformatie ✓ SELANA Alpha €1.900 ✓ Legaal op openbare weg rijden ✓ Complete gids",
+  keywords: "goedgekeurde elektrische step, elektrische step met kenteken, RDW goedgekeurd, elektrische step kenteken, goedgekeurde e steps, elektrische step rdw goedgekeurd, SELANA Alpha, kenteken estep",
   openGraph: {
-    title: 'KentekenEstep.nl - RDW Goedgekeurde Elektrische Steps Nederland 2025',
-    description: 'Alles over legale elektrische steps in Nederland: RDW goedkeuring, verzekeringen, boetes en toegestane modellen. SELANA Alpha €1.900.',
+    title: 'Goedgekeurde Elektrische Steps Nederland 2025 | RDW Kenteken',
+    description: 'Goedgekeurde elektrische steps met kenteken: RDW typegoedkeuring, verzekering en SELANA Alpha €1.900. Legaal op openbare weg.',
     url: 'https://kentekenestep.nl',
     siteName: 'KentekenEstep.nl',
     locale: 'nl_NL',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RDW Goedgekeurde Elektrische Steps Nederland 2025',
-    description: 'Vergelijk legale elektrische steps, verzekeringen en regelgeving. SELANA Alpha €1.900.',
+    title: 'Goedgekeurde Elektrische Steps met Kenteken Nederland 2025',
+    description: 'RDW goedgekeurde elektrische steps met kenteken. SELANA Alpha €1.900. Verzekering & regelgeving.',
     images: ['https://kentekenestep.nl/logo_estep_rdw.svg'],
   },
   robots: {
