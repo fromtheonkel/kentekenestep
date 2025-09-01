@@ -95,8 +95,8 @@ export default function RootLayout({
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
               
-              // Always use original GTM URL for now to fix preview mode
-              j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              // Use Cloudflare proxy for better performance
+              j.src = '/analytics/?id='+i+dl;
                 
               f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-KW6X22NL');
@@ -106,7 +106,7 @@ export default function RootLayout({
         {/* GTM NoScript fallback */}
         <noscript>
           <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KW6X22NL"
+            src="/analytics/?id=GTM-KW6X22NL"
             height="0" 
             width="0" 
             style={{display:'none', visibility:'hidden'}}
