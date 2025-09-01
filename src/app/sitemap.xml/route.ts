@@ -12,6 +12,12 @@ export async function GET() {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/goedgekeurde-elektrische-steps`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/vergelijken`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,

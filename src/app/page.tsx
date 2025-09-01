@@ -94,13 +94,27 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
               Een overzicht van goedgekeurde elektrische steps waarmee je nu of binnenkort het fietspad mee op mag
             </p>
-            <Link 
-              href="/vergelijken"
-              onClick={trackCTA.homeHeroButton}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
-            >
-              Vergelijk Elektrische Steps
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/goedgekeurde-elektrische-steps"
+                onClick={() => trackCTA.trackEvent('cta_click', {
+                  event_category: 'engagement',
+                  event_label: 'homepage_hero_goedgekeurde_steps',
+                  page_location: window.location.href,
+                  button_text: 'Goedgekeurde E-Steps'
+                })}
+                className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+              >
+                Goedgekeurde E-Steps
+              </Link>
+              <Link 
+                href="/vergelijken"
+                onClick={trackCTA.homeHeroButton}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+              >
+                Vergelijk Specificaties
+              </Link>
+            </div>
           </div>
         </div>
       </section>
