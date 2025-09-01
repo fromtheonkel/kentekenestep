@@ -95,15 +95,8 @@ export default function RootLayout({
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
               
-              // Check if in GTM preview mode (has gtm_debug or gtm_auth parameters)
-              var isPreviewMode = window.location.search.includes('gtm_debug') || 
-                                  window.location.search.includes('gtm_auth') ||
-                                  window.location.hash.includes('gtm_debug');
-              
-              // Use original GTM URL for preview mode, proxy for normal mode
-              j.src = isPreviewMode ? 
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl :
-                '/analytics/?id='+i+dl;
+              // Always use original GTM URL for now to fix preview mode
+              j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
                 
               f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-KW6X22NL');
@@ -113,7 +106,7 @@ export default function RootLayout({
         {/* GTM NoScript fallback */}
         <noscript>
           <iframe 
-            src="/analytics/?id=GTM-KW6X22NL"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KW6X22NL"
             height="0" 
             width="0" 
             style={{display:'none', visibility:'hidden'}}
