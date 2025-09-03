@@ -49,6 +49,289 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 };
 
 export const blogArticles: BlogArticle[] = [
+  {
+    id: 10,
+    title: "Grote Steden Willen Elektrische Steps Verbieden - Gevolgen voor RDW Goedgekeurde Modellen",
+    slug: "steden-verbod-elektrische-steps-rdw-goedgekeurd-2025",
+    excerpt: "Amsterdam, Rotterdam, Utrecht, Den Haag en Eindhoven willen lokaal e-steps kunnen verbieden. Wat betekent dit voor eigenaren van RDW goedgekeurde elektrische steps zoals de SELANA Alpha?",
+    author: "Iwan",
+    date: "2025-09-03",
+    category: "Nieuws",
+    tags: ["verbod", "steden", "RDW", "regelgeving", "verkeersveiligheid"],
+    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: true,
+    readTime: "8 min",
+    published: true,
+    content: `<p class="lead">Vijf grote Nederlandse steden hebben het kabinet opgeroepen om elektrische steps lokaal te kunnen verbieden. Amsterdam, Rotterdam, Utrecht, Den Haag en Eindhoven willen meer bevoegdheden om de verkeersveiligheid op fietspaden te verbeteren. Wat betekent dit voor eigenaren van RDW goedgekeurde e-steps?</p>
+
+<h2>Wat willen de steden precies?</h2>
+
+<h3>Brief aan Tweede Kamer</h3>
+
+<p>Op 3 september 2025 stuurden de vijf grootste steden een brief aan de commissie van de Tweede Kamer voorafgaand aan het debat over verkeersveiligheid met ministers Robert Tieman (Infrastructuur) en David van Weel (Veiligheid).</p>
+
+<p><strong>Hun concrete verzoeken:</strong></p>
+<ul>
+<li><strong>Lokaal verbod:</strong> Gemeenten moeten e-steps op bepaalde plaatsen kunnen verbieden</li>
+<li><strong>Grote bakfietsen naar de rijbaan:</strong> Vrachtbakfietsen verplaatsen van fietspad naar wegdeel</li>
+<li><strong>Fatbike beperkingen:</strong> Ook fatbikes lokaal kunnen weren</li>
+<li><strong>30 km/h zones:</strong> Grootschalige invoering van 30 km/h in bebouwde kom</li>
+</ul>
+
+<h3>Argumenten van de steden</h3>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>Verkeersveiligheid zorgen:</strong>
+<ul class="mt-2 space-y-1">
+<li>Toenemende snelheidsverschillen op fietspaden door e-steps</li>
+<li>700 verkeersdoden per jaar, 8.000 ernstig gewonden</li>
+<li>"Fietspad moet veilig blijven voor alle fietsers, niet alleen de grootste en snelste"</li>
+<li>Internationaal onderzoek toont aan dat e-steps minder veilig zijn dan fietsen</li>
+</ul>
+</div>
+
+<h2>Welke steden staan waar?</h2>
+
+<h3>Amsterdam: Duidelijk tegen</h3>
+<p>Amsterdam wil maatwerk afspraken met de minister over e-step regelgeving. De stad maakt zich vooral zorgen over:</p>
+<ul>
+<li>Overvolle fietspaden in de binnenstad</li>
+<li>Veiligheid van gewone fietsers</li>
+<li>Internationale toeristen die onbekend zijn met Nederlandse verkeersregels</li>
+</ul>
+
+<h3>Rotterdam: Voorzichtig positief</h3>
+<p>Rotterdam is het minst negatief van de vijf steden. Zij willen "in dialoog blijven" met het ministerie over specifieke regelgeving in plaats van een totaalverbod.</p>
+
+<h3>Utrecht: Twijfels over toegevoegde waarde</h3>
+<p>Utrecht stelt vraagtekens bij of e-steps wel bijdragen aan de mobiliteitsdoelstellingen van de stad. Een woordvoerder: "Ze komen hier zeker niet op straat."</p>
+
+<h3>Den Haag & Eindhoven: Veiligheid voorop</h3>
+<p>Beide steden sluiten zich aan bij de verkeersveiligheidsargumenten en willen lokale bevoegdheden om e-steps te kunnen weren waar nodig.</p>
+
+<h2>Gevolgen voor RDW goedgekeurde e-steps</h2>
+
+<h3>Onderscheid tussen verschillende types</h3>
+
+<p>Belangrijk om te begrijpen: de steden maken niet altijd duidelijk onderscheid tussen:</p>
+<ul>
+<li><strong>Deelsteps:</strong> Shared mobility e-steps van bedrijven</li>
+<li><strong>Illegale e-steps:</strong> Niet-goedgekeurde consumentenmodellen</li>
+<li><strong>RDW goedgekeurde e-steps:</strong> Zoals de SELANA Alpha</li>
+</ul>
+
+<h3>Juridische positie RDW modellen</h3>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Belangrijke juridische aspecten:</strong>
+<ul class="mt-2 space-y-1">
+<li>RDW goedgekeurde e-steps zijn officieel "bijzondere bromfietsen"</li>
+<li>Ze vallen onder nationale wetgeving, niet gemeentelijke regelgeving</li>
+<li>Lokale verboden kunnen juridisch complex zijn voor goedgekeurde voertuigen</li>
+<li>Vergelijkbaar met bromfietsen die ook niet lokaal verboden kunnen worden</li>
+</ul>
+</div>
+
+<h3>Mogelijke scenario's</h3>
+
+<p><strong>Scenario 1: Totaalverbod (onwaarschijnlijk)</strong></p>
+<ul>
+<li>Geldt voor alle e-steps, ook RDW goedgekeurde</li>
+<li>Juridisch complex vanwege nationale typegoedkeuring</li>
+<li>Zou compensatie voor eigenaren kunnen vereisen</li>
+</ul>
+
+<p><strong>Scenario 2: Selectief verbod (waarschijnlijker)</strong></p>
+<ul>
+<li>Alleen deelsteps en niet-goedgekeurde modellen</li>
+<li>RDW goedgekeurde e-steps blijven toegestaan</li>
+<li>Focus op commerciële exploitatie en veiligheid</li>
+</ul>
+
+<p><strong>Scenario 3: Gebiedsspecifieke beperkingen</strong></p>
+<ul>
+<li>Verbod in drukke binnensteden</li>
+<li>Toegestaan in woonwijken en buitengebieden</li>
+<li>Vergelijkbaar met milieuzone regelgeving</li>
+</ul>
+
+<h2>Wat zegt de regering?</h2>
+
+<h3>Minister Tieman's plannen</h3>
+
+<p>Minister Robert Tieman (Infrastructuur) kondigde in september 2025 nieuwe maatregelen aan:</p>
+
+<ul>
+<li><strong>Helmplicht:</strong> Verplicht voor onder-18 op fatbikes en e-bikes</li>
+<li><strong>Veiligheidsfocus:</strong> Reactie op verzesvoudiging spoedgevallen jongeren</li>
+<li><strong>Dialoog met gemeenten:</strong> Bereidheid tot maatwerk oplossingen</li>
+</ul>
+
+<h3>Landelijke regelgeving 2025</h3>
+
+<p>De huidige koers van het kabinet:</p>
+<ul>
+<li>E-steps zijn vanaf 2025 officieel toegestaan</li>
+<li>Kenteken verplicht vanaf juli 2025 (bestaande modellen: juli 2026)</li>
+<li>Strengere handhaving van niet-goedgekeurde modellen</li>
+<li>Focus op typegoedkeuring en veiligheidseisen</li>
+</ul>
+
+<h2>Impact op SELANA Alpha eigenaren</h2>
+
+<h3>Huidige rechten</h3>
+
+<p>Als eigenaar van een RDW goedgekeurde SELANA Alpha heb je momenteel:</p>
+<ul>
+<li>Recht om overal op openbare weg te rijden</li>
+<li>Officiële typegoedkeuring en kenteken</li>
+<li>Verzekeringsdekking</li>
+<li>Juridische bescherming als "bijzondere bromfiets"</li>
+</ul>
+
+<h3>Mogelijke gevolgen</h3>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>Wat kan er veranderen:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Beperkte toegang:</strong> Mogelijk geen toegang tot drukke binnensteden</li>
+<li><strong>Parkeerregels:</strong> Strengere regels voor stallen</li>
+<li><strong>Extra heffingen:</strong> Mogelijk lokale belastingen of parkeerkosten</li>
+<li><strong>Vergunningssystemen:</strong> Registratie bij gemeente verplicht</li>
+</ul>
+</div>
+
+<h2>Internationale vergelijking</h2>
+
+<h3>Parijs: Referendum resulteerde in verbod</h3>
+
+<p>Parijs verbood in 2023 e-step sharing na een referendum:</p>
+<ul>
+<li>89% van de stemmers was tegen deelsteps</li>
+<li>Privé e-steps bleven toegestaan</li>
+<li>Focus lag op overlast en veiligheid</li>
+</ul>
+
+<h3>Duitse steden: Gemengde ervaringen</h3>
+
+<p>Duitse steden hanteren verschillende strategieën:</p>
+<ul>
+<li><strong>München:</strong> Strikte parkeerregels, beperkte aantallen</li>
+<li><strong>Berlin:</strong> Toegestaan met vergunning per aanbieder</li>
+<li><strong>Hamburg:</strong> Volledige integratie met OV systeem</li>
+</ul>
+
+<h2>Praktische gevolgen voor gebruikers</h2>
+
+<h3>Korte termijn (2025-2026)</h3>
+
+<ul>
+<li>Waarschijnlijk geen directe gevolgen voor RDW modellen</li>
+<li>Mogelijk strengere handhaving illegale e-steps</li>
+<li>Focus op deelstep aanbieders eerst</li>
+</ul>
+
+<h3>Middellange termijn (2026-2028)</h3>
+
+<ul>
+<li>Mogelijke lokale beperkingen in stadscentra</li>
+<li>Parkeerregulering en -kosten</li>
+<li>Aanvullende veiligheidseisen (bv. helmen)</li>
+</ul>
+
+<h2>Advies voor e-step eigenaren</h2>
+
+<h3>Voor huidige SELANA Alpha eigenaren</h3>
+
+<ul>
+<li><strong>Blijf geïnformeerd:</strong> Volg lokale ontwikkelingen bij jouw gemeente</li>
+<li><strong>Documentatie op orde:</strong> Zorg dat kenteken en verzekering actueel zijn</li>
+<li><strong>Defensief rijden:</strong> Toon dat RDW e-steps veilig gebruikt kunnen worden</li>
+<li><strong>Belangenorganisaties:</strong> Sluit je aan bij gebruikersverenigingen</li>
+</ul>
+
+<h3>Voor potentiële kopers</h3>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Waarom RDW goedkeuring belangrijk blijft:</strong>
+<ul class="mt-2 space-y-1">
+<li>Juridische bescherming tegen willekeurige verboden</li>
+<li>Betere kans om uitgezonderd te worden van beperkingen</li>
+<li>Bewezen veiligheid door certificering</li>
+<li>Verzekeringsdekking en verhaalsmogelijkheden</li>
+</ul>
+</div>
+
+<h2>Wat kun je als gebruiker doen?</h2>
+
+<h3>Politieke betrokkenheid</h3>
+
+<ul>
+<li>Reageer op consultatierondes van je gemeente</li>
+<li>Neem contact op met gemeenteraadsleden</li>
+<li>Deel positieve ervaringen met RDW goedgekeurde e-steps</li>
+<li>Steun belangenorganisaties en petities</li>
+</ul>
+
+<h3>Verantwoord gebruik</h3>
+
+<ul>
+<li>Houd je aan verkeersregels en snelheidsbeperkingen</li>
+<li>Parkeer netjes en niet hinderlijk</li>
+<li>Draag beschermende kleding</li>
+<li>Wees respectvol naar andere weggebruikers</li>
+</ul>
+
+<h2>Toekomst perspectief</h2>
+
+<h3>Mogelijke ontwikkelingen</h3>
+
+<p>De discussie over e-steps in steden zal waarschijnlijk leiden tot:</p>
+<ul>
+<li><strong>Betere regulering:</strong> Duidelijker onderscheid tussen verschillende types</li>
+<li><strong>Technische vooruitgang:</strong> Veiligere e-steps met betere systemen</li>
+<li><strong>Infrastructuur aanpassingen:</strong> Bredere fietspaden, aparte rijstroken</li>
+<li><strong>Gedragsverandering:</strong> Betere educatie en training voor gebruikers</li>
+</ul>
+
+<h3>Rol van de industrie</h3>
+
+<p>Fabrikanten zoals SELANA kunnen bijdragen door:</p>
+<ul>
+<li>Nog veiliger ontwerp en betere remmen</li>
+<li>Geofencing technologie voor snelheidsbegrenzing</li>
+<li>Betere zichtbaarheid en verlichting</li>
+<li>Training en educatieprogramma's</li>
+</ul>
+
+<h2>Conclusie</h2>
+
+<p>Het voorstel van de vijf grote steden om e-steps lokaal te kunnen verbieden is vooral gericht op verkeersveiligheid en leefbaarheid. Voor eigenaren van RDW goedgekeurde elektrische steps zoals de SELANA Alpha zijn de directe gevolgen waarschijnlijk beperkt.</p>
+
+<p>De officiële typegoedkeuring biedt juridische bescherming en onderscheidt goedgekeurde modellen van illegale alternatieven. Wel is het verstandig om ontwikkelingen te volgen en verantwoordelijk te rijden.</p>
+
+<p>De komende maanden zullen cruciaal zijn. Het Tweede Kamerdebat en de reactie van minister Tieman kunnen de koers bepalen voor de toekomst van e-steps in Nederlandse steden.</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Belangrijke data om te onthouden:</strong>
+<ul class="mt-2">
+<li><strong>September 2025:</strong> Tweede Kamerdebat over verkeersveiligheid</li>
+<li><strong>Juli 2025:</strong> Kenteken verplicht voor nieuwe RDW e-steps</li>
+<li><strong>Juli 2026:</strong> Kenteken verplicht voor bestaande goedgekeurde modellen</li>
+<li><strong>2025-2026:</strong> Verwachte besluitvorming over lokale bevoegdheden</li>
+</ul>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<h3 class="font-semibold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
+<p class="text-yellow-800 text-sm leading-relaxed">
+<strong>Situatie in ontwikkeling:</strong> Dit artikel is gebaseerd op nieuwsberichten van september 2025. De politieke situatie en regelgeving kunnen snel veranderen. Raadpleeg altijd actuele bronnen zoals RDW, Rijksoverheid en je lokale gemeente voor de nieuwste informatie.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Geen juridisch advies:</strong> Deze informatie vormt geen juridisch advies. Bij specifieke vragen over je rechten of verplichtingen als e-step eigenaar, raadpleeg een gekwalificeerde jurist of neem contact op met je gemeente.
+</p>
+</div>`
+  },
   // 🆕 NEW ARTICLE - Add new articles here at the top
   {
     id: 9,
