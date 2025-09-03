@@ -51,7 +51,7 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 export const blogArticles: BlogArticle[] = [
   {
     id: 10,
-    title: "Grote Steden Willen Elektrische Steps Verbieden - Gevolgen voor RDW Goedgekeurde Modellen",
+    title: "Grote steden willen elektrische steps verbieden - gevolgen voor RDW goedgekeurde modellen",
     slug: "steden-verbod-elektrische-steps-rdw-goedgekeurd-2025",
     excerpt: "Amsterdam, Rotterdam, Utrecht, Den Haag en Eindhoven willen lokaal e-steps kunnen verbieden. Wat betekent dit voor eigenaren van RDW goedgekeurde elektrische steps zoals de SELANA Alpha?",
     author: "Iwan",
