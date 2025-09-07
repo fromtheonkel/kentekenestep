@@ -58,7 +58,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-07",
     category: "Vergelijking",
     tags: ["RDW", "goedgekeurd", "vergelijking", "modellen", "overzicht"],
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80",
+    image: "/images/rijtje_steps.webp",
     featured: false,
     readTime: "12 min",
     published: true,

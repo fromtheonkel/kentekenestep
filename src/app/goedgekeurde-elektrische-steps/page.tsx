@@ -104,7 +104,7 @@ export default function GoedgekeurdeElektrischeStepsPage() {
               Beschikbare Goedgekeurde Modellen
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Momenteel is er één officieel RDW goedgekeurde elektrische step beschikbaar in Nederland.
+              Er zijn 5 officieel RDW goedgekeurde modellen, maar slechts één werkt volledig elektrisch zonder steppen.
             </p>
           </div>
 
@@ -182,6 +182,96 @@ export default function GoedgekeurdeElektrischeStepsPage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Other RDW Approved Models */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Andere RDW goedgekeurde modellen (elektrisch ondersteund)
+              </h3>
+              <p className="text-gray-600">
+                Deze 4 modellen zijn ook officieel goedgekeurd, maar vereisen fysiek steppen voor voortbeweging.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Yedoo Mezeq */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Yedoo Mezeq</h4>
+                <p className="text-sm text-gray-600 mb-4">Sportstep met elektrische ondersteuning</p>
+                <ul className="text-sm text-gray-700 space-y-1 mb-4">
+                  <li>• Max 25 km/h</li>
+                  <li>• Steppen verplicht</li>
+                  <li>• Sport & lange afstanden</li>
+                  <li>• €800-1.200</li>
+                </ul>
+                <div className="text-xs text-gray-500">
+                  Geschikt voor: Sport, fitness, actief transport
+                </div>
+              </div>
+
+              {/* Kickbike Luxury */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Kickbike Luxury</h4>
+                <p className="text-sm text-gray-600 mb-4">Premium elektrisch ondersteunde stepper</p>
+                <ul className="text-sm text-gray-700 space-y-1 mb-4">
+                  <li>• Max 25 km/h</li>
+                  <li>• Steppen verplicht</li>
+                  <li>• Hoogwaardige afwerking</li>
+                  <li>• €900-1.400</li>
+                </ul>
+                <div className="text-xs text-gray-500">
+                  Geschikt voor: Luxe pendelen, stijlbewust rijden
+                </div>
+              </div>
+
+              {/* Kickbike Fat Max */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Kickbike Fat Max</h4>
+                <p className="text-sm text-gray-600 mb-4">Off-road elektrisch ondersteunde stepper</p>
+                <ul className="text-sm text-gray-700 space-y-1 mb-4">
+                  <li>• Max 25 km/h</li>
+                  <li>• Steppen verplicht</li>
+                  <li>• Fat banden voor terrein</li>
+                  <li>• €1.000-1.500</li>
+                </ul>
+                <div className="text-xs text-gray-500">
+                  Geschikt voor: Off-road, natuur, adventure
+                </div>
+              </div>
+
+              {/* Kickbike Cruise */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Kickbike Cruise</h4>
+                <p className="text-sm text-gray-600 mb-4">Comfort elektrisch ondersteunde stepper</p>
+                <ul className="text-sm text-gray-700 space-y-1 mb-4">
+                  <li>• Max 25 km/h</li>
+                  <li>• Steppen verplicht</li>
+                  <li>• 25-40 km bereik</li>
+                  <li>• €1.200-1.600</li>
+                </ul>
+                <div className="text-xs text-gray-500">
+                  Geschikt voor: Comfort pendelen, balans sport/gemak
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                <p className="text-blue-800 text-sm">
+                  <strong>Belangrijke opmerking:</strong> Deze 4 modellen zijn "steppers" - je moet blijven steppen voor voortbeweging. 
+                  Alleen de SELANA Alpha werkt volledig elektrisch zoals mensen zich een e-step voorstellen.
+                </p>
+              </div>
+              
+              <Link 
+                href="/blog/alle-rdw-goedgekeurde-elektrische-steps-nederland-complete-lijst"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors inline-flex items-center"
+              >
+                Lees volledig overzicht van alle 5 modellen
+              </Link>
             </div>
           </div>
         </div>
