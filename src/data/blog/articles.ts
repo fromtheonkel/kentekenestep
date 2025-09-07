@@ -50,6 +50,431 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 11,
+    title: "Alle RDW goedgekeurde elektrische steps Nederland 2025 - complete lijst en verschillen",
+    slug: "alle-rdw-goedgekeurde-elektrische-steps-nederland-complete-lijst",
+    excerpt: "Er zijn meer RDW goedgekeurde e-steps dan alleen de SELANA Alpha! Ontdek alle 5 officieel toegestane modellen: van traditionele steps tot stepper-modellen en hun unieke eigenschappen.",
+    author: "Iwan",
+    date: "2025-09-07",
+    category: "Vergelijking",
+    tags: ["RDW", "goedgekeurd", "vergelijking", "modellen", "overzicht"],
+    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: false,
+    readTime: "12 min",
+    published: true,
+    content: `<p class="lead">Veel mensen denken dat de SELANA Alpha de enige RDW goedgekeurde elektrische step in Nederland is. Dat klopt niet helemaal! Er zijn in totaal 5 officieel goedgekeurde modellen, maar ze verschillen sterk van elkaar. Van traditionele e-steps tot stepper-modellen - hier is het complete overzicht.</p>
+
+<h2>RDW goedgekeurde e-steps: complete lijst 2025</h2>
+
+<p>Volgens de officiële RDW website zijn er momenteel 5 elektrische steps goedgekeurd als "bijzondere bromfiets":</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Officiële RDW lijst:</strong>
+<ol class="mt-2 space-y-1">
+<li>SELANA Alpha (nationale typegoedkeuring)</li>
+<li>Yedoo Mezeq</li>
+<li>Kickbike Luxury</li>
+<li>Kickbike Fat Max</li>
+<li>Kickbike Cruise</li>
+</ol>
+</div>
+
+<p><strong>Belangrijke nuance:</strong> Niet alle goedgekeurde modellen zijn traditionele e-steps zoals we die kennen. Sommige zijn eigenlijk "steppers" - voertuigen waarbij je moet blijven steppen voor voorwaartse beweging.</p>
+
+<h2>Classificatie: echte e-step vs stepper</h2>
+
+<h3>Volledig elektrische steps (geen steppen nodig)</h3>
+
+<h4>1. SELANA Alpha - De enige echte e-step</h4>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>SELANA Alpha specificaties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Type:</strong> Volledig elektrische step (geen steppen nodig)</li>
+<li><strong>Max snelheid:</strong> 25 km/h</li>
+<li><strong>Bereik:</strong> Tot 52,5 km</li>
+<li><strong>Batterij:</strong> 576 Wh</li>
+<li><strong>Gewicht:</strong> 28,3 kg</li>
+<li><strong>Wielen:</strong> 10 inch tubeless</li>
+<li><strong>Prijs:</strong> €1.900</li>
+<li><strong>Bijzonderheid:</strong> Enige met "nationale typegoedkeuring"</li>
+</ul>
+</div>
+
+<p>De SELANA Alpha is de enige RDW goedgekeurde step die werkt zoals mensen zich een e-step voorstellen: volledig elektrisch, gas geven en rijden. Je hoeft niet te steppen.</p>
+
+<h3>Elektrisch ondersteunde steppers (steppen verplicht)</h3>
+
+<p>De andere vier modellen zijn eigenlijk "kick scooters" of steppers met elektrische ondersteuning. Je moet blijven steppen om vooruit te komen - de elektrische motor helpt alleen.</p>
+
+<h4>2. Yedoo Mezeq - Sportstep met ondersteuning</h4>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>Yedoo Mezeq specificaties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Type:</strong> Sportstep met elektrische ondersteuning</li>
+<li><strong>Max snelheid:</strong> 25 km/h (met steppen + ondersteuning)</li>
+<li><strong>Gebruik:</strong> Lange afstanden, sport</li>
+<li><strong>Frame:</strong> Hoogte verstelbaar</li>
+<li><strong>Geschikt voor:</strong> Personen vanaf 155 cm</li>
+<li><strong>Bijzonderheid:</strong> Geen zadel, moet blijven steppen</li>
+</ul>
+</div>
+
+<p>De Yedoo Mezeq is populair bij sportievelingen die langere afstanden willen afleggen met elektrische ondersteuning, maar wel de fysieke activiteit van het steppen behouden.</p>
+
+<h4>3. Kickbike Luxury - Premium stepper</h4>
+
+<div class="bg-purple-50 border border-purple-200 rounded-lg p-4 my-6">
+<strong>Kickbike Luxury specificaties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Type:</strong> Premium elektrisch ondersteunde stepper</li>
+<li><strong>Max snelheid:</strong> 25 km/h</li>
+<li><strong>Gebruik:</strong> Luxe pendelen met fysieke activiteit</li>
+<li><strong>Bijzonderheid:</strong> Hoogwaardige afwerking</li>
+<li><strong>Target groep:</strong> Gebruikers die stijl en functie combineren</li>
+</ul>
+</div>
+
+<h4>4. Kickbike Fat Max - Off-road stepper</h4>
+
+<div class="bg-orange-50 border border-orange-200 rounded-lg p-4 my-6">
+<strong>Kickbike Fat Max specificaties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Type:</strong> Off-road elektrisch ondersteunde stepper</li>
+<li><strong>Max snelheid:</strong> 25 km/h</li>
+<li><strong>Wielen:</strong> Zeer grote "fat" banden</li>
+<li><strong>Terrein:</strong> Off-road en gewone wegen</li>
+<li><strong>Bijzonderheid:</strong> Robuuste fatbike-stepper</li>
+<li><strong>Gebruik:</strong> Natuur, onverhard terrein</li>
+</ul>
+</div>
+
+<h4>5. Kickbike Cruise - Balans tussen comfort en sport</h4>
+
+<div class="bg-teal-50 border border-teal-200 rounded-lg p-4 my-6">
+<strong>Kickbike Cruise specificaties:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Type:</strong> Comfort elektrisch ondersteunde stepper</li>
+<li><strong>Max snelheid:</strong> 25 km/h</li>
+<li><strong>Batterij:</strong> 36V / 14Ah Li-ion</li>
+<li><strong>Bereik:</strong> 25-40 km</li>
+<li><strong>Gewicht:</strong> 16 kg</li>
+<li><strong>Wielen:</strong> 28 inch voor, 20 inch achter</li>
+<li><strong>Geschikt voor:</strong> 165-205 cm</li>
+<li><strong>Bijzonderheid:</strong> Lichtste van de Kickbike modellen</li>
+</ul>
+</div>
+
+<h2>Vergelijkingstabel: alle RDW goedgekeurde modellen</h2>
+
+<div class="overflow-x-auto my-6">
+<table class="w-full border-collapse border border-gray-300">
+<thead class="bg-gray-100">
+<tr>
+<th class="border border-gray-300 px-4 py-2 text-left">Model</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Type</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Max snelheid</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Steppen nodig?</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Bereik</th>
+<th class="border border-gray-300 px-4 py-2 text-left">Prijs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-gray-300 px-4 py-2 font-medium">SELANA Alpha</td>
+<td class="border border-gray-300 px-4 py-2">Echte e-step</td>
+<td class="border border-gray-300 px-4 py-2">25 km/h</td>
+<td class="border border-gray-300 px-4 py-2 text-green-600 font-bold">Nee</td>
+<td class="border border-gray-300 px-4 py-2">52,5 km</td>
+<td class="border border-gray-300 px-4 py-2">€1.900</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2 font-medium">Yedoo Mezeq</td>
+<td class="border border-gray-300 px-4 py-2">Sportstep</td>
+<td class="border border-gray-300 px-4 py-2">25 km/h</td>
+<td class="border border-gray-300 px-4 py-2 text-red-600 font-bold">Ja</td>
+<td class="border border-gray-300 px-4 py-2">Variabel</td>
+<td class="border border-gray-300 px-4 py-2">€800-1200</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2 font-medium">Kickbike Luxury</td>
+<td class="border border-gray-300 px-4 py-2">Premium stepper</td>
+<td class="border border-gray-300 px-4 py-2">25 km/h</td>
+<td class="border border-gray-300 px-4 py-2 text-red-600 font-bold">Ja</td>
+<td class="border border-gray-300 px-4 py-2">Variabel</td>
+<td class="border border-gray-300 px-4 py-2">€900-1400</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2 font-medium">Kickbike Fat Max</td>
+<td class="border border-gray-300 px-4 py-2">Off-road stepper</td>
+<td class="border border-gray-300 px-4 py-2">25 km/h</td>
+<td class="border border-gray-300 px-4 py-2 text-red-600 font-bold">Ja</td>
+<td class="border border-gray-300 px-4 py-2">Variabel</td>
+<td class="border border-gray-300 px-4 py-2">€1000-1500</td>
+</tr>
+<tr>
+<td class="border border-gray-300 px-4 py-2 font-medium">Kickbike Cruise</td>
+<td class="border border-gray-300 px-4 py-2">Comfort stepper</td>
+<td class="border border-gray-300 px-4 py-2">25 km/h</td>
+<td class="border border-gray-300 px-4 py-2 text-red-600 font-bold">Ja</td>
+<td class="border border-gray-300 px-4 py-2">25-40 km</td>
+<td class="border border-gray-300 px-4 py-2">€1200-1600</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>Waarom zijn de andere modellen minder bekend?</h2>
+
+<h3>1. Verwarrende naam "e-step"</h3>
+
+<p>Mensen zoeken naar "elektrische steps" en verwachten voertuigen zoals de SELANA Alpha - volledig elektrisch zonder steppen. De Kickbike en Yedoo modellen zijn eigenlijk "elektrisch ondersteunde steppers", wat een heel ander concept is.</p>
+
+<h3>2. Niche doelgroep</h3>
+
+<p>Stepper-modellen appelleren aan:</p>
+<ul>
+<li>Sportliefhebbers die fysieke activiteit willen behouden</li>
+<li>Outdoor enthousiasten (vooral Fat Max)</li>
+<li>Mensen die van "aktief transport" houden</li>
+</ul>
+
+<p>Dit is een veel kleinere markt dan mensen die gewoon een elektrische step willen.</p>
+
+<h3>3. Marketing en zichtbaarheid</h3>
+
+<p>SELANA heeft zwaar geïnvesteerd in marketing als "de eerste RDW goedgekeurde e-step". Technisch klopt dit niet, maar wel als "eerste volledig elektrische step".</p>
+
+<h2>Voor- en nadelen per categorie</h2>
+
+<h3>Volledig elektrische e-step (SELANA Alpha)</h3>
+
+<div class="grid md:grid-cols-2 gap-6 my-6">
+<div>
+<h4 class="text-lg font-bold text-green-600 mb-3">Voordelen ✅</h4>
+<ul class="space-y-2">
+<li>• Geen fysieke inspanning nodig</li>
+<li>• Geschikt voor alle leeftijden</li>
+<li>• Grote bereik (52,5 km)</li>
+<li>• Consistent tempo</li>
+<li>• Ideaal voor woon-werk verkeer</li>
+<li>• Werkt zoals mensen verwachten van een "e-step"</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold text-red-600 mb-3">Nadelen ❌</h4>
+<ul class="space-y-2">
+<li>• Duurste optie (€1.900)</li>
+<li>• Zwaarste model (28,3 kg)</li>
+<li>• Minder sportief/gezond</li>
+<li>• Afhankelijk van batterij</li>
+<li>• Complexere technologie</li>
+</ul>
+</div>
+</div>
+
+<h3>Elektrisch ondersteunde steppers (Yedoo & Kickbike)</h3>
+
+<div class="grid md:grid-cols-2 gap-6 my-6">
+<div>
+<h4 class="text-lg font-bold text-green-600 mb-3">Voordelen ✅</h4>
+<ul class="space-y-2">
+<li>• Goedkoper (€800-1600)</li>
+<li>• Gezonde fysieke activiteit</li>
+<li>• Lichtere modellen</li>
+<li>• Minder batterijafhankelijk</li>
+<li>• Sportieve ervaring</li>
+<li>• Verschillende specialisaties (off-road, comfort, sport)</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold text-red-600 mb-3">Nadelen ❌</h4>
+<ul class="space-y-2">
+<li>• Fysieke inspanning vereist</li>
+<li>• Niet geschikt voor iedereen</li>
+<li>• Beperkt bereik door vermoeidheid</li>
+<li>• Zweten bij warm weer</li>
+<li>• Niet ideaal voor formele kleding</li>
+<li>• Verwarrende marketing als "e-step"</li>
+</ul>
+</div>
+</div>
+
+<h2>Welke kies je voor welk gebruik?</h2>
+
+<h3>Woon-werk verkeer (dagelijks 10-30 km)</h3>
+<p><strong>Beste keuze: SELANA Alpha</strong></p>
+<ul>
+<li>Geen zweten in pak/kostuum</li>
+<li>Consistent tempo</li>
+<li>Grote bereik</li>
+<li>Werkt bij alle weersomstandigheden</li>
+</ul>
+
+<h3>Sport en recreatie (weekend trips, fitness)</h3>
+<p><strong>Beste keuze: Yedoo Mezeq of Kickbike modellen</strong></p>
+<ul>
+<li>Fysieke activiteit</li>
+<li>Goedkoper</li>
+<li>Sportieve ervaring</li>
+<li>Verschillende terreinopties</li>
+</ul>
+
+<h3>Off-road en natuur</h3>
+<p><strong>Beste keuze: Kickbike Fat Max</strong></p>
+<ul>
+<li>Grote banden voor terrein</li>
+<li>Robuuste constructie</li>
+<li>Adventure ervaring</li>
+</ul>
+
+<h3>Comfort en stijl</h3>
+<p><strong>Beste keuze: Kickbike Luxury of SELANA Alpha</strong></p>
+<ul>
+<li>Premium afwerking</li>
+<li>Representatieve uitstraling</li>
+<li>Kwaliteitsmaterialen</li>
+</ul>
+
+<h2>Kenteken en verzekering voor alle modellen</h2>
+
+<h3>Nieuwe regelgeving 2025-2026</h3>
+
+<p><strong>Voor alle 5 modellen geldt:</strong></p>
+<ul>
+<li>Kenteken verplicht tussen 1 juli 2025 - 1 juli 2026</li>
+<li>Kosten: €18 voor kenteken + kentekenplaat</li>
+<li>WA-verzekering verplicht</li>
+<li>Verzekeringssticker zichtbaar op voertuig</li>
+<li>Minimum leeftijd: 16 jaar</li>
+<li>Geen rijbewijs nodig</li>
+</ul>
+
+<h3>Onderscheid in behandeling</h3>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>SELANA Alpha bijzondere status:</strong>
+<ul class="mt-2 space-y-1">
+<li>Heeft "nationale typegoedkeuring"</li>
+<li>Mogelijk voorrang in regelgeving</li>
+<li>Gebruikt in overheidsvoorlichting</li>
+<li>Referentiemodel voor e-step wetgeving</li>
+</ul>
+</div>
+
+<h2>Waar kun je deze modellen kopen?</h2>
+
+<h3>SELANA Alpha</h3>
+<ul>
+<li><strong>Officieel:</strong> Selana.nl</li>
+<li><strong>Prijs:</strong> €1.900 incl. BTW</li>
+<li><strong>Levering:</strong> Direct beschikbaar</li>
+</ul>
+
+<h3>Yedoo Mezeq</h3>
+<ul>
+<li><strong>Dealers:</strong> Stepsonline.nl, gespecialiseerde fietswinkels</li>
+<li><strong>Prijs:</strong> €800-1.200 afhankelijk van configuratie</li>
+<li><strong>Import:</strong> Vaak via Tsjechische importeurs</li>
+</ul>
+
+<h3>Kickbike modellen</h3>
+<ul>
+<li><strong>Dealers:</strong> Stepfabriek.nl, eMove-Company.nl, Iedereenelektrisch.nl</li>
+<li><strong>Prijzen:</strong> €900-1.600 per model</li>
+<li><strong>Import:</strong> Via Finse/Europese distributeurs</li>
+</ul>
+
+<h2>Toekomst: verwachte ontwikkelingen</h2>
+
+<h3>Meer volledig elektrische modellen?</h3>
+
+<p>De populariteit van SELANA Alpha toont aan dat er vraag is naar "echte" e-steps. Verwacht wordt dat:</p>
+<ul>
+<li>Meer merken nationale typegoedkeuring aanvragen</li>
+<li>Prijs concurrentie SELANA Alpha uitdaagt</li>
+<li>Technologie verbeteringen (lichter, verder, goedkoper)</li>
+</ul>
+
+<h3>Regelgeving ontwikkeling</h3>
+
+<p>Mogelijke veranderingen:</p>
+<ul>
+<li>Duidelijker onderscheid tussen e-steps en steppers</li>
+<li>Aangepaste regels per type</li>
+<li>Nieuwe veiligheidseisen</li>
+<li>Infrastructuur aanpassingen</li>
+</ul>
+
+<h2>Veelgestelde vragen</h2>
+
+<div class="space-y-6 my-8">
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-3">Waarom zijn er zo weinig RDW goedgekeurde e-steps?</h3>
+<p class="text-gray-700">
+Het goedkeuringsproces is duur en tijdrovend. Fabrikanten moeten investeren in typegoedkeuring zonder zekerheid over marktomvang. Veel merken wachten af hoe de markt zich ontwikkelt.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-3">Kan ik een illegale e-step laten goedkeuren?</h3>
+<p class="text-gray-700">
+Nee, individuele voertuigen kunnen niet worden goedgekeurd. Alleen fabrikanten kunnen typegoedkeuring aanvragen voor hun modellen.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-3">Waarom kost de SELANA Alpha zoveel meer dan Kickbike modellen?</h3>
+<p class="text-gray-700">
+SELANA Alpha heeft een grotere batterij (576 Wh vs ~500 Wh), complexere elektronica, en geen steppen vereist. Dit maakt het technisch complexer en duurder om te produceren.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-3">Zijn Kickbike modellen geschikt voor dagelijks woon-werk verkeer?</h3>
+<p class="text-gray-700">
+Dat hangt af van je conditie, afstand en dresscode. Voor korte afstanden (5-15 km) en casual kleding kan het, maar voor lange afstanden of formele kleding is SELANA Alpha praktischer.
+</p>
+</div>
+
+</div>
+
+<h2>Conclusie</h2>
+
+<p>Er zijn inderdaad 5 RDW goedgekeurde elektrische steps in Nederland, maar slechts één (SELANA Alpha) is een "echte" e-step zoals de meeste mensen die voor ogen hebben. De andere vier zijn elektrisch ondersteunde steppers die een compleet andere rijervaring bieden.</p>
+
+<p><strong>Voor de meeste consumenten geldt:</strong></p>
+<ul>
+<li><strong>Woon-werk verkeer:</strong> SELANA Alpha is de enige praktische optie</li>
+<li><strong>Sport en recreatie:</strong> Kickbike en Yedoo modellen zijn interessant</li>
+<li><strong>Budget overwegingen:</strong> Steppers zijn goedkoper maar vereisen fysieke inspanning</li>
+</ul>
+
+<p>De markt staat nog in de kinderschoenen. Verwacht meer volledig elektrische modellen in de komende jaren als andere fabrikanten zien hoe succesvol SELANA Alpha is.</p>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Advies bij aankoop:</strong>
+<ul class="mt-2">
+<li>Bepaal eerst wat je wilt: volledig elektrisch of met steppen</li>
+<li>Test verschillende modellen als dat mogelijk is</li>
+<li>Houd rekening met kenteken en verzekeringkosten (€60-100/jaar extra)</li>
+<li>Koop alleen bij erkende dealers voor garantie en service</li>
+</ul>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<h3 class="font-semibold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
+<p class="text-yellow-800 text-sm leading-relaxed">
+<strong>Actuele informatie:</strong> Dit overzicht is gebaseerd op RDW informatie van september 2025. De lijst van goedgekeurde modellen kan uitbreiden. Controleer altijd de actuele RDW database voor de nieuwste informatie.
+</p>
+<p class="text-yellow-800 text-sm leading-relaxed mt-3">
+<strong>Prijzen indicatief:</strong> Genoemde prijzen zijn schattingen gebaseerd op marktonderzoek. Werkelijke prijzen kunnen variëren per dealer en configuratie. Vraag altijd actuele prijzen bij officiële dealers.
+</p>
+</div>`
+  },
+  {
     id: 10,
     title: "Grote steden willen elektrische steps verbieden - gevolgen voor RDW goedgekeurde modellen",
     slug: "steden-verbod-elektrische-steps-rdw-goedgekeurd-2025",
