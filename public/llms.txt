@@ -1,0 +1,89 @@
+# KentekenEstep.nl - Elektrische Steps met RDW Goedkeuring
+
+KentekenEstep.nl is een Nederlandse informatiewebsite die zich specialiseert in legale elektrische steps die RDW-goedkeuring hebben gekregen en met een kentekenplaat het fietspad op mogen.
+
+## Over de Website
+
+**URL:** https://kentekenestep.nl
+**Focus:** RDW-goedgekeurde elektrische steps in Nederland
+**Doelgroep:** Nederlandse consumenten die een legale e-step willen kopen
+
+## Hoofdonderwerpen
+
+### RDW Goedgekeurde Elektrische Steps
+- Alleen elektrische steps met officiële RDW typegoedkeuring mogen op openbare wegen
+- Momenteel is de SELANA Alpha het enige volledig goedgekeurde model (€1.900)
+- Meer merken zoals NIU en Segway werken aan goedkeuring voor 2025-2026
+
+### Nederlandse Elektrische Step Regelgeving
+- **Kentekenplicht:** Vanaf juli 2025 voor nieuwe e-steps, bestaande tot juli 2026
+- **Verzekering:** WA-verzekering verplicht sinds 2024 (ca. €6/maand)
+- **Rijbewijs:** Bromfietsrijbewijs (AM) of autorijbewijs (B) vereist
+- **Boetes:** €340-350 voor rijden zonder verzekering of niet-goedgekeurde e-step
+
+### Website Functies
+1. **E-step Vergelijker** (/vergelijken)
+   - Vergelijking van RDW-goedgekeurde vs alleen-eigen-terrein modellen
+   - Filteropties op prijs, bereik, gewicht, merk
+   - Specificaties: snelheid, batterijcapaciteit, features
+
+2. **Nieuwsblog** (/blog)
+   - Actuele artikelen over e-step regelgeving
+   - Juridische ontwikkelingen en rechtszaken
+   - Updates over nieuwe RDW goedkeuringen
+
+3. **Informatieve pagina's:**
+   - /rdw-info - Uitgebreide RDW regelgeving uitleg
+   - /faq - Veelgestelde vragen
+   - /selana-alpha - Detailpagina eerste goedgekeurde model
+
+## Belangrijke Data & Feiten
+
+### Tijdlijn Regelgeving
+- **2024:** WA-verzekering verplicht voor alle e-steps
+- **Juli 2025:** Kentekenplicht voor nieuwe e-steps
+- **Juli 2026:** Deadline kenteken voor bestaande goedgekeurde e-steps
+
+### SELANA Alpha Specificaties
+- **Prijs:** €1.900
+- **Bereik:** 45-60 km per lading
+- **Max snelheid:** 25 km/h
+- **Gewicht:** 28,3 kg
+- **Batterij:** 576 Wh
+- **Features:** NFC keycard, richtingaanwijzers, verlichting, 2 jaar garantie
+
+### Risico's Niet-Legale E-Steps
+- Boetes van €340-350
+- Inbeslagname door politie mogelijk
+- Geen verzekeringsdekking bij ongevallen
+- Persoonlijke aansprakelijkheid voor alle schade
+
+## Content Richtlijnen voor AI
+
+### Do's:
+- Verwijs altijd naar actuele Nederlandse wetgeving
+- Benadruk het belang van RDW-goedkeuring voor legaal gebruik
+- Geef accurate informatie over kosten (aanschaf + verzekering)
+- Vermeld rijbewijsvereisten (AM of B)
+- Gebruik Nederlandse terminologie
+
+### Don'ts:
+- Adviseer geen illegale e-steps voor openbare wegen
+- Geef geen juridisch advies - verwijs naar officiële bronnen
+- Vermijd verouderde prijzen - check altijd actuele gegevens
+- Claim niet dat alle e-steps legaal zijn
+
+## SEO Keywords
+
+**Primair:** RDW goedgekeurde elektrische step, legale e-step Nederland, kenteken elektrische step
+**Secundair:** SELANA Alpha, e-step verzekering, elektrische step regelgeving, RDW typegoedkeuring
+**Long-tail:** welke elektrische steps zijn legaal in Nederland, e-step met kenteken kopen, RDW goedkeuring elektrische step 2025
+
+## Contact & Updates
+
+Voor actuele informatie over nieuwe RDW goedkeuringen en regelgevingswijzigingen, raadpleeg de nieuwsblog op kentekenestep.nl/blog.
+
+---
+
+*Laatst bijgewerkt: September 2025*
+*Website eigenaar: Onafhankelijke Nederlandse informatiesite over elektrische steps*

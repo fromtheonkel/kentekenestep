@@ -8,7 +8,8 @@ import { trackCTA } from '@/lib/gtm';
 
 export default function Home() {
 
-  const jsonLd = {
+  // Website structured data
+  const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "KentekenEstep.nl",
@@ -18,44 +19,87 @@ export default function Home() {
       "@type": "SearchAction",
       "target": "https://kentekenestep.nl/vergelijken",
       "query-input": "required name=search_term_string"
-    },
-    "mainEntity": {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Welke elektrische steps zijn toegestaan in Nederland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Alleen door de RDW goedgekeurde elektrische steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900)."
-          }
-        },
-        {
-          "@type": "Question", 
-          "name": "Is een verzekering verplicht voor elektrische steps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, een WA-verzekering is verplicht voor alle elektrische steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Heb ik een rijbewijs nodig voor een elektrische step?", 
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Voor RDW goedgekeurde elektrische steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook rijden."
-          }
-        }
-      ]
     }
+  };
+
+  // Organization structured data
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "KentekenEstep.nl",
+    "url": "https://kentekenestep.nl",
+    "logo": "https://kentekenestep.nl/logo_estep_rdw.svg",
+    "description": "Onafhankelijke informatie over RDW goedgekeurde elektrische steps in Nederland",
+    "foundingDate": "2024",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Netherlands"
+    },
+    "knowsAbout": [
+      "Elektrische steps",
+      "RDW goedkeuring",
+      "Nederlandse regelgeving",
+      "E-step verzekeringen",
+      "SELANA Alpha"
+    ],
+    "sameAs": [
+      "https://kentekenestep.nl"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Dutch",
+      "url": "https://kentekenestep.nl/contact"
+    }
+  };
+
+  // FAQ structured data
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke elektrische steps zijn toegestaan in Nederland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alleen door de RDW goedgekeurde elektrische steps mogen op openbare wegen rijden. Momenteel is de SELANA Alpha het enige officieel goedgekeurde model (€1.900)."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Is een verzekering verplicht voor elektrische steps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, een WA-verzekering is verplicht voor alle elektrische steps in Nederland sinds 2024. De kosten zijn ongeveer €6 per maand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik een rijbewijs nodig voor een elektrische step?", 
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voor RDW goedgekeurde elektrische steps heb je minimaal een bromfietsrijbewijs (AM) nodig. Als je een geldig autorijbewijs (B) hebt, mag je ook rijden."
+        }
+      }
+    ]
   };
 
 
   return (
     <>
+      {/* Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}

@@ -7,6 +7,7 @@ import { Calendar, ArrowRight, Search, User, Clock } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { blogArticles, categories, getFeaturedArticles } from '@/data/blog/articles';
+import { generateBreadcrumbStructuredData } from '@/lib/structured-data';
 
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,7 +27,20 @@ export default function BlogPage() {
 
   const featuredArticles = getFeaturedArticles();
 
+  // Generate breadcrumb structured data
+  const breadcrumbStructuredData = generateBreadcrumbStructuredData([
+    { name: "Home", url: "https://kentekenestep.nl" },
+    { name: "Blog", url: "https://kentekenestep.nl/blog" }
+  ]);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData)
+        }}
+      />
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white py-16">
@@ -256,5 +270,6 @@ export default function BlogPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

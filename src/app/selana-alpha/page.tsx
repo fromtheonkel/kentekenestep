@@ -4,9 +4,93 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, Battery, Zap, Weight, Ruler, Shield, Navigation, Eye, Bluetooth, Wrench, Euro, Calendar, MapPin } from 'lucide-react';
 import { trackCTA } from '@/lib/gtm';
+import { generateBreadcrumbStructuredData } from '@/lib/structured-data';
 
 export default function SelanaAlphaPage() {
+  // Generate breadcrumb and product structured data
+  const breadcrumbStructuredData = generateBreadcrumbStructuredData([
+    { name: "Home", url: "https://kentekenestep.nl" },
+    { name: "Vergelijken", url: "https://kentekenestep.nl/vergelijken" },
+    { name: "SELANA Alpha", url: "https://kentekenestep.nl/selana-alpha" }
+  ]);
+
+  const productStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "SELANA Alpha",
+    "description": "De eerste volledig RDW goedgekeurde elektrische step in Nederland met kenteken en verzekering",
+    "brand": {
+      "@type": "Brand",
+      "name": "SELANA"
+    },
+    "model": "Alpha",
+    "image": "https://kentekenestep.nl/images/selana_alpha.jpeg",
+    "url": "https://kentekenestep.nl/selana-alpha",
+    "category": "Elektrische Step",
+    "offers": {
+      "@type": "Offer",
+      "price": "1900",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/PreOrder",
+      "priceValidUntil": new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+      "seller": {
+        "@type": "Organization",
+        "name": "SELANA"
+      }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Max Snelheid",
+        "value": "25 km/h"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Bereik",
+        "value": "45-60 km"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Gewicht",
+        "value": "28,3 kg"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Batterij Capaciteit",
+        "value": "576 Wh"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "RDW Goedkeuring",
+        "value": "Ja"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "RDW Nummer",
+        "value": "RDW-2024-SELANA-001"
+      }
+    ],
+    "isRelatedTo": {
+      "@type": "Thing",
+      "name": "RDW Goedkeuring",
+      "description": "Officiële typegoedkeuring van de Rijksdienst voor het Wegverkeer"
+    }
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productStructuredData)
+        }}
+      />
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
@@ -436,5 +520,6 @@ export default function SelanaAlphaPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

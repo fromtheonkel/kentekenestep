@@ -55,8 +55,85 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     .filter(a => a.published && a.category === article.category && a.id !== article.id)
     .slice(0, 3);
 
+  // Generate Article structured data
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": article.image ? `https://kentekenestep.nl${article.image}` : "https://kentekenestep.nl/logo_estep_rdw.svg",
+    "author": {
+      "@type": "Person",
+      "name": article.author,
+      "url": "https://kentekenestep.nl"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "KentekenEstep.nl",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kentekenestep.nl/logo_estep_rdw.svg"
+      }
+    },
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://kentekenestep.nl/blog/${article.slug}`
+    },
+    "articleSection": article.category,
+    "keywords": article.tags.join(", "),
+    "wordCount": article.content ? article.content.replace(/<[^>]*>/g, '').split(' ').length : 500,
+    "timeRequired": article.readTime,
+    "about": {
+      "@type": "Thing",
+      "name": "Elektrische Steps",
+      "description": "RDW goedgekeurde elektrische steps in Nederland"
+    }
+  };
+
+  // Generate breadcrumb structured data
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://kentekenestep.nl"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://kentekenestep.nl/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://kentekenestep.nl/blog/${article.slug}`
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleStructuredData)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData)
+        }}
+      />
+      <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -242,5 +319,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
     </div>
+    </>
   );
 }

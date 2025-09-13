@@ -3,7 +3,7 @@ name: Daily E-Step News Blog Generation
 on:
   # Run daily at 10 AM UTC (11 AM CET)
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 11 * * *'
   
   # Allow manual triggering from GitHub UI
   workflow_dispatch:

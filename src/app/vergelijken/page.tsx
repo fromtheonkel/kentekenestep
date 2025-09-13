@@ -194,8 +194,117 @@ export default function VergelijkenPage() {
     searchTerm !== ''
   ].filter(Boolean).length;
 
+  // Generate structured data for products
+  const generateProductStructuredData = (scooters: typeof allScooters) => {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Elektrische Step Vergelijker",
+      "description": "Vergelijk alle e-steps en vind het perfecte model voor jouw situatie",
+      "url": "https://kentekenestep.nl/vergelijken",
+      "numberOfItems": scooters.length,
+      "itemListElement": scooters.map((scooter, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Product",
+          "name": `${scooter.brand} ${scooter.model}`,
+          "description": scooter.description,
+          "brand": {
+            "@type": "Brand",
+            "name": scooter.brand
+          },
+          "model": scooter.model,
+          "image": `https://kentekenestep.nl${scooter.image}`,
+          "url": scooter.isRDWApproved ? "https://kentekenestep.nl/selana-alpha" : scooter.affiliate || "https://kentekenestep.nl/vergelijken",
+          "offers": {
+            "@type": "Offer",
+            "price": scooter.price,
+            "priceCurrency": "EUR",
+            "availability": scooter.available.includes('Direct') ? "https://schema.org/InStock" : "https://schema.org/PreOrder",
+            "priceValidUntil": new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 30 days from now
+            "seller": {
+              "@type": "Organization",
+              "name": scooter.affiliate?.includes('mediamarkt') ? "MediaMarkt" : scooter.brand
+            }
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Max Snelheid",
+              "value": `${scooter.maxSpeed} km/h`
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Bereik",
+              "value": `${scooter.range} km`
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Gewicht",
+              "value": `${scooter.weight} kg`
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Batterij Capaciteit",
+              "value": `${scooter.batteryCapacity} Wh`
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "RDW Goedkeuring",
+              "value": scooter.isRDWApproved ? "Ja" : "Nee"
+            }
+          ],
+          ...(scooter.rating && {
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": scooter.rating,
+              "reviewCount": scooter.reviews,
+              "bestRating": 5,
+              "worstRating": 1
+            }
+          })
+        }
+      }))
+    };
+  };
+
+  // Generate breadcrumb structured data
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://kentekenestep.nl"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vergelijken",
+        "item": "https://kentekenestep.nl/vergelijken"
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateProductStructuredData(filteredAndSortedScooters))
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData)
+        }}
+      />
+      <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -625,5 +734,6 @@ export default function VergelijkenPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

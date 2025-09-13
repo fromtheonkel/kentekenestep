@@ -50,6 +50,73 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 12,
+    title: "België: E-step ongevallen verruimde in 5 jaar - waarom Nederland strenger moet blijven",
+    slug: "belgie-e-step-ongevallen-verzesvoudigd-nederland-strengere-regels",
+    excerpt: "In België stegen e-step ongevallen van 208 naar 1.254 in vijf jaar tijd. Dit toont waarom Nederland terecht strenge RDW-eisen stelt aan elektrische steps - veiligheid moet voorop staan.",
+    author: "Iwan", 
+    date: "2025-01-13",
+    category: "Nieuws",
+    tags: ["veiligheid", "België", "ongevallen", "RDW", "regelgeving"],
+    image: "/images/estep_ongeluk_belgie.webp",
+    featured: true,
+    readTime: "6 min", 
+    published: true,
+    content: `<p class="lead">Schokkende cijfers uit België laten zien hoe gevaarlijk e-steps kunnen zijn zonder goede regelgeving. In vijf jaar tijd stegen ongevallen met e-steps in het woon-werkverkeer van 208 naar 1.254 - een verzesvoudiging. Dit onderstreept waarom Nederland terecht strenge eisen stelt aan elektrische steps.</p>
+
+<h2>Dramatische toename Belgische e-step ongevallen</h2>
+
+<p>Uit recent onderzoek blijkt dat <strong>één op de acht e-step ongevallen</strong> in België leidt tot minstens drie maanden arbeidsongeschiktheid. Nog schokkender is dat één op de tien slachtoffers de gevolgen levenslang met zich meedraagt. Twee ongevallen waren zelfs dodelijk.</p>
+
+<p>De cijfers zijn des te opvallender omdat e-steps in België veel gangbaarder zijn dan in Nederland. Terwijl Nederland vanaf het begin heeft gekozen voor strikte handhaving op illegale e-steps, ziet België nu pas de gevolgen van een te permissieve aanpak. Het Belgische verkeer wemelt van de e-steps - van studenten die naar college rijden tot forensen die de laatste kilometers naar kantoor overbruggen.</p>
+
+<p>De realiteit is hard: wat begon als een handig alternatief voor korte afstanden, is uitgegroeid tot een significant veiligheidsprobleem. Belgische ziekenhuizen melden een sterke toename van ernstige verwondingen door e-step ongevallen, vaak met blijvende gevolgen.</p>
+
+<h2>Nederland koos bewust voor preventie</h2>
+
+<p>In tegenstelling tot België heeft Nederland vanaf het begin gekozen voor een preventieve veiligheidsstrategie. Waar onze zuiderburen nu achteraf moeten ingrijpen, heeft Nederland de problemen voorkomen door strenge eisen te stellen voordat e-steps massaal de weg op gingen.</p>
+
+<p>De Nederlandse aanpak draait om vier pijlers: RDW typegoedkeuring zorgt ervoor dat alleen gecontroleerde, veilige modellen de weg op komen. Vanaf juli 2025 geldt bovendien kentekenplicht, wat traceerbaarheid en verantwoordelijkheid waarborgt. Daarnaast is een verplichte verzekering ingevoerd, zodat slachtoffers altijd vergoeding krijgen. Ten slotte moeten bestuurders beschikken over minimaal een bromfietsrijbewijs, wat zorgt voor basiskennis van verkeersregels.</p>
+
+<p>Deze maatregelen kunnen ongevallen voorkomen in plaats van achteraf de schade te tellen. Het is een fundamenteel andere filosofie dan de Belgische aanpak, waar vrijheid voorop stond en veiligheid een bijzaak leek.</p>
+
+<h2>Het draagvlak staat op het spel</h2>
+
+<p>De Belgische cijfers tonen aan wat er gebeurt als veiligheid ondergeschikt wordt aan toegankelijkheid. Elk ongeval schaadt het draagvlak voor elektrische mobiliteit. Ziekenhuizen zien een toenemend aantal ernstige e-step verwondingen, verzekeringsmaatschappijen verhogen hun premies, de politiek roept om strengere maatregelen of zelfs verboden, en de publieke opinie keert zich tegen wat zij beschouwt als 'gevaarlijke gadgets'.</p>
+
+<p>Nederland voorkomt dit scenario door nu al hoge veiligheidseisen te stellen. Hierdoor blijft het maatschappelijk draagvlak voor e-steps behouden en wordt voorkomen dat deze innovatieve vorm van transport het slachtoffer wordt van zijn eigen succes.</p>
+
+<h2>Kwaliteit versus kwantiteit</h2>
+
+<p>De SELANA Alpha, als eerste RDW-goedgekeurde e-step, illustreert perfect hoe veiligheid eruit kan zien. Het voertuig beschikt over richtingaanwijzers zodat andere weggebruikers je intenties kunnen zien, goede verlichting voor zichtbaarheid in het donker, een stabiel chassis dat de kans op vallen vermindert, betrouwbare remmen voor veilig stoppen, en doorloopt grondige kwaliteitscontroles om Chinese rommel te voorkomen.</p>
+
+<p>Dit zijn precies de veiligheidskenmerken die in België blijkbaar ontbreken bij veel e-steps. Terwijl België kiest voor kwantiteit - veel verschillende modellen zonder al te veel controle - zet Nederland in op kwaliteit door alleen de beste en veiligste modellen toe te laten.</p>
+
+<h2>België grijpt nu alsnog in</h2>
+
+<p>De Belgische regering kondigt inmiddels meer controles op e-step verkoop aan om veiligheidsstandaarden te waarborgen. Het is een reactie op de geschetste problematiek, maar wel een die achteraf komt. Nederland heeft deze controle al jaren ingebouwd via de RDW-goedkeuring.</p>
+
+<p>Het Nederlandse systeem draait om preventie boven reparatie - voorkomen is immers beter dan genezen. Door kwaliteitsborging worden alleen veilige modellen toegestaan. De rijbewijsplicht zorgt voor gebruikerseducatie en verkeersinzicht. En de verzekeringplicht biedt financiële zekerheid voor alle betrokkenen.</p>
+
+<h2>Innovatie vraagt om verantwoordelijkheid</h2>
+
+<p>Elektrische mobiliteit heeft onmiskenbaar een grote toekomst, maar alleen als het veilig gebeurt. Nederland's aanpak zorgt ervoor dat e-steps een welkome aanvulling worden op het verkeer, geen bron van ergernis en ongevallen.</p>
+
+<p>De Belgische cijfers zijn een wake-up call: zonder goede regelgeving gaan ongevallen exponentieel stijgen. Dan wordt de maatschappelijke steun voor e-steps snel weggenomen, en daarmee ook de kansen voor deze innovatieve vorm van transport.</p>
+
+<p>Nederland voorkomt dit door nu al de lat hoog te leggen. Het resultaat? Veiligere wegen, tevreden weggebruikers, en breed maatschappelijk draagvlak voor innovatieve mobiliteit. Het is een investering in de toekomst van duurzame mobiliteit.</p>
+
+<h2>Strengheid als bescherming</h2>
+
+<p>Critici beweren regelmatig dat Nederland te streng is met e-step regelgeving. De Belgische cijfers bewijzen het tegendeel: strengheid voorkomt menselijk leed en beschermt de toekomst van elektrische mobiliteit.</p>
+
+<p>Door nu hoge veiligheidseisen te stellen, zorgt Nederland ervoor dat e-steps een duurzame en geaccepteerde vorm van transport worden. België toont wat er gebeurt als je dit nalaat - en dat is geen prettig vooruitzicht.</p>
+
+<p>De Nederlandse strategie is helder: RDW-goedkeuring voorkomt onveilige modellen, kentekenplicht zorgt voor controle, verzekeringplicht beschermt slachtoffers, rijbewijsplicht educeert gebruikers, en zo blijft het maatschappelijk draagvlak behouden. Het is een holistische aanpak die veiligheid en innovatie met elkaar verbindt.</p>
+
+<p>Veiligheid is geen obstakel voor innovatie - het is de basis ervan. Nederland bewijst dat je tegelijkertijd vooruitstrevend en voorzichtig kunt zijn. Het resultaat is een e-step landschap dat zowel modern als verantwoord is.</p>`
+  },
+  {
     id: 11,
     title: "Alle RDW goedgekeurde elektrische steps Nederland 2025 - complete lijst en verschillen",
     slug: "alle-rdw-goedgekeurde-elektrische-steps-nederland-complete-lijst",
