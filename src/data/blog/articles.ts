@@ -50,6 +50,88 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 13,
+    title: "Een gewaarschuwd mens telt voor twee: Politie neemt illegale e-steps steeds vaker in beslag",
+    slug: "gewaarschuwd-mens-telt-twee-politie-neemt-illegale-esteps-beslag",
+    excerpt: "In Nootdorp nam de politie deze week een illegale e-step in beslag na een tweede overtreding. Het is geen incident: de handhaving van illegale steps wordt steeds strenger. Tweede keer betekent direct inbeslagname.",
+    author: "Iwan",
+    date: "2025-09-17",
+    category: "Nieuws",
+    tags: ["politie", "handhaving", "inbeslagname", "illegaal", "regelgeving"],
+    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: true,
+    readTime: "4 min",
+    published: true,
+    content: `<p class="lead">In Nootdorp heeft de politie deze week een elektrische step in beslag genomen na een tweede overtreding. De bestuurder reed opnieuw illegaal op de openbare weg, ondanks een eerdere waarschuwing en boete. Dit incident illustreert de strengere handhaving die sinds juli 2025 geldt voor illegale e-steps.</p>
+
+<h2>Tweede keer is raak: direct inbeslagname</h2>
+
+<p>De zaak in Nootdorp toont het nieuwe handhavingskader van het Openbaar Ministerie in actie. Bij de eerste overtreding kreeg de bestuurder een bekeuring en officiële waarschuwing. Toen hij toch opnieuw met zijn illegale step de weg opging, volgde niet alleen een tweede boete maar ook <strong>directe inbeslagname van het voertuig</strong>.</p>
+
+<p>De politie benadrukt dat dit geen incident is, maar onderdeel van een bewuste strategie. "Een gewaarschuwd mens telt voor twee," aldus de politie. De boodschap is helder: wie na een waarschuwing toch blijft rijden met een illegale step, raakt zijn voertuig definitief kwijt.</p>
+
+<h2>Strengere regels sinds juli 2025</h2>
+
+<p>Sinds 1 juli 2025 gelden aangescherpte regels voor elektrische steps in Nederland. <strong>Alleen RDW-goedgekeurde modellen</strong> mogen nog op de openbare weg. Deze steps moeten voorzien zijn van een kentekenplaat en mogen alleen bestuurd worden door iemand van minimaal 16 jaar oud met een geldig rijbewijs.</p>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>Nieuwe eisen per juli 2025:</strong>
+<ul class="mt-2 space-y-1">
+<li>✓ RDW typegoedkeuring verplicht</li>
+<li>✓ Kentekenplaat moet zichtbaar zijn</li>
+<li>✓ Minimumleeftijd 16 jaar</li>
+<li>✓ Geldig rijbewijs vereist</li>
+<li>✓ Verzekering afgesloten</li>
+</ul>
+</div>
+
+<p>Het doel van deze regelgeving is verkeersveiligheid vergroten en ongelukken met ongecontroleerde voertuigen voorkomen. Nederland koos bewust voor strenge eisen om de problemen te vermijden die andere landen wel ondervinden met massale toestroom van onveilige e-steps.</p>
+
+<h2>Escalatiestrategie: van waarschuwing naar inbeslagname</h2>
+
+<p>Het handhavingskader werkt volgens een duidelijke escalatiestrategie:</p>
+
+<p><strong>Eerste overtreding:</strong> Boete en geregistreerde waarschuwing. De politie legt uit welke regels overtreden zijn en waarom deze bestaan. Er wordt gewezen op de mogelijkheden om legaal te rijden met RDW-goedgekeurde modellen.</p>
+
+<p><strong>Tweede overtreding:</strong> Opnieuw een boete, maar nu ook directe inbeslagname van de step. Het voertuig wordt weggenomen en komt niet meer terug. De bestuurder moet zelf voor transport naar huis zorgen.</p>
+
+<p>Deze aanpak zorgt ervoor dat het "gewoon proberen" en hopen op mildheid geen optie meer is. De consequenties zijn voorspelbaar en escaleren snel genoeg om gedragsverandering te bewerkstelligen.</p>
+
+<h2>Landelijke trend: strengere handhaving</h2>
+
+<p>Nootdorp staat niet alleen. Uit heel Nederland komen vergelijkbare berichten over inbeslaggenomen illegale steps. Van Amsterdam tot Maastricht zien politiekorpsen de urgentie om de nieuwe regelgeving krachtig te handhaven.</p>
+
+<p>De politie erkent dat de transitie naar alleen RDW-goedgekeurde steps tijd kost, maar benadrukt dat <strong>onwetendheid geen excuus meer is</strong>. De regels gelden al sinds juli, en er is voldoende tijd geweest om zich aan te passen.</p>
+
+<p>Belangrijke factoren die bijdragen aan de strengere handhaving:</p>
+
+<p><strong>Verkeersveiligheid:</strong> Illegale steps hebben vaak gebrekkige verlichting, slechte remmen of instabiele constructies. Dit leidt tot gevaarlijke situaties, vooral in het donker of bij slecht weer.</p>
+
+<p><strong>Verzekeringsproblematiek:</strong> Bij ongevallen met illegale steps ontstaan vaak complexe aansprakelijkheidskwesties. Slachtoffers kunnen financieel de dupe worden van schade veroorzaakt door onverzekerde, illegale voertuigen.</p>
+
+<p><strong>Maatschappelijk draagvlak:</strong> Hoe meer illegale steps ongevallen veroorzaken of overlast geven, hoe meer weerstand er ontstaat tegen e-steps in het algemeen. Strenge handhaving beschermt het draagvlak voor legale modellen.</p>
+
+<h2>Wat betekent dit voor e-step eigenaren?</h2>
+
+<p>De boodschap is duidelijk: wie nog steeds rijdt met een illegale step, loopt een groot risico. De eerste waarschuwing is een cadeau - de tweede keer wordt duur.</p>
+
+<p><strong>Controleer uw situatie:</strong> Heeft uw step een kenteken? Is het een RDW-goedgekeurd model? Heeft u de juiste verzekering en het vereiste rijbewijs? Zo niet, dan rijdt u illegaal en riskeert u inbeslagname.</p>
+
+<p><strong>Legale alternatieven:</strong> Momenteel is de <a href="/selana-alpha">SELANA Alpha</a> het enige volledig verkrijgbare RDW-goedgekeurde model. Voor €1.900 heeft u een legale, veilige e-step met kenteken en verzekering.</p>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>Waarschuwing:</strong> Inbeslaggenomen steps komen niet terug. De eigenaar draagt ook de kosten voor wegslepen en stalling. Tel daar de boetes bij op, en een illegale step wordt erg duur.
+</div>
+
+<h2>Preventie is beter dan inbeslagname</h2>
+
+<p>Nederland heeft bewust gekozen voor preventieve maatregelen in plaats van achteraf opruimen van de schade. De RDW-goedkeuring zorgt ervoor dat alleen veilige, geteste modellen de weg op komen. De kentekenplicht maakt traceerbaarheid mogelijk. De verzekeringplicht beschermt alle betrokkenen financieel.</p>
+
+<p>Deze aanpak werkt alleen als er ook consequent wordt gehandhaafd. Het incident in Nootdorp toont dat de politie die handhaving serieus neemt. "Een gewaarschuwd mens telt voor twee" - en wie de waarschuwing negeert, betaalt de prijs.</p>
+
+<p>Voor wie legaal wil rijden zijn er goede mogelijkheden. Voor wie dat weigert, wordt het risico steeds groter. De keuze is aan u - maar de gevolgen zijn voorspelbaar.</p>`,
+  },
+  {
     id: 12,
     title: "België: E-step ongevallen verruimde in 5 jaar - waarom Nederland strenger moet blijven",
     slug: "belgie-e-step-ongevallen-verzesvoudigd-nederland-strengere-regels",
