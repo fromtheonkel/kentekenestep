@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Goedgekeurde Elektrische Steps Nederland 2025 | RDW Kenteken & Verzekering',
-  description: "✓ Goedgekeurde elektrische steps met kenteken ✓ RDW typegoedkeuring ✓ Verzekeringsinformatie ✓ SELANA Alpha €1.900 ✓ Legaal op openbare weg rijden ✓ Complete gids",
+  description: "Overzicht RDW goedgekeurde e-steps - Elektrische steps met kenteken, typegoedkeuring en verzekering. SELANA Alpha €1.900. Legaal op openbare weg.",
   keywords: "goedgekeurde elektrische step, elektrische step met kenteken, RDW goedgekeurd, elektrische step kenteken, goedgekeurde e steps, elektrische step rdw goedgekeurd, SELANA Alpha, kenteken estep",
   openGraph: {
     title: 'Goedgekeurde Elektrische Steps Nederland 2025 | RDW Kenteken',
