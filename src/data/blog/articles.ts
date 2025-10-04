@@ -62,7 +62,7 @@ export const blogArticles: BlogArticle[] = [
     featured: true,
     readTime: "7 min",
     published: true,
-    content: `<p class="lead">Drie maanden na de introductie van de <a href="/">kentekenplicht voor elektrische steps</a> in Nederland is de realiteit ernuchterend: de grote doorbraak bleef uit. Waar andere Europese landen al jaren vol inzetten op micromobiliteit, blijft Nederland vasthouden aan een systeem dat veiligheid boven toegankelijkheid stelt - met alle gevolgen van dien.</p>
+    content: `<p class="lead">Drie maanden na de introductie van de <a href="/">kentekenplicht voor elektrische steps</a> in Nederland is de realiteit ontnuchterend: de grote doorbraak bleef uit. Waar andere Europese landen al jaren vol inzetten op micromobiliteit, blijft Nederland vasthouden aan een systeem dat veiligheid boven toegankelijkheid stelt - met alle gevolgen van dien.</p>
 
 <h2>De Harde Cijfers: Een Magere Oogst</h2>
 
