@@ -50,6 +50,153 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 14,
+    title: "Juli 2025: Een Symbolische Verandering - Waarom Nederland's E-Step Kenteken Weinig Veranderde",
+    slug: "juli-2025-symbolische-verandering-e-step-kenteken",
+    excerpt: "Drie maanden na de kentekenplicht voor e-steps blijkt de grote doorbraak uit te blijven. Slechts 5 goedgekeurde modellen, waaronder de SELANA Alpha, versus duizenden illegale steps op straat.",
+    author: "Iwan",
+    date: "2025-10-03",
+    category: "Nieuws",
+    tags: ["kenteken", "regelgeving", "SELANA Alpha", "RDW", "europa"],
+    image: "/images/steps_in_stad.webp",
+    featured: true,
+    readTime: "7 min",
+    published: true,
+    content: `<p class="lead">Drie maanden na de introductie van de <a href="/">kentekenplicht voor elektrische steps</a> in Nederland is de realiteit ernuchterend: de grote doorbraak bleef uit. Waar andere Europese landen al jaren vol inzetten op micromobiliteit, blijft Nederland vasthouden aan een systeem dat veiligheid boven toegankelijkheid stelt - met alle gevolgen van dien.</p>
+
+<h2>De Harde Cijfers: Een Magere Oogst</h2>
+
+<p>Na drie maanden kentekenplicht is de balans bescheiden. Van de 17 toegelaten bijzondere bromfietsen zijn slechts 4 elektrische steps die een kenteken nodig hebben tussen juli 2025 en juli 2026. Nog schrijnender: slechts 1 e-step heeft volledige nationale typegoedkeuring en mag daadwerkelijk de weg op.</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>De goedgekeurde modellen:</strong>
+<ul class="mt-2 space-y-1">
+<li>• Drie Kickbike-modellen (Cruise, Fat Max en Luxury)</li>
+<li>• Eén Yedoo-model (Mezeq)</li>
+<li>• <strong><a href="/blog/selana-alpha-review">SELANA Alpha</a></strong> - de enige volledig elektrische e-step zonder trapondersteunig die officieel is goedgekeurd</li>
+</ul>
+</div>
+
+<p>De <a href="/selana-alpha">SELANA Alpha</a> onderscheidt zich als het enige model dat je kunt gebruiken zonder zelf te hoeven trappen - alle andere goedgekeurde modellen vereisen nog steeds step-ondersteuning van de gebruiker.</p>
+
+<p>Dit betekent dat driekwart van het jaar na de 'legalisering' nog altijd het overgrote deel van de e-steps die je in Nederlandse webshops kunt kopen illegaal is.</p>
+
+<h2>Europa: Een Wereld van Verschil</h2>
+
+<p>Terwijl Nederland worstelt met een handvol goedgekeurde modellen, ziet de situatie er elders in Europa compleet anders uit:</p>
+
+<p><strong>Duitsland (sinds 2019):</strong></p>
+<ul>
+<li>50.000 deelsteps in omloop</li>
+<li>Derde grootste e-step markt van Europa (+64% groei)</li>
+<li>Minimumleeftijd 14 jaar, geen rijbewijs vereist</li>
+</ul>
+
+<p><strong>Frankrijk:</strong></p>
+<ul>
+<li>Grootste e-step markt (ondanks recent Parijs-verbod)</li>
+<li>Minimumleeftijd 14 jaar sinds 2023</li>
+<li>Volledige integratie in verkeerssysteem</li>
+</ul>
+
+<p><strong>België:</strong></p>
+<ul>
+<li>Brussels bij Europese top van deelstep-gebruik</li>
+<li>Echter: <a href="/blog/belgie-e-step-ongevallen-2024">forse toename in ongevallen</a> (+10% in 2024, met 1.745 geregistreerde ongevallen)</li>
+<li>Dagelijks gemiddeld één ongeval alleen al in Antwerpen</li>
+</ul>
+
+<p>Nederland staat samen met alleen Servië en het Verenigd Koninkrijk in de kleine groep Europese landen die e-steps nog niet volledig hebben omarmd.</p>
+
+<h2>De Realiteit op Straat: Handhaving vs Praktijk</h2>
+
+<p>Ondanks de nieuwe regelgeving blijven duizenden illegale e-steps rondrijden. De boetes variëren van €280 tot €400, plus mogelijke inbeslagname. Toch erkent verkeersadvocaat Bert Kabel: "Ik heb nog nooit zo'n zaak gehad. Het is relatief nieuw en de regels zijn niet duidelijk."</p>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>De handhaving in cijfers:</strong>
+<ul class="mt-2 space-y-1">
+<li>• Boetes: €280-€400</li>
+<li>• Eerste inbeslagnames sinds juli 2025</li>
+<li>• Veel variatie per regio in handhaving</li>
+</ul>
+</div>
+
+<p>De meeste e-steprijders lijken het er simpelweg op te wagen - en vaak terecht, want de kans op een boete blijft relatief klein.</p>
+
+<h2>LEV-Expert Pieter Dekker Had Gelijk</h2>
+
+<p>In oktober 2024 waarschuwde Pieter Dekker van het HAN LEV Kenniscentrum al dat Nederland achterblijft. Zijn kritiek op het ministerie van Infrastructuur en Waterstaat - "Het lijkt wel alsof het ministerie de razendsnelle ontwikkelingen in deze sector niet kan bijbenen" - blijkt profetisch.</p>
+
+<p>De beloofde doorbraak van juli 2025 is uitgebleven. Minister Madlener stelde zelfs recente besluiten over kentekens opnieuw uit, wat de trage voortgang onderstreept.</p>
+
+<h2>Strenge Toelating: Zegen of Vloek?</h2>
+
+<p>Nederland's strikte benadering heeft voor- en nadelen:</p>
+
+<p><strong>Voordelen:</strong></p>
+<ul>
+<li>Hoge veiligheidseisen (25 km/u max, verlichting, remmen)</li>
+<li>Duidelijke wet- en regelgeving</li>
+<li>Verzekeringsdekking gegarandeerd</li>
+<li>Mogelijk preventie van ongevallentoename zoals in België</li>
+</ul>
+
+<p><strong>Nadelen:</strong></p>
+<ul>
+<li>Beperkte keuze voor consumenten (slechts 5 goedgekeurde modellen)</li>
+<li>Achterstand op Europese concurrentie</li>
+<li>Gemiste economische kansen (markt potentiaal: €100-150 miljard in 2030)</li>
+<li>Innovatie wordt afgeremd</li>
+</ul>
+
+<h2>De Prijs van Voorzichtigheid</h2>
+
+<p>De Nederlandse aanpak kent een hoge prijs. McKinsey schat de Europese LEV-markt op 100-150 miljard dollar tegen 2030. Door de strikte regelgeving mist Nederland kansen in deze explosief groeiende markt.</p>
+
+<p>Deeldiensten zoals Lime en Tier, die in andere Europese steden niet meer weg te denken zijn, blijven hier grotendeels afwezig. Startups en innovatieve bedrijven richten hun pijlen op landen met toegankelijker regelgeving.</p>
+
+<h2>Juli 2026: De Echte Test</h2>
+
+<p>De ware impact van Nederland's e-step beleid wordt pas duidelijk in juli 2026, wanneer ook bestaande goedgekeurde modellen een kenteken moeten hebben. Dan zal blijken of de Nederlandse aanpak heeft geleid tot een veilige én levensvatbare e-step cultuur, of dat we simpelweg een kans hebben gemist.</p>
+
+<p><strong>Voor nu blijft de conclusie helder:</strong> Juli 2025 was vooral een symbolische verandering. Nederland heeft gekozen voor veiligheid boven toegankelijkheid, terwijl de rest van Europa al jaren vooruit racet op twee wielen.</p>
+
+<h2>Wat Betekent Dit Voor Jou?</h2>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>Als je een e-step wilt kopen:</strong>
+<ul class="mt-2 space-y-1">
+<li>• Check of het model <a href="/rdw-goedgekeurde-e-steps">RDW-goedgekeurd</a> is (momenteel 5 modellen beschikbaar)</li>
+<li>• Overweeg de <a href="/selana-alpha">SELANA Alpha</a> als enige volledig elektrische optie</li>
+<li>• Kies voor een model met trapondersteunig (250W, 25 km/u) - deze vallen onder <a href="/blog/e-step-fietsregels">fietsregels</a></li>
+<li>• Reken op beperkte keuze vergeleken met andere landen</li>
+</ul>
+</div>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>Als je al een e-step hebt:</strong>
+<ul class="mt-2 space-y-1">
+<li>• Check of jouw model <a href="/kenteken-checker">goedgekeurd</a> is</li>
+<li>• Wees voorbereid op mogelijke <a href="/blog/e-step-boetes-handhaving">boetes</a> (€280-€400)</li>
+<li>• Tot juli 2026 heb je nog uitstel voor kenteken bij goedgekeurde modellen</li>
+</ul>
+</div>
+
+<p>Nederland's voorzichtige koers heeft zijn prijs: terwijl Europa op volle snelheid richting duurzame micromobiliteit rijdt, blijven wij voorzichtig gas geven vanuit de zijlijn.</p>
+
+<hr>
+
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6">
+<strong>Meer lezen:</strong>
+<ul class="mt-2 space-y-1">
+<li>• <a href="/rdw-goedgekeurde-e-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
+<li>• <a href="/selana-alpha">SELANA Alpha: De eerste echte e-step</a></li>
+<li>• <a href="/blog/belgie-e-step-ongevallen-2024">E-step ongevallen in België stijgen fors</a></li>
+<li>• <a href="/blog/e-step-regels-nederland-2025">Complete gids: E-step regels Nederland 2025</a></li>
+</ul>
+</div>`,
+  },
+  {
     id: 13,
     title: "Een gewaarschuwd mens telt voor twee: Politie neemt illegale e-steps steeds vaker in beslag",
     slug: "gewaarschuwd-mens-telt-twee-politie-neemt-illegale-esteps-beslag",
