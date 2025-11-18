@@ -50,6 +50,230 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 15,
+    title: "1 Juli 2026: De Echte Deadline voor E-Step Kenteken - Wat Verandert Er?",
+    slug: "1-juli-2026-echte-deadline-e-step-kenteken",
+    excerpt: "Vanaf 1 juli 2026 eindigt de overgangsperiode definitief. Zonder kenteken mag je niet meer de weg op met je elektrische step - op straffe van boetes. Ook worden de kosten voor kentekenregistratie flink hoger. Alles wat je moet weten over deze cruciale deadline.",
+    author: "Iwan",
+    date: "2025-01-18",
+    category: "Regelgeving",
+    tags: ["kenteken", "deadline", "2026", "RDW", "kosten", "boete"],
+    image: "/images/step_dam.webp",
+    featured: true,
+    readTime: "8 min",
+    published: true,
+    content: `<p class="lead">1 Juli 2026 markeert het definitieve einde van de overgangsperiode voor elektrische steps in Nederland. Waar juli 2025 vooral symbolisch was, wordt juli 2026 de harde deadline: zonder kenteken mag je niet meer de weg op. Bovendien stijgen de kosten voor kentekenregistratie fors. Hier lees je alles wat je moet weten om voorbereid te zijn.</p>
+
+<h2>Het Einde van de Overgangsperiode</h2>
+
+<p>Sinds 1 juli 2025 geldt in Nederland de kentekenplicht voor elektrische steps die als bijzondere bromfiets worden geclassificeerd. De eerste twaalf maanden fungeerden echter als een soepele overgangsperiode, waarin eigenaren van reeds RDW-goedgekeurde modellen nog zonder kenteken mochten rijden.</p>
+
+<p><strong>Die coulance eindigt definitief op 1 juli 2026.</strong></p>
+
+<p>Vanaf die datum geldt voor iedereen zonder uitzondering: geen kenteken betekent niet de weg op. De politie kan dan direct handhaven zonder enige clementie. Wie toch zonder kenteken rijdt, riskeert niet alleen een boete maar ook inbeslagname van het voertuig.</p>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>⚠️ Belangrijkste wijziging per 1 juli 2026:</strong>
+<ul class="mt-2 space-y-1">
+<li>• <strong>Kentekenplicht absoluut:</strong> Zonder kenteken mag je niet meer de weg op</li>
+<li>• <strong>Direct beboetbaar:</strong> Geen waarschuwingen meer, direct sancties</li>
+<li>• <strong>Hogere kosten:</strong> Minimaal €116,65 voor kentekenregistratie bij RDW-keuring</li>
+<li>• <strong>Inbeslagname mogelijk:</strong> Tweede overtreding betekent definitief verlies van je step</li>
+</ul>
+</div>
+
+<h2>Fors Hogere Kosten na de Deadline</h2>
+
+<p>De RDW introduceert per 1 juli 2026 een belangrijk kostenverschil. Wie vóór die datum een kenteken aanvraagt, profiteert nog van het standaardtarief. Maar wie ná 1 juli 2026 pas een kenteken aanvraagt voor zijn bijzondere bromfiets, moet verplicht naar een RDW-keuringsstation.</p>
+
+<p>Dit betekent aanzienlijk hogere kosten:</p>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>Kostenvergelijking kentekenregistratie:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Vóór 1 juli 2026:</strong> Standaard kentekentarief (circa €40-50)</li>
+<li><strong>Ná 1 juli 2026:</strong> RDW-keuringsstation verplicht - minimaal €116,65</li>
+<li><strong>Reden verschil:</strong> De RDW moet het voertuig dan apart beoordelen en keuren</li>
+</ul>
+</div>
+
+<p>Het verschil zit hem in de beoordelingsprocedure. Vóór de deadline kan de kentekenregistratie nog relatief eenvoudig verlopen voor goedgekeurde modellen. Ná de deadline moet elk voertuig individueel worden gekeurd door de RDW, wat aanzienlijk meer tijd en mankracht kost - en dus duurder is.</p>
+
+<p><strong>De boodschap is helder: wacht niet tot het laatste moment.</strong> Wie nu al een RDW-goedgekeurde step heeft maar nog geen kenteken, kan beter vóór 1 juli 2026 actie ondernemen om de extra kosten te vermijden.</p>
+
+<h2>Boetes en Handhaving vanaf Juli 2026</h2>
+
+<p>De handhaving wordt na 1 juli 2026 aanmerkelijk strenger. Waar tijdens de overgangsperiode nog enige coulance mogelijk was, geldt daarna de harde lijn. De politie heeft inmiddels ruim ervaring opgebouwd met het herkennen van illegale steps en het toepassen van sancties.</p>
+
+<p>De <a href="/blog/gewaarschuwd-mens-telt-twee-politie-neemt-illegale-esteps-beslag">handhavingsstrategie</a> kent een duidelijke escalatie:</p>
+
+<h3>Eerste Overtreding</h3>
+<p>Bij de eerste keer dat je zonder kenteken wordt aangetroffen, volgt een boete. Het bedrag varieert tussen de €280 en €400, afhankelijk van de exacte overtreding. De politie registreert de overtreding officieel en waarschuwt expliciet dat herhaling tot inbeslagname leidt.</p>
+
+<h3>Tweede Overtreding</h3>
+<p>Wie na een eerste waarschuwing toch opnieuw zonder kenteken wordt aangetroffen, verliest zijn step. De politie neemt het voertuig direct in beslag. Je krijgt opnieuw een boete én je moet zelf voor transport naar huis zorgen. De step krijg je niet terug.</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Handhavingscijfers sinds juli 2025:</strong>
+<ul class="mt-2 space-y-1">
+<li>• Tientallen inbeslagnames landelijk</li>
+<li>• Boetes variëren van €280 tot €400</li>
+<li>• "Een gewaarschuwd mens telt voor twee" - politie toont geen mededogen bij herhaling</li>
+<li>• Verkeerscontroles richten zich steeds vaker specifiek op e-steps</li>
+</ul>
+</div>
+
+<h2>Welke E-Steps Hebben Een Kenteken Nodig?</h2>
+
+<p>Niet alle elektrische steps vallen onder de kentekenplicht. Het gaat specifiek om modellen die als "bijzondere bromfiets" worden geclassificeerd. Dit zijn steps met een elektromotor die volledig zelfstandig voortstuwing biedt, zonder dat je hoeft te trappen.</p>
+
+<h3>Kentekenplicht geldt voor:</h3>
+<ul>
+<li><strong>Volledig elektrische steps:</strong> Zoals de <a href="/selana-alpha">SELANA Alpha</a> - je hoeft niet te trappen</li>
+<li><strong>Snelheid tot 25 km/u:</strong> Harder mag sowieso niet op de openbare weg</li>
+<li><strong>RDW-goedgekeurde modellen:</strong> Alleen deze mogen überhaupt de weg op</li>
+</ul>
+
+<h3>Geen kenteken nodig:</h3>
+<ul>
+<li><strong>Trapondersteunde steps:</strong> Modellen waarbij de motor alleen bijstand geeft als je trapt (maximaal 250W, 25 km/u)</li>
+<li><strong>Deze vallen onder fietsregels:</strong> Geen kenteken, verzekering of rijbewijs vereist</li>
+<li><strong>Bijvoorbeeld:</strong> Veel populaire deelsteps in andere Europese landen werken volgens dit principe</li>
+</ul>
+
+<p>Het verschil is cruciaal. Heb je een trapondersteunde step tot 250W en 25 km/u? Dan val je onder de <a href="/blog/e-step-fietsregels">fietsregels</a> en heb je geen kenteken nodig. Heb je een volledig elektrische step? Dan is vanaf 1 juli 2026 een kenteken absoluut verplicht.</p>
+
+<h2>Hoeveel E-Steps Zijn Momenteel Goedgekeurd?</h2>
+
+<p>De realiteit is nog steeds bescheiden. Per januari 2025 zijn er slechts <strong>5 RDW-goedgekeurde modellen</strong> toegestaan op de Nederlandse wegen:</p>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>RDW-goedgekeurde e-steps 2025:</strong>
+<ol class="mt-2 space-y-2">
+<li><strong>SELANA Alpha</strong> - Enige volledig elektrische step met nationale typegoedkeuring (€1.900)</li>
+<li><strong>Yedoo Mezeq</strong> - Stepper-model (vereist trappen)</li>
+<li><strong>Kickbike Cruise</strong> - Stepper-model (vereist trappen)</li>
+<li><strong>Kickbike Fat Max</strong> - Stepper-model (vereist trappen)</li>
+<li><strong>Kickbike Luxury</strong> - Stepper-model (vereist trappen)</li>
+</ol>
+</div>
+
+<p>Van deze vijf modellen is alleen de SELANA Alpha een "echte" e-step waarbij je niet hoeft te trappen. De vier Kickbike/Yedoo-modellen zijn eigenlijk steppers waarbij de elektromotor alleen ondersteunt als je zelf trapt - vergelijkbaar met een e-bike.</p>
+
+<p>Dit betekent dat de keuze voor Nederlandse consumenten die een volledig elektrische step willen extreem beperkt is. Wil je legaal elektrisch rijden zonder te trappen, dan is de SELANA Alpha momenteel je enige optie.</p>
+
+<h2>Wat Moet Je Nu Doen?</h2>
+
+<p>Afhankelijk van jouw situatie zijn er verschillende acties nodig:</p>
+
+<h3>Heb je al een RDW-goedgekeurde step maar nog geen kenteken?</h3>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Actieplan vóór 1 juli 2026:</strong>
+<ol class="mt-2 space-y-2">
+<li><strong>Check je model:</strong> Staat je step op de <a href="/rdw-goedgekeurde-e-steps">officiële RDW-lijst</a>?</li>
+<li><strong>Vraag vóór juli 2026 kenteken aan:</strong> Bespaar minimaal €66 aan extra keuringskosten</li>
+<li><strong>Regel verzekering:</strong> Verplicht vanaf moment van kentekenregistratie (circa €6/maand)</li>
+<li><strong>Controleer rijbewijs:</strong> Minimaal bromfietsrijbewijs vereist (vanaf 16 jaar)</li>
+</ol>
+</div>
+
+<h3>Heb je een niet-goedgekeurde step?</h3>
+
+<p>Dan zijn de opties beperkter en minder prettig:</p>
+
+<ul>
+<li><strong>Stoppen met gebruik:</strong> Vanaf 1 juli 2026 mag je niet meer de weg op</li>
+<li><strong>Verkopen/inruilen:</strong> Probeer er nog wat voor te krijgen voordat de markt instort</li>
+<li><strong>Overstappen op goedgekeurd model:</strong> Momenteel eigenlijk alleen de SELANA Alpha als volwaardige e-step</li>
+<li><strong>Risico nemen:</strong> Rijden zonder kenteken betekent boetes en mogelijk inbeslagname - geen slimme keuze</li>
+</ul>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>⚠️ Waarschuwing illegale steps:</strong>
+<p class="mt-2">Veel webshops verkopen nog steeds e-steps die niet RDW-goedgekeurd zijn. Deze zijn vanaf 1 juli 2026 absoluut illegaal op de openbare weg. Koop nooit een step zonder te controleren of deze op de officiële RDW-lijst staat - anders betaal je voor een voertuig dat je niet mag gebruiken.</p>
+</div>
+
+<h3>Wil je een e-step kopen?</h3>
+
+<p>Dan is het verstandig om nu al goed te kiezen:</p>
+
+<ul>
+<li><strong>Alleen RDW-goedgekeurde modellen:</strong> Anders mag je vanaf juli 2026 niet de weg op</li>
+<li><strong>Vraag direct kenteken aan:</strong> Voor de deadline om extra kosten te vermijden</li>
+<li><strong>Controleer totale kosten:</strong> Aanschafprijs + kenteken + verzekering + onderhoud</li>
+<li><strong>Overweeg alternatieven:</strong> Trapondersteunde steps (max 250W, 25 km/u) vallen onder fietsregels en zijn vaak goedkoper</li>
+</ul>
+
+<h2>Europa Kijkt Mee</h2>
+
+<p>Nederland's strikte aanpak staat niet op zichzelf. Zoals we eerder bespraken in ons artikel over <a href="/blog/belgie-e-step-ongevallen-verzesvoudigd-nederland-strengere-regels">Belgische e-step ongevallen</a>, heeft permissieve regelgeving geleid tot een verzesvoudiging van ongevallen in vijf jaar tijd.</p>
+
+<p>De Nederlandse strategie van preventie in plaats van achteraf repareren begint vruchten af te werpen:</p>
+
+<ul>
+<li><strong>Geen explosie van ongevallen</strong> zoals in België</li>
+<li><strong>Bewustzijn over veiligheid</strong> bij gebruikers</li>
+<li><strong>Duidelijke kaders</strong> voor de industrie</li>
+<li><strong>Behoud van maatschappelijk draagvlak</strong> voor micromobiliteit</li>
+</ul>
+
+<p>De harde deadline van 1 juli 2026 is onderdeel van deze strategie. Het geeft de markt tijd om te reageren, maar stelt ook duidelijke grenzen. Na die datum is er geen ruimte meer voor experimenteren met onveilige of niet-goedgekeurde modellen.</p>
+
+<h2>Veelgestelde Vragen Juli 2026</h2>
+
+<h3>Wat gebeurt er precies op 1 juli 2026?</h3>
+<p>De overgangsperiode voor kentekenplicht eindigt definitief. Vanaf die datum mag je zonder kenteken niet meer de weg op met een elektrische step die als bijzondere bromfiets is geclassificeerd. De politie kan direct handhaven met boetes en inbeslagname.</p>
+
+<h3>Waarom zijn de kosten hoger na 1 juli 2026?</h3>
+<p>Na de deadline moet je verplicht naar een RDW-keuringsstation. De RDW moet je voertuig dan apart beoordelen en keuren, wat meer tijd en personeel kost. Dit resulteert in minimaal €116,65 aan kosten in plaats van het standaardtarief van ongeveer €40-50.</p>
+
+<h3>Kan ik nog snel voor 1 juli 2026 een kenteken regelen?</h3>
+<p>Ja, maar alleen als je een RDW-goedgekeurd model hebt. Check de <a href="/rdw-goedgekeurde-e-steps">officiële RDW-lijst</a> of jouw model goedgekeurd is. Zo ja, vraag zo snel mogelijk je kenteken aan om de extra kosten te vermijden.</p>
+
+<h3>Wat als mijn step niet op de RDW-lijst staat?</h3>
+<p>Dan mag je vanaf 1 juli 2026 niet meer de weg op met dit model. Je kunt het voertuig verkopen, inruilen voor een goedgekeurd model, of het risico nemen op boetes en inbeslagname - maar dat laatste is geen verstandige keuze.</p>
+
+<h3>Gelden dezelfde regels voor deelsteps?</h3>
+<p>Ja, ook deelsteps moeten voldoen aan de kentekenplicht als ze volledig elektrisch zijn. Dit is een van de redenen waarom grote deeldiensten zoals Lime en Tier nog niet actief zijn in Nederland - hun modellen zijn vaak niet RDW-goedgekeurd.</p>
+
+<h2>De Tijd Tikt: Bereid Je Voor</h2>
+
+<p>1 Juli 2026 komt sneller dan je denkt. Over minder dan anderhalf jaar eindigt de coulanceperiode definitief. Voor e-step eigenaren betekent dit:</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>Tijdlijn naar de deadline:</strong>
+<ul class="mt-2 space-y-1">
+<li><strong>Nu - juni 2026:</strong> Tijd om kenteken aan te vragen tegen standaardtarief</li>
+<li><strong>1 juli 2026:</strong> Kentekenplicht wordt absoluut, hogere kosten voor registratie</li>
+<li><strong>Na juli 2026:</strong> Strenge handhaving, boetes en inbeslagname bij overtredingen</li>
+</ul>
+</div>
+
+<p>Wacht niet tot het laatste moment. De RDW-keuringsstations zullen waarschijnlijk overbelast raken in de maanden voor de deadline, wat kan leiden tot lange wachttijden. Bovendien loop je het risico op extra kosten als je de deadline mist.</p>
+
+<h2>Veiligheid Voorop</h2>
+
+<p>De strikte Nederlandse aanpak kan frustrerend zijn voor wie graag meer keuze en vrijheid wil. Maar de <a href="/blog/belgie-e-step-ongevallen-verzesvoudigd-nederland-strengere-regels">cijfers uit België</a> tonen aan waarom deze voorzichtigheid gerechtvaardigd is: zonder goede regelgeving exploderen ongevallen en komt het maatschappelijk draagvlak in gevaar.</p>
+
+<p>1 Juli 2026 is niet het einde van e-steps in Nederland - het is het begin van een nieuwe fase waarin alleen veilige, gecontroleerde modellen de weg op mogen. Voor gebruikers betekent dit zekerheid: je weet dat je op een goed gekeurd, verzekerd voertuig rijdt. Voor de samenleving betekent het veiligere wegen en minder ongevallen.</p>
+
+<p>Bereid je voor, regel tijdig je kenteken, en blijf veilig rijden. De toekomst van elektrische mobiliteit in Nederland hangt af van verantwoord gebruik en naleving van de regels.</p>
+
+<hr>
+
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6">
+<strong>Meer informatie:</strong>
+<ul class="mt-2 space-y-1">
+<li>• <a href="/rdw-goedgekeurde-e-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
+<li>• <a href="/selana-alpha">SELANA Alpha: De enige volledig elektrische goedgekeurde e-step</a></li>
+<li>• <a href="/blog/gewaarschuwd-mens-telt-twee-politie-neemt-illegale-esteps-beslag">Handhaving illegale e-steps wordt strenger</a></li>
+<li>• <a href="/kenteken-checker">Check of jouw e-step RDW-goedgekeurd is</a></li>
+<li>• <a href="https://www.rdw.nl/paginas/kenteken-aanvragen-voor-uw-bijzondere-bromfiets" target="_blank" rel="noopener">Officiële RDW informatie over kenteken aanvragen</a></li>
+</ul>
+</div>`,
+  },
+  {
     id: 14,
     title: "Juli 2025: Een Symbolische Verandering - Waarom Nederland's E-Step Kenteken Weinig Veranderde",
     slug: "juli-2025-symbolische-verandering-e-step-kenteken",
