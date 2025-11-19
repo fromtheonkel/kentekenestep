@@ -51,18 +51,18 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 export const blogArticles: BlogArticle[] = [
   {
     id: 15,
-    title: "1 Juli 2026: De Echte Deadline voor E-Step Kenteken - Wat Verandert Er?",
-    slug: "1-juli-2026-echte-deadline-e-step-kenteken",
+    title: "1 juli 2026: de echte deadline voor elektrische step kenteken - wat verandert er?",
+    slug: "1-juli-2026-echte-deadline-elektrische-step-kenteken",
     excerpt: "Vanaf 1 juli 2026 eindigt de overgangsperiode definitief. Zonder kenteken mag je niet meer de weg op met je elektrische step - op straffe van boetes. Ook worden de kosten voor kentekenregistratie flink hoger. Alles wat je moet weten over deze cruciale deadline.",
     author: "Iwan",
-    date: "2025-01-18",
+    date: "2025-11-19",
     category: "Regelgeving",
     tags: ["kenteken", "deadline", "2026", "RDW", "kosten", "boete"],
     image: "/images/step_dam.webp",
     featured: true,
     readTime: "8 min",
     published: true,
-    content: `<p class="lead">1 Juli 2026 markeert het definitieve einde van de overgangsperiode voor elektrische steps in Nederland. Waar juli 2025 vooral symbolisch was, wordt juli 2026 de harde deadline: zonder kenteken mag je niet meer de weg op. Bovendien stijgen de kosten voor kentekenregistratie fors. Hier lees je alles wat je moet weten om voorbereid te zijn.</p>
+    content: `<p class="lead">1 juli 2026 markeert het definitieve einde van de overgangsperiode voor elektrische steps in Nederland. Waar juli 2025 vooral symbolisch was, wordt juli 2026 de harde deadline: zonder kenteken mag je niet meer de weg op. Bovendien stijgen de kosten voor kentekenregistratie fors. Hier lees je alles wat je moet weten om voorbereid te zijn.</p>
 
 <h2>Het Einde van de Overgangsperiode</h2>
 
@@ -141,7 +141,7 @@ export const blogArticles: BlogArticle[] = [
 <li><strong>Bijvoorbeeld:</strong> Veel populaire deelsteps in andere Europese landen werken volgens dit principe</li>
 </ul>
 
-<p>Het verschil is cruciaal. Heb je een trapondersteunde step tot 250W en 25 km/u? Dan val je onder de <a href="/blog/e-step-fietsregels">fietsregels</a> en heb je geen kenteken nodig. Heb je een volledig elektrische step? Dan is vanaf 1 juli 2026 een kenteken absoluut verplicht.</p>
+<p>Het verschil is cruciaal. Heb je een trapondersteunde step tot 250W en 25 km/u? Dan val je onder de fietsregels en heb je geen kenteken nodig. Heb je een volledig elektrische step? Dan is vanaf 1 juli 2026 een kenteken absoluut verplicht.</p>
 
 <h2>Hoeveel E-Steps Zijn Momenteel Goedgekeurd?</h2>
 
@@ -171,7 +171,7 @@ export const blogArticles: BlogArticle[] = [
 <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
 <strong>Actieplan vóór 1 juli 2026:</strong>
 <ol class="mt-2 space-y-2">
-<li><strong>Check je model:</strong> Staat je step op de <a href="/rdw-goedgekeurde-e-steps">officiële RDW-lijst</a>?</li>
+<li><strong>Check je model:</strong> Staat je step op de <a href="/goedgekeurde-elektrische-steps">officiële RDW-lijst</a>?</li>
 <li><strong>Vraag vóór juli 2026 kenteken aan:</strong> Bespaar minimaal €66 aan extra keuringskosten</li>
 <li><strong>Regel verzekering:</strong> Verplicht vanaf moment van kentekenregistratie (circa €6/maand)</li>
 <li><strong>Controleer rijbewijs:</strong> Minimaal bromfietsrijbewijs vereist (vanaf 16 jaar)</li>
@@ -229,7 +229,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Na de deadline moet je verplicht naar een RDW-keuringsstation. De RDW moet je voertuig dan apart beoordelen en keuren, wat meer tijd en personeel kost. Dit resulteert in minimaal €116,65 aan kosten in plaats van het standaardtarief van ongeveer €40-50.</p>
 
 <h3>Kan ik nog snel voor 1 juli 2026 een kenteken regelen?</h3>
-<p>Ja, maar alleen als je een RDW-goedgekeurd model hebt. Check de <a href="/rdw-goedgekeurde-e-steps">officiële RDW-lijst</a> of jouw model goedgekeurd is. Zo ja, vraag zo snel mogelijk je kenteken aan om de extra kosten te vermijden.</p>
+<p>Ja, maar alleen als je een RDW-goedgekeurd model hebt. Check de <a href="/goedgekeurde-elektrische-steps">officiële RDW-lijst</a> of jouw model goedgekeurd is. Zo ja, vraag zo snel mogelijk je kenteken aan om de extra kosten te vermijden.</p>
 
 <h3>Wat als mijn step niet op de RDW-lijst staat?</h3>
 <p>Dan mag je vanaf 1 juli 2026 niet meer de weg op met dit model. Je kunt het voertuig verkopen, inruilen voor een goedgekeurd model, of het risico nemen op boetes en inbeslagname - maar dat laatste is geen verstandige keuze.</p>
@@ -239,7 +239,7 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>De Tijd Tikt: Bereid Je Voor</h2>
 
-<p>1 Juli 2026 komt sneller dan je denkt. Over minder dan anderhalf jaar eindigt de coulanceperiode definitief. Voor e-step eigenaren betekent dit:</p>
+<p>1 juli 2026 komt sneller dan je denkt. Over minder dan anderhalf jaar eindigt de coulanceperiode definitief. Voor e-step eigenaren betekent dit:</p>
 
 <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
 <strong>Tijdlijn naar de deadline:</strong>
@@ -256,7 +256,7 @@ export const blogArticles: BlogArticle[] = [
 
 <p>De strikte Nederlandse aanpak kan frustrerend zijn voor wie graag meer keuze en vrijheid wil. Maar de <a href="/blog/belgie-e-step-ongevallen-verzesvoudigd-nederland-strengere-regels">cijfers uit België</a> tonen aan waarom deze voorzichtigheid gerechtvaardigd is: zonder goede regelgeving exploderen ongevallen en komt het maatschappelijk draagvlak in gevaar.</p>
 
-<p>1 Juli 2026 is niet het einde van e-steps in Nederland - het is het begin van een nieuwe fase waarin alleen veilige, gecontroleerde modellen de weg op mogen. Voor gebruikers betekent dit zekerheid: je weet dat je op een goed gekeurd, verzekerd voertuig rijdt. Voor de samenleving betekent het veiligere wegen en minder ongevallen.</p>
+<p>1 juli 2026 is niet het einde van e-steps in Nederland - het is het begin van een nieuwe fase waarin alleen veilige, gecontroleerde modellen de weg op mogen. Voor gebruikers betekent dit zekerheid: je weet dat je op een goed gekeurd, verzekerd voertuig rijdt. Voor de samenleving betekent het veiligere wegen en minder ongevallen.</p>
 
 <p>Bereid je voor, regel tijdig je kenteken, en blijf veilig rijden. De toekomst van elektrische mobiliteit in Nederland hangt af van verantwoord gebruik en naleving van de regels.</p>
 
@@ -265,10 +265,9 @@ export const blogArticles: BlogArticle[] = [
 <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6">
 <strong>Meer informatie:</strong>
 <ul class="mt-2 space-y-1">
-<li>• <a href="/rdw-goedgekeurde-e-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
+<li>• <a href="/goedgekeurde-elektrische-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
 <li>• <a href="/selana-alpha">SELANA Alpha: De enige volledig elektrische goedgekeurde e-step</a></li>
 <li>• <a href="/blog/gewaarschuwd-mens-telt-twee-politie-neemt-illegale-esteps-beslag">Handhaving illegale e-steps wordt strenger</a></li>
-<li>• <a href="/kenteken-checker">Check of jouw e-step RDW-goedgekeurd is</a></li>
 <li>• <a href="https://www.rdw.nl/paginas/kenteken-aanvragen-voor-uw-bijzondere-bromfiets" target="_blank" rel="noopener">Officiële RDW informatie over kenteken aanvragen</a></li>
 </ul>
 </div>`,
@@ -413,7 +412,7 @@ export const blogArticles: BlogArticle[] = [
 <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6">
 <strong>Meer lezen:</strong>
 <ul class="mt-2 space-y-1">
-<li>• <a href="/rdw-goedgekeurde-e-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
+<li>• <a href="/goedgekeurde-elektrische-steps">Alle RDW goedgekeurde e-steps in Nederland</a></li>
 <li>• <a href="/selana-alpha">SELANA Alpha: De eerste echte e-step</a></li>
 <li>• <a href="/blog/belgie-e-step-ongevallen-2024">E-step ongevallen in België stijgen fors</a></li>
 <li>• <a href="/blog/e-step-regels-nederland-2025">Complete gids: E-step regels Nederland 2025</a></li>
