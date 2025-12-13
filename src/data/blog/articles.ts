@@ -50,6 +50,168 @@ export const createBlogArticle = (article: Partial<BlogArticle> & {
 
 export const blogArticles: BlogArticle[] = [
   {
+    id: 16,
+    title: "16 EU-landen eisen uniforme wetgeving voor elektrische steps - einde aan regelchaos in zicht",
+    slug: "16-eu-landen-uniforme-wetgeving-elektrische-steps",
+    excerpt: "Nederland en 15 andere EU-landen willen af van de lappendeken aan regels voor elektrische steps. Minister Tieman pleit voor Europese wetgeving: een step die in één land is goedgekeurd, moet overal kunnen rijden. Dit betekent mogelijk grote veranderingen voor de Nederlandse regelgeving.",
+    author: "Iwan",
+    date: "2025-12-13",
+    category: "Regelgeving",
+    tags: ["EU", "wetgeving", "internationale regels", "minister Tieman", "Europese Unie"],
+    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=400&fit=crop&crop=center&q=80",
+    featured: true,
+    readTime: "6 min",
+    published: true,
+    content: `<p class="lead">Zestien EU-landen, waaronder Nederland, Duitsland, Polen en België, roepen op tot uniforme Europese wetgeving voor elektrische steps. Minister Robert Tieman (BBB) van Infrastructuur en Waterstaat wil een einde maken aan de huidige "lappendeken" waarbij elk land zijn eigen regels hanteert. Het doel: een step die in één lidstaat is goedgekeurd, moet overal in Europa kunnen rijden.</p>
+
+<h2>Het Probleem: Een Regelchaos in Europa</h2>
+
+<p>De situatie rondom elektrische steps in Europa is momenteel chaotisch. Elk land heeft zijn eigen toelatingseisen, snelheidslimieten en gebruiksvoorwaarden bedacht. Wat in Nederland wel mag, is in België misschien verboden. En wat in Duitsland toegestaan is, kan in Frankrijk weer andere eisen hebben.</p>
+
+<p>Dit levert niet alleen verwarring op voor gebruikers, maar ook grote problemen voor fabrikanten. Een step moet voor elk land apart worden gecertificeerd en goedgekeurd. Dit maakt ontwikkeling duurder en vertraagt innovatie.</p>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-6">
+<strong>Voorbeelden van verschillende regels per land:</strong>
+<ul class="mt-2 space-y-1">
+<li>• <strong>Nederland:</strong> kenteken verplicht, maximaal 25 km/u, verzekering vereist</li>
+<li>• <strong>Duitsland:</strong> verzekering verplicht, kentekenplaat, maximaal 20 km/u</li>
+<li>• <strong>België:</strong> in sommige regio's verboden, in andere toegestaan met beperkingen</li>
+<li>• <strong>Frankrijk:</strong> maximaal 25 km/u, verplichte verzekering, rijden op fietspaden</li>
+</ul>
+</div>
+
+<h2>De Oplossing: Eén Europese Standaard</h2>
+
+<p>Minister Tieman presenteerde donderdag 4 december 2025 zijn voorstel tijdens een overleg met Europese collega's. Zijn boodschap is helder: <strong>"Een voertuig dat in één lidstaat volgens Europese regels is goedgekeurd, moet ook in alle andere lidstaten de weg op kunnen."</strong></p>
+
+<p>Het plan krijgt steun van vijftien andere EU-landen, wat samen zestien landen betekent. Deze brede steun vergroot de kans dat er daadwerkelijk iets gaat gebeuren.</p>
+
+<h3>Wat Betekent Dit Concreet?</h3>
+
+<p>Een Europese standaard zou betekenen dat er uniforme eisen komen voor:</p>
+
+<ul>
+<li><strong>Technische specificaties:</strong> eenduidige normen voor veiligheid, remmen, verlichting en maximale snelheid</li>
+<li><strong>Typegoedkeuring:</strong> één Europese goedkeuring in plaats van per land apart certificeren</li>
+<li><strong>Gebruiksvoorwaarden:</strong> duidelijkheid over waar je mag rijden en wat er verplicht is</li>
+<li><strong>Verzekeringen:</strong> mogelijk Europese regeling voor aansprakelijkheid</li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>💡 Voordeel voor gebruikers:</strong>
+<p class="mt-2">Als de Europese regelgeving er komt, kun je met dezelfde elektrische step vrijwel overal in Europa rijden. Geen verrassingen meer bij de grens, geen extra certificeringen nodig. Handig voor vakantie of zakenreizen.</p>
+</div>
+
+<h2>Gevolgen voor Nederland</h2>
+
+<p>Voor Nederland zou een Europese standaard zowel voor- als nadelen kunnen hebben. Enerzijds kan het betekenen dat de <a href="/blog/1-juli-2026-echte-deadline-elektrische-step-kenteken">strenge Nederlandse regelgeving</a> mogelijk iets wordt versoepeld. Anderzijds zou het ook kunnen dat andere landen juist strenger worden.</p>
+
+<h3>Mogelijk Strengere Eisen</h3>
+
+<p>Nederland heeft momenteel al vrij strenge eisen vergeleken met veel andere EU-landen:</p>
+
+<ul>
+<li>kenteken verplicht vanaf <a href="/blog/juli-2025-symbolische-verandering-e-step-kenteken">1 juli 2025</a></li>
+<li>verzekering verplicht (WA minimaal)</li>
+<li>alleen <a href="/goedgekeurde-elektrische-steps">RDW-goedgekeurde modellen</a> toegestaan</li>
+<li>maximaal 25 km/u</li>
+</ul>
+
+<p>Een Europese norm zou deze eisen kunnen standaardiseren voor heel Europa. Dit betekent mogelijk dat landen met soepeler regelgeving - zoals Frankrijk waar veel deelsteps vrij kunnen rijden - strenger worden.</p>
+
+<h3>Mogelijk Meer Keuze</h3>
+
+<p>Aan de andere kant zou harmonisatie ook meer modellen beschikbaar kunnen maken in Nederland. Nu zijn er slechts <a href="/goedgekeurde-elektrische-steps">5 RDW-goedgekeurde modellen</a>. Met een Europese typegoedkeuring zouden veel meer modellen automatisch ook in Nederland toegelaten kunnen worden.</p>
+
+<div class="bg-green-50 border border-green-200 rounded-lg p-4 my-6">
+<strong>✅ Mogelijke voordelen voor Nederlandse gebruikers:</strong>
+<ul class="mt-2 space-y-1">
+<li>• meer keuze uit goedgekeurde modellen</li>
+<li>• lagere prijzen door grotere markt</li>
+<li>• snellere innovatie door Europese markt</li>
+<li>• makkelijker steps meenemen over de grens</li>
+</ul>
+</div>
+
+<h2>Timing: Wanneer Komt Het?</h2>
+
+<p>De grote vraag is natuurlijk: wanneer gaat dit daadwerkelijk gebeuren? Europese wetgeving kost doorgaans jaren om tot stand te komen. Er moet eerst een voorstel komen, dan onderhandelingen tussen landen, amendementen, en uiteindelijk implementatie.</p>
+
+<p>Realistische inschatting:</p>
+
+<ul>
+<li><strong>2026:</strong> eerste concrete voorstellen en onderhandelingen</li>
+<li><strong>2027-2028:</strong> definitieve wetgeving aangenomen door EU</li>
+<li><strong>2029-2030:</strong> implementatie in alle lidstaten</li>
+</ul>
+
+<p>Dit betekent dat de huidige <a href="/blog/1-juli-2026-echte-deadline-elektrische-step-kenteken">Nederlandse deadline van 1 juli 2026</a> gewoon doorgaat. De Europese regelgeving komt pas daarna, en zal de bestaande nationale regels dan aanvullen of vervangen.</p>
+
+<div class="bg-red-50 border border-red-200 rounded-lg p-4 my-6">
+<strong>⚠️ Let op:</strong>
+<p class="mt-2">Wacht niet met het aanvragen van een kenteken in de hoop dat de regels soepeler worden. De Nederlandse kentekenplicht geldt vanaf 1 juli 2026 sowieso, ongeacht wat er in Europa gebeurt. Wacht je te lang, dan <a href="/blog/1-juli-2026-echte-deadline-elektrische-step-kenteken">betaal je fors meer</a> voor je kentekenregistratie.</p>
+</div>
+
+<h2>Wat Betekent Dit voor Fabrikanten?</h2>
+
+<p>Voor fabrikanten van elektrische steps is dit uitstekend nieuws. In plaats van voor elk land apart door een duur en tijdrovend certificeringsproces te moeten, volstaat straks één Europese typegoedkeuring.</p>
+
+<p>Dit heeft meerdere voordelen:</p>
+
+<ul>
+<li><strong>Lagere kosten:</strong> één certificering in plaats van 27 verschillende</li>
+<li><strong>Snellere time-to-market:</strong> nieuwe modellen sneller beschikbaar in heel Europa</li>
+<li><strong>Grotere markt:</strong> investeren in één model loont meer met toegang tot 450 miljoen Europeanen</li>
+<li><strong>Meer innovatie:</strong> doordat ontwikkeling goedkoper wordt, komt er meer ruimte voor innovatie</li>
+</ul>
+
+<h2>Wat Kun Je Nu Al Doen?</h2>
+
+<p>Voor Nederlandse gebruikers verandert er voorlopig niets. De bestaande regels blijven gewoon gelden. Maar er zijn wel dingen waar je rekening mee kunt houden:</p>
+
+<h3>1. Vraag Je Kenteken Op Tijd Aan</h3>
+
+<p>Heb je al een RDW-goedgekeurde step zoals de <a href="/selana-alpha">SELANA Alpha</a>? Vraag dan vóór 1 juli 2026 je kenteken aan. Daarna wordt het <a href="/blog/1-juli-2026-echte-deadline-elektrische-step-kenteken">minimaal €116,65 duurder</a>.</p>
+
+<h3>2. Let Op Nieuwe Modellen</h3>
+
+<p>Als er Europese regelgeving komt, verwacht je waarschijnlijk een golf aan nieuwe modellen die ook in Nederland toegelaten worden. Het kan de moeite waard zijn om nog even te wachten met een aankoop als je dat kunt.</p>
+
+<h3>3. Volg De Ontwikkelingen</h3>
+
+<p>De komende jaren zal er veel bewegen op Europees niveau. Blijf op de hoogte via onze <a href="/blog">blog</a> waar we alle ontwikkelingen voor je bijhouden.</p>
+
+<h2>Conclusie: Een Stap in de Goede Richting</h2>
+
+<p>Het initiatief van minister Tieman en de vijftien andere EU-landen is een welkome ontwikkeling. De huidige lappendeken aan regels helpt niemand: niet de gebruikers, niet de fabrikanten, en niet de overheden die moeten handhaven.</p>
+
+<p>Uniforme Europese wetgeving kan zorgen voor:</p>
+
+<ul>
+<li>✅ meer duidelijkheid voor gebruikers</li>
+<li>✅ lagere kosten en meer keuze</li>
+<li>✅ snellere innovatie</li>
+<li>✅ betere veiligheid door eenduidige normen</li>
+<li>✅ gemakkelijker grensoverschrijdend gebruik</li>
+</ul>
+
+<p>Maar het zal nog wel even duren voordat de regelgeving er daadwerkelijk is. Tot die tijd blijven de Nederlandse regels gewoon gelden. Zorg dus dat je vóór 1 juli 2026 in orde bent met je kenteken en verzekering - want daarop wordt streng gehandhaafd.</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+<strong>📌 Belangrijkste punten samengevat:</strong>
+<ul class="mt-2 space-y-1">
+<li>• 16 EU-landen willen uniforme regelgeving voor e-steps</li>
+<li>• doel: één goedkeuring geldig in heel Europa</li>
+<li>• verwachting: implementatie rond 2029-2030</li>
+<li>• Nederlandse deadline 1 juli 2026 blijft gewoon gelden</li>
+<li>• mogelijk meer modellen beschikbaar in Nederland</li>
+<li>• vraag je kenteken op tijd aan om kosten te besparen</li>
+</ul>
+</div>
+
+<p><em>Wil je op de hoogte blijven van alle ontwikkelingen rondom elektrische steps in Nederland en Europa? Check regelmatig onze <a href="/blog">blog</a> voor het laatste nieuws en analyses.</em></p>`
+  },
+  {
     id: 15,
     title: "1 juli 2026: de echte deadline voor elektrische step kenteken - wat verandert er?",
     slug: "1-juli-2026-echte-deadline-elektrische-step-kenteken",
